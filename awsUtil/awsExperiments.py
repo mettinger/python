@@ -7,9 +7,9 @@
 #          ------ pythonFile must cope with previous results, e.g. using previousResults.pkl
 #  3.  put required data files in mettinger/Data
 #  4.  define parameterListDict using (possibly using makeProduct)
-#         e.g. parameterListDict = makeProduct({'movePoints':[[10,20,30]], 'uctConstant':[1000], 'moveChoiceMethod':['avgValue'],'alpha':[.01,.1], 'numLoops':[1000], 's3SavePeriod':[10], 'selectChildMethod': ['uct']})
+#         e.g. parameterListDict = makeProduct({'movePoints':[[10000,5000]],'uctConstant':[1000], 'moveChoiceMethod':['visits'],'alpha':[.01,.1], 'numLoops':[1000], 'selectChildMethod': ['uct'], 'tableName':['analytics.mettinger_let_it_ride']})
 #  5.  put experimentDefinition.txt in "experiment_name" using writeExperiment()
-#          e.g. writeExperiment('testExperiment', ['HandRanks.dat', 'equivClassList.pkl'], 'videoPokerUCTGeneral.py', parameterListDict)
+#          e.g. writeExperiment('letItRide1', ['HandRanks.dat'], 'letItRideUCT.py', parameterListDict)
 #  6.  run e.g. ~/pypy-2.6.0-linux64/bin/pypy /Users/mettinger/GitHub/python-mettinger/awsUtil/awsExperiments.py 'autoExperiment_3' > /var/www/html/videoPokerResults.txt
 
 
@@ -63,7 +63,7 @@ def makeProduct(parameterListDict):
         thisDict['parameterGroupName'] = 'group' + str(i)
         i = i + 1
     return parameterDictList
-
+    
 # write an experiment definition file from list of parameters and other essential information  
 def writeExperiment(experimentName, dataFileList, pythonFile, parameterDictList):
     definitionDict = {'experimentName': experimentName, 
@@ -79,7 +79,7 @@ def writeExperiment(experimentName, dataFileList, pythonFile, parameterDictList)
 #%% RUN AN EXPERIMENT
 
 if len(sys.argv) < 2:
-    experimentName = 'testExperiment'
+    experimentName = 'letItRide1'
     print "experiment name: " + experimentName
 else:
     experimentName = sys.argv[1]
