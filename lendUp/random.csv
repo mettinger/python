@@ -1,5001 +1,1001 @@
 id,loan_status
-1147436,Fully Paid
-3105089,Current
-1132315,Fully Paid
-7090434,Current
-9044772,Current
-9654727,Current
-5778075,Fully Paid
-6535789,Fully Paid
-1108250,Fully Paid
-1954743,Fully Paid
-1239570,Fully Paid
-5435548,Fully Paid
-3146739,Current
-9217435,Fully Paid
-6406254,Fully Paid
-4311088,Charged Off
-1434472,Current
-3015622,Current
-1122862,Fully Paid
-5630291,Fully Paid
-5174867,Current
-2945725,Charged Off
-10167275,Fully Paid
-1299230,Fully Paid
-3221026,Fully Paid
-1454004,Current
-4300196,Late (31-120 days)
-2311405,Charged Off
-1318142,Charged Off
-1228884,Current
-8957249,Current
-3351963,Current
-2935673,Fully Paid
-3699503,Current
-1521738,Fully Paid
-1131899,Fully Paid
-9012204,Charged Off
-3234682,Current
-8375803,Current
-3366870,Fully Paid
-3188384,Charged Off
-7048121,Fully Paid
-3698047,Current
-1591515,Fully Paid
-8365560,Current
-5772070,Charged Off
-1454318,Fully Paid
-8126045,Current
-7514774,Current
-5610689,Current
-6699715,Fully Paid
-3694878,Current
-3921424,Fully Paid
-7731195,Charged Off
-1522886,Fully Paid
-1246190,Fully Paid
-2308042,Fully Paid
-1576429,Fully Paid
-1592305,Fully Paid
-7296948,Charged Off
-5234758,Fully Paid
-1369175,Charged Off
-5184999,Fully Paid
-6504958,Current
-6938622,Current
-2835554,Fully Paid
-1466399,Charged Off
-7075408,Current
-10138329,Current
-4546688,Current
-1451387,Fully Paid
-6189813,Current
-6518370,Fully Paid
-1816485,Fully Paid
-3634856,Fully Paid
-1945425,Fully Paid
-8795436,Current
-7925769,Charged Off
-7699906,Current
-1523111,Fully Paid
-6829877,Late (16-30 days)
-1267092,Charged Off
-4555513,Current
-1514727,Fully Paid
-1239090,Fully Paid
-5039409,Current
-6235497,Current
-1458982,Fully Paid
-9494626,Charged Off
-1165348,Charged Off
-4286975,Current
-7437894,Current
-6529895,Charged Off
-6565978,Current
-8194873,Current
-7047549,Current
-6617020,Fully Paid
-8959716,Fully Paid
-2595415,Fully Paid
-4444786,Current
-8555927,Charged Off
-9876741,Current
-8607964,Fully Paid
-1605429,Late (31-120 days)
-7380473,Current
-6615300,Fully Paid
-3697810,Charged Off
-4289423,Charged Off
-6627077,Current
-7437138,Fully Paid
-1112715,Charged Off
-3162254,Fully Paid
-1680382,Fully Paid
-7341299,Fully Paid
-1346251,Current
-4294701,Current
-4197070,Current
-6207366,Fully Paid
-7285298,Charged Off
-4254966,Current
-5967109,Charged Off
-7081454,Fully Paid
-3375442,Fully Paid
-5436026,Charged Off
-6715363,Current
-5040182,Current
-3635294,Current
-3382324,Current
-7058428,Charged Off
-9554956,Current
-8136488,Current
-1088623,Fully Paid
-4278761,Current
-7639411,Current
-3627144,Current
-8814796,Charged Off
-5975071,Current
-3639332,Charged Off
-6516808,Fully Paid
-5335941,Fully Paid
-1132175,Fully Paid
-4310132,Current
-1675498,Fully Paid
-7444697,Fully Paid
-1612265,Current
-1825845,Fully Paid
-1397629,Charged Off
-3917589,Current
-8967830,Current
-9825258,Fully Paid
-10148240,Fully Paid
-4776548,Fully Paid
-9725117,Current
-3108503,Fully Paid
-8655057,Current
-9164739,Fully Paid
-3219542,Fully Paid
-7389898,Fully Paid
-8638335,Current
-7954792,Current
-1467630,Charged Off
-9188318,Charged Off
-7377716,Current
-1340731,Charged Off
-7051514,Fully Paid
-1185855,Fully Paid
-7275279,Current
-6918807,Current
-2309361,Fully Paid
-5545073,Current
-3538424,Fully Paid
-8604608,Fully Paid
-1223766,Fully Paid
-6287162,Fully Paid
-1215810,Charged Off
-1246122,Current
-4185973,Fully Paid
-2015249,Fully Paid
-8724640,Current
-2825355,Current
-3642941,Charged Off
-5609029,Fully Paid
-5607546,Fully Paid
-7345309,Charged Off
-1794635,Fully Paid
-7711612,Current
-2301283,Late (31-120 days)
-7584603,Fully Paid
-8669940,Current
-1559801,Fully Paid
-6694922,Current
-2085301,Fully Paid
-6385631,Charged Off
-9024689,Current
-9794579,Current
-9064696,Current
-8014648,Current
-5967809,Fully Paid
-1582044,Fully Paid
-5704643,Fully Paid
-1584483,Fully Paid
-1320884,Fully Paid
-10175496,Current
-1345556,Charged Off
-3638270,Fully Paid
-7093685,Current
-7339733,Fully Paid
-6157107,Current
-10067060,Fully Paid
-2081579,Fully Paid
-1339474,Charged Off
-1468859,Fully Paid
-3163677,Fully Paid
-3497193,Current
-3292116,Current
-1690511,Fully Paid
-7946560,Fully Paid
-1357660,Charged Off
-1217849,Fully Paid
-4375456,Fully Paid
-1609432,Fully Paid
-1373673,Charged Off
-2175644,Fully Paid
-4306696,Fully Paid
-5763526,Fully Paid
-6526675,Current
-1548586,Fully Paid
-4714658,Fully Paid
-3359768,Fully Paid
-5696022,Late (31-120 days)
-2234966,Charged Off
-1424790,Fully Paid
-9047288,Current
-1166159,Fully Paid
-7098557,Charged Off
-4806570,Fully Paid
-4557628,Fully Paid
-1294481,Fully Paid
-6167402,Current
-6697226,Current
-5884914,Charged Off
-1153513,Charged Off
-6290510,Charged Off
-5164650,Current
-8365574,Current
-9655379,Current
-8955655,Current
-6887998,Current
-8987699,Fully Paid
-1196197,Fully Paid
-5970759,Fully Paid
-4787179,Current
-10117214,Fully Paid
-3844669,Current
-4806890,Current
-5135683,Charged Off
-5535572,Current
-1388764,Fully Paid
-7655676,Current
-4785939,Fully Paid
-6785538,Fully Paid
-5778109,Charged Off
-7068285,Charged Off
-1513389,Charged Off
-9104570,Current
-3632720,Current
-5155257,Charged Off
-1091361,Fully Paid
-5757894,Fully Paid
-6179130,Current
-2275328,Fully Paid
-7079761,Current
-3628282,Late (31-120 days)
-6529298,Current
-10089225,Current
-6827162,Current
-3369317,Current
-3927600,Current
-7102688,Fully Paid
-5979740,Charged Off
-7925688,Current
-3236347,Current
-6527878,Fully Paid
-1370356,Fully Paid
-1513209,Fully Paid
-10165836,Current
-4275951,Fully Paid
-1165765,Fully Paid
-8535421,Fully Paid
-8638832,Charged Off
-6567038,Current
-8294827,Current
-1455443,Fully Paid
-1541074,Fully Paid
-6177719,Current
-3844838,Charged Off
-7069901,Fully Paid
-3495217,Current
-5958551,Late (31-120 days)
-5640400,Current
-8305323,Fully Paid
-3638191,Fully Paid
-5978960,Current
-3240848,Current
-5525861,Current
-8590114,Fully Paid
-9228622,Current
-7091132,Current
-5025762,Fully Paid
-1490675,Fully Paid
-3629136,Fully Paid
-2276384,Fully Paid
-1257269,Fully Paid
-1864889,Fully Paid
-1202688,Fully Paid
-7645695,Fully Paid
-1136188,Charged Off
-1195922,Fully Paid
-1148431,Fully Paid
-9066776,Fully Paid
-7063609,Fully Paid
-5639235,Fully Paid
-9755584,Current
-4215086,Current
-3358457,Late (31-120 days)
-5618940,Current
-5637181,Fully Paid
-1591306,Fully Paid
-1275484,Fully Paid
-7264899,Fully Paid
-3732189,Fully Paid
-1135763,Fully Paid
-1584042,Late (31-120 days)
-4567020,Fully Paid
-6174703,Fully Paid
-6165877,Current
-7080672,Charged Off
-8905447,Fully Paid
-8636521,Fully Paid
-6297464,Fully Paid
-4175876,Current
-1251927,Fully Paid
-5784983,Fully Paid
-6717199,Fully Paid
-1519030,Fully Paid
-1430540,Fully Paid
-1309566,Fully Paid
-3375027,Current
-9685062,Current
-1439683,Charged Off
-5035594,Current
-6115744,Fully Paid
-1189878,Fully Paid
-3365102,Fully Paid
-7342667,Fully Paid
-1574217,Fully Paid
-1519499,Fully Paid
-9666372,Current
-7485114,Charged Off
-1581281,Fully Paid
-5356116,Fully Paid
-1430695,Current
-5031855,Current
-1571482,Fully Paid
-6646164,Fully Paid
-1372533,Charged Off
-8579525,Fully Paid
-2309040,Current
-1129707,Fully Paid
-6206687,Current
-7144658,Fully Paid
-9004997,Current
-8785340,Current
-3537290,Fully Paid
-8765348,Fully Paid
-7285217,Fully Paid
-7046662,Fully Paid
-7698235,Current
-3299160,Current
-5114967,Fully Paid
-5755926,Current
-4167075,Charged Off
-1606571,Fully Paid
-3731399,Current
-8796233,Current
-8524636,Fully Paid
-7864751,Current
-1155825,Fully Paid
-1208375,Fully Paid
-6789529,Fully Paid
-7099545,Fully Paid
-6114915,Fully Paid
-3640627,Fully Paid
-1585457,Fully Paid
-1420974,Charged Off
-3676234,Fully Paid
-8586202,Fully Paid
-8116730,Current
-9848304,Fully Paid
-5385330,Fully Paid
-3484991,Fully Paid
-3353051,Current
-1686390,Current
-6547729,Fully Paid
-2379108,In Grace Period
-1583365,Fully Paid
-1547637,Charged Off
-9856564,Current
-2934956,Fully Paid
-7066599,Charged Off
-6495141,Current
-3381185,Current
-1392351,Fully Paid
-10117284,Charged Off
-6544595,Current
-3375364,Current
-2378847,Fully Paid
-3630753,Fully Paid
-1090260,Fully Paid
-1681416,Fully Paid
-1548303,Fully Paid
-9209669,Current
-2079900,Fully Paid
-8995789,Current
-7063795,Current
-5639258,Charged Off
-6616014,Charged Off
-8835596,Fully Paid
-1236538,Fully Paid
-2654636,Fully Paid
-6878418,Current
-5630743,Fully Paid
-7936638,Current
-1575418,Fully Paid
-7659283,Current
-5937472,Fully Paid
-3162988,Fully Paid
-1496144,Fully Paid
-1500553,Fully Paid
-9646087,Fully Paid
-3694914,Fully Paid
-1345693,Fully Paid
-6706362,Current
-1423084,Fully Paid
-1068359,Fully Paid
-1544755,Fully Paid
-8454603,Current
-8795158,Fully Paid
-8615069,Current
-8015349,Fully Paid
-10125297,Current
-9845716,Current
-3930611,Charged Off
-7445172,Current
-1188084,Current
-1674672,Fully Paid
-6318116,Fully Paid
-8195312,Fully Paid
-3376165,Current
-3235588,Current
-1826525,Current
-6816436,Current
-1238865,Fully Paid
-1327700,Charged Off
-1491410,Charged Off
-1539165,Fully Paid
-1293649,Charged Off
-5055093,Charged Off
-4282193,Fully Paid
-1511903,Fully Paid
-7710634,Fully Paid
-8648475,Current
-7369931,Current
-8649320,Fully Paid
-6166926,Fully Paid
-5757499,Current
-5609364,Current
-7064287,Current
-1388254,Fully Paid
-3007030,Fully Paid
-1293617,Fully Paid
-9445165,Fully Paid
-2865464,Fully Paid
-1531745,Fully Paid
-1402002,Charged Off
-8981267,Current
-3624715,Fully Paid
-5114766,Current
-1378045,Fully Paid
-6535948,Current
-1175823,Fully Paid
-3920871,Charged Off
-1595241,Fully Paid
-8637454,Current
-3239012,Fully Paid
-8315740,Fully Paid
-6710154,Current
-5030626,Charged Off
-4526587,Current
-5716062,Current
-3445080,Charged Off
-7053478,Current
-10165783,Current
-6296850,Fully Paid
-7370075,Fully Paid
-5604785,Fully Paid
-7255142,Current
-2375759,Fully Paid
-8597028,Fully Paid
-8936140,Current
-6176163,Fully Paid
-1235121,Fully Paid
-6607314,Current
-1683732,Fully Paid
-5768840,Fully Paid
-1419182,Fully Paid
-1553077,Fully Paid
-1398753,Charged Off
-1120476,Fully Paid
-3529006,Charged Off
-1563414,Fully Paid
-6539103,Current
-8991503,Fully Paid
-3643246,Current
-5772382,Fully Paid
-6915061,Fully Paid
-6699665,Current
-2874653,Fully Paid
-1174298,Fully Paid
-1583469,Charged Off
-7716335,Current
-3186070,Fully Paid
-6527590,Fully Paid
-6888704,Current
-3846304,Fully Paid
-1437255,Fully Paid
-6726354,Current
-9767441,Current
-2309983,Fully Paid
-1145515,Charged Off
-8960418,Current
-8145861,Current
-1457598,Fully Paid
-7704657,Current
-4765731,Current
-2368450,Fully Paid
-3376663,Current
-3526263,Charged Off
-1472307,Current
-6927670,Current
-1527168,Charged Off
-1613138,Charged Off
-2075120,Fully Paid
-6965281,Current
-10137981,Current
-1313454,Fully Paid
-6583302,Charged Off
-9767534,Fully Paid
-4564979,Fully Paid
-4295217,Current
-8816347,Current
-7669082,Fully Paid
-4538149,Current
-1141358,Fully Paid
-2225616,Fully Paid
-7377890,Current
-1519568,Fully Paid
-3004864,Fully Paid
-8225376,Current
-6536378,Late (16-30 days)
-7103162,Fully Paid
-6134871,Current
-7678723,Current
-1582869,Fully Paid
-7045265,Fully Paid
-9047028,Fully Paid
-8405324,Current
-3346294,Charged Off
-1585655,Fully Paid
-1292977,Charged Off
-2574961,Fully Paid
-7370173,Fully Paid
-6729261,Fully Paid
-5948974,Current
-1363664,Fully Paid
-7342446,Charged Off
-5769220,Charged Off
-5798888,Current
-1337272,Fully Paid
-1415495,Fully Paid
-6745007,Fully Paid
-6445501,Charged Off
-5649501,Fully Paid
-3159352,Current
-1584650,Fully Paid
-9574699,Fully Paid
-5618691,Current
-1164225,Fully Paid
-5976257,Fully Paid
-3849127,Current
-2554624,Charged Off
-1532676,Fully Paid
-1336478,Charged Off
-7691544,Current
-3196154,Current
-2228649,Charged Off
-4154845,Charged Off
-7707813,Charged Off
-1675688,Fully Paid
-1090877,Fully Paid
-7305611,Current
-3376159,Fully Paid
-1595426,Fully Paid
-1551324,Fully Paid
-1076373,Charged Off
-6617465,Fully Paid
-1583583,Fully Paid
-1150498,Charged Off
-4166198,Fully Paid
-1382055,Charged Off
-1431908,Current
-8991513,Current
-1276931,Fully Paid
-3097552,Fully Paid
-9524701,Fully Paid
-6575326,Late (31-120 days)
-6288017,Fully Paid
-5705477,Fully Paid
-5835053,Current
-5640071,Current
-3635924,Fully Paid
-6716560,Current
-1286245,Charged Off
-8185186,Current
-1734851,Fully Paid
-3845027,Fully Paid
-1066040,Fully Paid
-1154221,Fully Paid
-6065031,Fully Paid
-6845641,Current
-9806643,Current
-3676546,Current
-6540290,Fully Paid
-7224634,Fully Paid
-2994581,Current
-5609549,Fully Paid
-8586125,Current
-6728007,Current
-6926677,Fully Paid
-8615723,Late (16-30 days)
-2379079,Current
-8618711,Current
-5934825,Fully Paid
-1815701,Fully Paid
-1515554,Current
-1399101,Fully Paid
-7725340,Current
-1137167,Fully Paid
-1636284,Fully Paid
-2835917,Current
-5945155,Fully Paid
-8996210,Charged Off
-7834575,Fully Paid
-7445569,Fully Paid
-2308186,Fully Paid
-8886443,Fully Paid
-5607862,Fully Paid
-7083453,Current
-1342860,Fully Paid
-6315668,Fully Paid
-5757279,Fully Paid
-1478995,Fully Paid
-9009188,Fully Paid
-1498015,Fully Paid
-2300943,Fully Paid
-5177165,Fully Paid
-1225068,Fully Paid
-5765287,Current
-5768633,Charged Off
-3371242,Fully Paid
-6596212,Fully Paid
-1068957,Fully Paid
-3494911,Fully Paid
-5875476,Fully Paid
-3164069,Fully Paid
-9894660,Current
-8135787,Fully Paid
-7676683,Current
-4567792,Current
-6899720,Current
-8094776,Fully Paid
-1143736,Fully Paid
-8874806,Current
-4894689,Fully Paid
-9634832,Late (16-30 days)
-4454967,Charged Off
-1214459,Fully Paid
-1088682,Fully Paid
-4425191,Current
-3636545,Fully Paid
-6696296,Current
-10148649,Fully Paid
-8990741,Current
-3696507,Fully Paid
-6187875,Current
-1469907,Charged Off
-4775860,Fully Paid
-1219750,Fully Paid
-8845421,Charged Off
-2228912,Fully Paid
-1298445,Fully Paid
-6464670,Current
-5025694,Charged Off
-5039859,Fully Paid
-1354279,Fully Paid
-2295903,Current
-1586321,Fully Paid
-8570534,Current
-7688719,Current
-4294703,Charged Off
-2366208,Fully Paid
-9078102,Fully Paid
-5036911,Fully Paid
-1537474,Fully Paid
-6264964,Fully Paid
-1577006,Fully Paid
-7687911,Fully Paid
-1368837,Fully Paid
-4444698,Fully Paid
-7296096,Current
-6180617,Fully Paid
-3187983,Charged Off
-8637079,Charged Off
-5936667,Fully Paid
-1637222,Fully Paid
-1351569,Charged Off
-1817232,Current
-5524798,Fully Paid
-1245864,Charged Off
-2085213,Fully Paid
-6291252,Charged Off
-6552577,Current
-3378346,Fully Paid
-5055371,Charged Off
-8155613,Fully Paid
-1104462,Fully Paid
-8991919,Current
-8997799,Current
-9414776,Fully Paid
-7705592,Current
-1327706,Fully Paid
-8884966,Charged Off
-6737636,Charged Off
-7379816,Current
-3291422,Fully Paid
-8034869,Current
-6485005,Fully Paid
-8647052,Current
-9415181,Charged Off
-9665521,Current
-9815857,Charged Off
-9005396,Fully Paid
-2828440,Charged Off
-5146095,Charged Off
-1481047,Fully Paid
-4155815,Fully Paid
-8981594,Fully Paid
-5175725,Fully Paid
-7080823,Fully Paid
-6838896,Current
-7380547,Current
-9155305,Charged Off
-5704796,Fully Paid
-5043047,Fully Paid
-3255699,Current
-5834906,Fully Paid
-4555756,Current
-3096675,Fully Paid
-2305578,Fully Paid
-1299562,Fully Paid
-1475961,Fully Paid
-5766806,Current
-7645956,Current
-6324853,Current
-6526405,Fully Paid
-1572278,Charged Off
-3346806,Fully Paid
-4526185,Current
-3147637,Charged Off
-5606880,Fully Paid
-1401450,Fully Paid
-6816404,Current
-7052024,Fully Paid
-1867105,Fully Paid
-8646904,Current
-1495066,Fully Paid
-10145033,Fully Paid
-2634991,Current
-7436452,Current
-1451313,Fully Paid
-1160789,Fully Paid
-6825149,Fully Paid
-7234723,Fully Paid
-1560524,Fully Paid
-1273292,Fully Paid
-7605105,Current
-2284711,Fully Paid
-5374900,Current
-5028354,Current
-5030220,Fully Paid
-1423828,Fully Paid
-6934572,Charged Off
-3807055,Current
-5175047,Fully Paid
-5715959,Fully Paid
-5385917,Fully Paid
-3162511,Fully Paid
-1416158,Fully Paid
-1579961,Fully Paid
-2826036,Current
-9074758,Current
-1197002,Fully Paid
-3845732,Current
-1293889,Charged Off
-6297002,Fully Paid
-8580814,Fully Paid
-3535454,Current
-4454735,Current
-6616401,Current
-1548712,Late (31-120 days)
-3925741,Fully Paid
-3219099,Current
-5135619,Fully Paid
-9067881,Fully Paid
-1511939,Charged Off
-8626519,Charged Off
-3381103,Fully Paid
-8126456,Late (31-120 days)
-3634137,Current
-1393831,Charged Off
-9075253,Current
-7084247,Fully Paid
-3198087,Fully Paid
-2414660,Fully Paid
-7649319,Current
-1298939,Fully Paid
-5176430,Fully Paid
-5104727,Fully Paid
-6896298,Current
-1158370,Fully Paid
-3357761,Charged Off
-1347777,Fully Paid
-4545640,Fully Paid
-1449824,Fully Paid
-4796227,Current
-4924627,Current
-2377011,Charged Off
-1173715,Fully Paid
-1092573,Fully Paid
-5770014,Current
-1955359,Fully Paid
-7925868,Current
-1082763,Fully Paid
-1534146,Charged Off
-3185482,Fully Paid
-3626299,Current
-7074931,Current
-6285743,Fully Paid
-1693867,Fully Paid
-6344761,Current
-1354349,Fully Paid
-3495060,Current
-1470633,Charged Off
-8595936,Fully Paid
-1446223,Current
-6301950,Current
-1109220,Fully Paid
-5757732,Current
-6794955,Fully Paid
-5835427,Current
-1429794,Current
-8586234,Current
-3733704,Fully Paid
-1584649,Fully Paid
-5064826,Current
-7098080,Current
-6531356,Fully Paid
-4215344,Current
-1311981,Fully Paid
-7103865,Current
-6318025,Fully Paid
-1439346,Fully Paid
-1237989,Fully Paid
-7729740,Fully Paid
-7935299,Current
-2375157,Fully Paid
-7649995,Fully Paid
-1412438,Fully Paid
-5606156,Fully Paid
-7656922,Current
-1679330,Fully Paid
-5164590,Fully Paid
-5790974,Fully Paid
-6327134,Current
-5715137,Fully Paid
-9374703,Fully Paid
-8580517,Fully Paid
-1665284,Fully Paid
-8629623,Current
-3291555,Current
-7435047,Fully Paid
-6180311,Current
-6526312,Fully Paid
-1394831,Fully Paid
-6888120,Fully Paid
-5759076,Fully Paid
-4568548,Charged Off
-1401185,Fully Paid
-1434835,Fully Paid
-1301423,Charged Off
-3145025,Fully Paid
-7374790,Fully Paid
-3188499,Charged Off
-1186801,Charged Off
-5799086,Current
-1228223,Fully Paid
-6876827,Fully Paid
-6525341,Fully Paid
-8616674,Current
-4525637,Fully Paid
-1222191,Charged Off
-3632019,Current
-1562194,Fully Paid
-2044707,Fully Paid
-5775367,Current
-8580778,Charged Off
-6344821,Current
-1336857,Charged Off
-1315682,Fully Paid
-8127574,Fully Paid
-8157947,Current
-1440291,Fully Paid
-1156405,Fully Paid
-1357630,Fully Paid
-5606769,Fully Paid
-1335469,Fully Paid
-6804922,Current
-1292054,Current
-6186335,Fully Paid
-8366087,Fully Paid
-10097454,Current
-6186231,Fully Paid
-3238192,Fully Paid
-8645508,Fully Paid
-3014877,Current
-3699219,Fully Paid
-1367370,Fully Paid
-2055263,Fully Paid
-6299171,Current
-6815585,Fully Paid
-1362410,Current
-5636314,Fully Paid
-1115677,Fully Paid
-1574459,Fully Paid
-1111812,Fully Paid
-5774687,Fully Paid
-7381955,Current
-1098417,Fully Paid
-6180615,Current
-6838138,Current
-5796475,Current
-6582717,Charged Off
-1292306,Fully Paid
-1395606,Fully Paid
-3016513,Fully Paid
-1444066,Fully Paid
-6536493,Fully Paid
-1099296,Fully Paid
-5385549,Fully Paid
-9594607,Fully Paid
-9774636,Current
-1494964,Charged Off
-1235687,Charged Off
-5789263,Current
-1507802,Fully Paid
-1480070,Fully Paid
-4445846,Fully Paid
-5716535,Fully Paid
-8044808,Fully Paid
-9004618,Current
-3369133,Fully Paid
-1347067,Late (31-120 days)
-6695143,Current
-4074893,Current
-1334454,Fully Paid
-3358674,Current
-3155993,Fully Paid
-3034663,Fully Paid
-1518911,Fully Paid
-8955801,Current
-8560498,Current
-2367423,Fully Paid
-7657423,Fully Paid
-7053266,Current
-3627003,Current
-5796832,Fully Paid
-7058700,Fully Paid
-1565525,Fully Paid
-1695790,Fully Paid
-6827086,In Grace Period
-5545817,Fully Paid
-2935332,Current
-8954969,Current
-6839334,Charged Off
-6624635,Fully Paid
-1144295,Charged Off
-9875603,In Grace Period
-5617733,Current
-5620494,Fully Paid
-1480249,Fully Paid
-6529145,Current
-3495115,Fully Paid
-7440145,Current
-1637836,Current
-5938114,Current
-9227147,Current
-7377833,Current
-7387753,Late (31-120 days)
-3066505,Fully Paid
-9027747,Charged Off
-1293176,Fully Paid
-1300623,Fully Paid
-1202098,Fully Paid
-1388139,Fully Paid
-1406572,Fully Paid
-5960115,Fully Paid
-2380894,Fully Paid
-5176126,Charged Off
-1418730,Charged Off
-7266445,Current
-1271252,Fully Paid
-2218733,Fully Paid
-1341531,Fully Paid
-8934635,Current
-6714834,Charged Off
-6627296,Current
-7069496,Current
-7285189,Current
-6696414,Fully Paid
-8557900,Fully Paid
-9768391,Fully Paid
-8148386,Fully Paid
-1417464,Fully Paid
-7650034,Fully Paid
-5958797,Fully Paid
-1445563,Fully Paid
-3915422,Fully Paid
-9404571,Current
-1605085,Charged Off
-3198419,Charged Off
-1339797,Current
-2367644,Current
-4768134,Charged Off
-9964679,Current
-6808220,Current
-6245275,Charged Off
-5854897,Fully Paid
-7093813,Charged Off
-8095596,Current
-7275864,Fully Paid
-4275950,Fully Paid
-10176777,Late (31-120 days)
-1337496,Fully Paid
-8265100,Current
-1556516,Fully Paid
-1593221,Current
-1159444,Fully Paid
-3372999,Current
-1098233,Fully Paid
-5645327,Fully Paid
-2366195,Current
-5767863,Current
-4104965,Current
-10139040,Current
-8945624,Current
-1275597,Current
-7716283,Current
-7925777,Current
-7627318,Current
-7056115,Fully Paid
-9674929,Fully Paid
-7676886,Current
-9816710,Fully Paid
-6627473,Fully Paid
-5756243,Fully Paid
-8646232,Current
-4194732,Fully Paid
-6908622,Charged Off
-1524323,Charged Off
-5030712,Current
-7054186,Fully Paid
-4375443,Current
-5695933,Current
-1190581,Fully Paid
-5685735,Current
-3629024,Fully Paid
-5938914,Fully Paid
-4085243,Current
-8990109,Fully Paid
-5865163,Current
-2375203,Fully Paid
-1286618,Fully Paid
-4276648,Current
-1097341,Charged Off
-5834746,Current
-1146885,Fully Paid
-3499128,Current
-7658404,Current
-7265044,Current
-3606126,Fully Paid
-1638046,Charged Off
-6736583,Current
-1362673,Fully Paid
-3725812,Current
-2216321,Fully Paid
-7296216,Current
-1525545,Fully Paid
-3160216,Fully Paid
-5445545,Current
-1665240,Fully Paid
-3727602,Charged Off
-7389391,Fully Paid
-2075906,Fully Paid
-8296460,Fully Paid
-2088368,Fully Paid
-5937898,Fully Paid
-5224682,Fully Paid
-1636518,Fully Paid
-6718835,Current
-3486267,Fully Paid
-1692824,Fully Paid
-3638853,Current
-7628095,Charged Off
-4798112,Current
-3641029,Current
-3932880,Current
-6550455,Fully Paid
-3629450,Charged Off
-1636947,Fully Paid
-1172295,Fully Paid
-5755619,Current
-2309407,Fully Paid
-5196071,Current
-8924627,Fully Paid
-5026148,Current
-6555190,Current
-3055002,Current
-3238705,Fully Paid
-3239576,Fully Paid
-4278018,Current
-4307405,Charged Off
-4464707,Fully Paid
-3634590,Fully Paid
-3701307,Current
-1122759,Fully Paid
-3455082,Fully Paid
-4314919,Current
-5794174,Fully Paid
-1447072,Fully Paid
-7085619,Current
-1408490,Fully Paid
-5757479,Fully Paid
-2864631,Fully Paid
-5195039,Current
-2295079,Charged Off
-4156435,Fully Paid
-8185092,In Grace Period
-3351431,Fully Paid
-9134699,Fully Paid
-4806965,Charged Off
-6726585,Current
-7686186,In Grace Period
-2295558,Fully Paid
-1233965,Fully Paid
-5782993,Current
-7367083,Current
-6568068,Fully Paid
-5414804,Fully Paid
-5424766,Current
-6537786,Charged Off
-7936200,Current
-4425928,Fully Paid
-1354611,Fully Paid
-6105172,Current
-7648802,Current
-7628428,Current
-1286413,Fully Paid
-1120905,Fully Paid
-8635642,Fully Paid
-3643719,Current
-8394793,Current
-3015750,Fully Paid
-1301729,Fully Paid
-7619759,Charged Off
-5770155,Current
-8618193,Current
-10155327,Fully Paid
-3366219,Fully Paid
-6817072,Fully Paid
-3934623,Fully Paid
-2424653,Fully Paid
-8386124,Fully Paid
-1421491,Fully Paid
-1493086,Fully Paid
-1452234,Fully Paid
-3300357,Current
-1189540,Fully Paid
-3625668,Fully Paid
-5638128,Current
-9125157,Fully Paid
-6208665,Fully Paid
-1393562,Fully Paid
-7339232,Current
-10098925,Current
-5034983,Fully Paid
-9834917,Fully Paid
-9009257,Fully Paid
-7389792,Current
-3812018,Current
-9045620,Fully Paid
-1456235,Fully Paid
-9805237,Current
-1301078,Fully Paid
-7005243,Current
-9716520,Current
-4545165,Current
-3350764,Fully Paid
-9206755,Current
-7342273,Fully Paid
-1153437,Fully Paid
-1221806,Fully Paid
-9754655,Fully Paid
-3297082,Current
-8617277,Current
-1394469,Fully Paid
-8587472,Current
-5025775,Fully Paid
-3632956,Fully Paid
-1473314,Fully Paid
-1388262,Fully Paid
-8356425,Current
-3812056,Fully Paid
-3807837,Current
-3807755,Fully Paid
-4154902,Charged Off
-1108567,Fully Paid
-1447953,Charged Off
-1317507,Fully Paid
-9205974,Fully Paid
-1526182,Current
-8355447,Current
-9875121,Current
-4794638,Fully Paid
-5608238,Current
-8234635,Fully Paid
-3187133,Current
-7844771,Current
-1120349,Fully Paid
-1619136,Charged Off
-6617123,Fully Paid
-3237994,Current
-5156679,Charged Off
-9654652,Current
-9245140,Charged Off
-2077806,Fully Paid
-5735726,Current
-9229263,Fully Paid
-4280745,Current
-4777409,Charged Off
-7355126,Current
-3237314,Fully Paid
-1395543,Fully Paid
-6817021,Fully Paid
-1467714,Current
-1537639,Fully Paid
-1239432,Charged Off
-7730536,Current
-1154494,Fully Paid
-9008709,Fully Paid
-6566094,Current
-5960258,Current
-4301068,Fully Paid
-7005211,Fully Paid
-2285198,Charged Off
-1335749,Fully Paid
-8204617,Current
-3675252,Fully Paid
-8617161,Current
-2835365,Fully Paid
-2826612,Fully Paid
-4235281,Fully Paid
-6550192,Fully Paid
-6287631,Current
-1399803,Fully Paid
-7449005,Current
-3624658,Current
-7657031,Current
-1054014,Fully Paid
-9666514,Current
-1490657,Fully Paid
-1463063,Fully Paid
-3289651,Fully Paid
-4565593,Fully Paid
-3629817,Charged Off
-9274812,Fully Paid
-2045294,Fully Paid
-9065004,Fully Paid
-2364632,Fully Paid
-5789698,Fully Paid
-1537784,Fully Paid
-5960464,Fully Paid
-7689556,Current
-7705699,Fully Paid
-1484015,Fully Paid
-1392294,Fully Paid
-6189715,Fully Paid
-9404607,Current
-1413079,Charged Off
-1151020,Fully Paid
-5885788,Fully Paid
-5793215,Current
-3371733,Current
-7090457,Charged Off
-1635192,Charged Off
-1078937,Current
-8914896,Charged Off
-1260778,Fully Paid
-1318140,Fully Paid
-6819868,Current
-5639155,Current
-1247231,Fully Paid
-4074698,Current
-7648459,Current
-7441131,Charged Off
-6115628,Fully Paid
-9804995,Current
-3162897,Fully Paid
-1296832,Fully Paid
-8624691,Current
-7676205,In Grace Period
-3324745,Fully Paid
-3806998,Charged Off
-1059903,Fully Paid
-4548739,Fully Paid
-4538383,Current
-1504032,Fully Paid
-6715806,Fully Paid
-8666932,Fully Paid
-1237387,Fully Paid
-5637743,Fully Paid
-2484870,Fully Paid
-7485161,Current
-6825907,Fully Paid
-2301065,Fully Paid
-1636127,Charged Off
-3286815,Fully Paid
-1154121,Fully Paid
-6528853,Current
-1553107,Fully Paid
-3238668,Current
-5685536,Charged Off
-6955101,Current
-5786543,Fully Paid
-8959540,Fully Paid
-6726328,Current
-1463730,Charged Off
-3921580,Fully Paid
-8044695,Current
-3067043,Fully Paid
-7354579,Fully Paid
-7050545,Current
-4064923,Charged Off
-8137977,Late (31-120 days)
-1675649,Fully Paid
-3290818,Current
-7665233,Fully Paid
-5938674,Charged Off
-1864828,Fully Paid
-8626875,Current
-9594977,Fully Paid
-5785073,Current
-5764760,Fully Paid
-2084543,Current
-3159985,Current
-8559539,Current
-5084916,Fully Paid
-2092139,Fully Paid
-5344801,Fully Paid
-5625369,Fully Paid
-8577223,Current
-3095418,Current
-1177418,Current
-6645909,Current
-10077626,Fully Paid
-7647345,Current
-3847867,Current
-1502803,Fully Paid
-7083852,Fully Paid
-1520520,Fully Paid
-5035150,Current
-5964916,Fully Paid
-6245271,Current
-5197472,Current
-6314789,Fully Paid
-6627504,Current
-7074145,Current
-5414969,Fully Paid
-1390616,Fully Paid
-6885194,Current
-5791405,Current
-6728576,Fully Paid
-1147615,Charged Off
-2826187,Fully Paid
-1397402,Fully Paid
-1246773,Fully Paid
-10076054,Fully Paid
-6547460,Current
-9207306,Fully Paid
-3637520,Current
-7385387,In Grace Period
-1335604,Fully Paid
-6726924,Current
-6531313,Current
-7721327,Current
-2714678,Fully Paid
-4335234,Fully Paid
-1826667,Fully Paid
-1456638,Charged Off
-9194838,Current
-6794948,Current
-5939140,Fully Paid
-1467762,Fully Paid
-7665592,Current
-1619621,Charged Off
-1566971,Fully Paid
-5029166,Current
-6716356,Current
-9764603,Current
-9855018,Charged Off
-3198993,Fully Paid
-5629001,Fully Paid
-5797109,Fully Paid
-3300804,Fully Paid
-3538207,Current
-1368017,Charged Off
-9694574,Current
-2224901,Charged Off
-5777648,Current
-6605326,Late (16-30 days)
-8588174,Current
-1521219,Fully Paid
-8786111,Current
-4176983,Current
-4277807,Fully Paid
-8666690,Charged Off
-1251153,Charged Off
-1438283,Fully Paid
-1548460,Charged Off
-1221351,Fully Paid
-1453065,Fully Paid
-3350664,Fully Paid
-2091829,Charged Off
-5774653,Fully Paid
-1339863,Current
-3812597,Current
-1687552,Fully Paid
-1705105,Fully Paid
-8972212,Current
-4865157,Fully Paid
-5155893,Current
-6574640,Fully Paid
-8885614,Fully Paid
-1401465,Fully Paid
-6235411,Charged Off
-7286705,Fully Paid
-7584739,Charged Off
-5936382,Current
-1398478,Fully Paid
-8406245,Fully Paid
-6726759,Fully Paid
-5792408,Charged Off
-3529398,Fully Paid
-6170592,Fully Paid
-1443004,Fully Paid
-9564856,Fully Paid
-9804924,Current
-1528090,Fully Paid
-6615672,Fully Paid
-1636717,Fully Paid
-5771898,Fully Paid
-1249709,Fully Paid
-1386607,Fully Paid
-5620767,Fully Paid
-1235749,Charged Off
-8585923,Fully Paid
-7051925,Fully Paid
-4904769,Current
-6515733,Fully Paid
-1325966,Fully Paid
-6739746,Fully Paid
-5385209,Current
-3811132,Fully Paid
-7015219,Fully Paid
-5037100,Fully Paid
-7708488,Current
-9848109,Current
-2379128,Fully Paid
-1476449,Charged Off
-7104115,Charged Off
-5715702,Fully Paid
-3220923,Current
-5165574,Charged Off
-1418691,Fully Paid
-1494900,Charged Off
-4805431,Charged Off
-2275989,Fully Paid
-1570001,Fully Paid
-3695608,Fully Paid
-6287297,Fully Paid
-2837896,Fully Paid
-7616919,Fully Paid
-8576087,Current
-8607600,Fully Paid
-2905987,Current
-6828221,Fully Paid
-5788744,Fully Paid
-6927798,Charged Off
-6321394,Charged Off
-6264719,Fully Paid
-9675475,Fully Paid
-6169889,Current
-6178965,Current
-1177428,Fully Paid
-1638476,Charged Off
-8874989,Fully Paid
-2554604,Current
-6597746,Fully Paid
-1610389,Fully Paid
-5544610,Fully Paid
-3643693,Fully Paid
-1253153,Current
-2306235,Fully Paid
-4304967,Fully Paid
-8905009,Fully Paid
-1351718,Fully Paid
-10147757,Current
-5648888,Fully Paid
-9787063,Current
-4545145,Charged Off
-9435035,Late (31-120 days)
-5414763,Current
-1589906,Fully Paid
-8118356,Current
-4765652,Current
-6175798,Fully Paid
-5455683,Current
-3265500,Current
-2944863,Current
-4166429,Current
-3286143,Fully Paid
-1163615,Fully Paid
-8987598,Current
-5626791,Fully Paid
-1179819,Fully Paid
-3146297,Current
-3352985,Current
-10107204,Current
-6208751,Current
-7371240,Current
-3808789,Charged Off
-2299249,Fully Paid
-6808726,Current
-2377102,Charged Off
-6646230,Current
-3057719,Fully Paid
-3695872,Fully Paid
-7067215,Current
-3383464,Current
-5027601,Fully Paid
-3289455,Current
-1541688,Fully Paid
-7731588,Current
-3809012,Fully Paid
-7705110,Current
-1613246,Charged Off
-1206609,Fully Paid
-9066967,Fully Paid
-1442495,Fully Paid
-2185231,Fully Paid
-3376334,Fully Paid
-5956265,Fully Paid
-3374948,Current
-8969206,Charged Off
-7052694,Current
-9475082,Current
-5777883,Current
-8064573,Current
-1300208,Fully Paid
-6517852,Fully Paid
-7691179,Current
-1589385,Fully Paid
-6616996,Fully Paid
-4547580,Fully Paid
-8265467,Fully Paid
-5104694,Charged Off
-9827960,Charged Off
-1159309,Fully Paid
-3359976,Fully Paid
-1221201,Fully Paid
-1092623,Fully Paid
-8665523,Charged Off
-6528052,Fully Paid
-7096899,Current
-3638046,Current
-6567406,Current
-1284410,Fully Paid
-2484992,Fully Paid
-6210476,Current
-5885136,Current
-1132478,Fully Paid
-6536570,Charged Off
-8996263,Fully Paid
-7074157,Current
-8657076,Fully Paid
-6394586,Charged Off
-1373586,Fully Paid
-8134578,Fully Paid
-1134445,Current
-6715689,Fully Paid
-6166200,Fully Paid
-3373501,Fully Paid
-4524612,Current
-5645841,Current
-1235183,Fully Paid
-1619778,Fully Paid
-9685600,Fully Paid
-4281926,Charged Off
-8484608,Current
-8567723,Fully Paid
-9867072,Current
-1387417,Fully Paid
-6159311,Fully Paid
-8599121,Late (31-120 days)
-1172266,Fully Paid
-7053951,Fully Paid
-2044682,Fully Paid
-7079702,Current
-1152581,Charged Off
-3676206,Charged Off
-1093493,Fully Paid
-7686012,Current
-5786685,Current
-5947098,Fully Paid
-6297749,Fully Paid
-4766608,Fully Paid
-8590297,Current
-3156623,Current
-3066698,Current
-5535607,Fully Paid
-2078288,Charged Off
-8285156,Fully Paid
-4525613,Current
-2225775,Current
-8494846,Fully Paid
-7495707,Current
-8617319,Current
-6809488,Fully Paid
-618929,Fully Paid
-1433219,Fully Paid
-10135686,Current
-10116395,Current
-2825491,Fully Paid
-9644973,Fully Paid
-2145059,Fully Paid
-1190053,Fully Paid
-8095059,Charged Off
-3237616,Current
-9474844,Fully Paid
-8904907,Current
-5125866,Current
-8559142,Current
-7656293,Current
-3004750,Fully Paid
-5155982,Current
-8158497,Fully Paid
-1299524,Charged Off
-1322941,Fully Paid
-10116246,Fully Paid
-1734967,Charged Off
-6527796,Current
-5630694,Fully Paid
-7515589,Current
-7335175,Current
-1687075,Fully Paid
-1189129,Fully Paid
-1351379,Charged Off
-1504046,Late (31-120 days)
-6104641,Fully Paid
-5029411,Fully Paid
-7655220,Current
-1246343,Fully Paid
-6188427,Fully Paid
-1588920,Fully Paid
-6909526,Current
-3015291,Fully Paid
-8266187,Current
-9795143,Current
-1065506,Fully Paid
-7617693,Current
-1685625,Fully Paid
-1070173,Fully Paid
-7068977,Fully Paid
-7385225,Fully Paid
-2092545,Fully Paid
-9726247,Late (16-30 days)
-6190344,Current
-1196514,Fully Paid
-5791412,Current
-3358279,Fully Paid
-1468737,Fully Paid
-5034917,Current
-2297005,Fully Paid
-1542827,Fully Paid
-2226353,Current
-8765872,Current
-1414546,Fully Paid
-8970028,Current
-4797647,Fully Paid
-6155014,Charged Off
-8649687,Current
-8605810,Fully Paid
-5425832,Current
-8596481,Current
-6244828,Fully Paid
-8885265,Current
-7618286,Current
-7685736,Current
-1250132,Fully Paid
-1337958,Fully Paid
-3288472,Fully Paid
-6607067,In Grace Period
-7711588,Fully Paid
-1189466,Fully Paid
-10145044,Current
-2694824,Fully Paid
-1502007,Fully Paid
-6726384,Current
-5785461,Fully Paid
-7380556,Current
-2226930,Fully Paid
-4278550,Fully Paid
-1607210,Fully Paid
-2874682,Current
-1428008,Fully Paid
-6936178,Fully Paid
-1096176,Charged Off
-7689077,Charged Off
-5978669,Fully Paid
-1172782,Fully Paid
-3350786,Current
-8556120,Current
-5028994,Fully Paid
-3701974,Fully Paid
-4275228,Late (31-120 days)
-8627731,Current
-5939534,Current
-7380055,Fully Paid
-5037522,Fully Paid
-1440682,Fully Paid
-8276311,Current
-9755141,Current
-3595282,Current
-6518795,Fully Paid
-1408507,Fully Paid
-5761989,Current
-6885024,Fully Paid
-4282092,Current
-1291529,Fully Paid
-5435446,Fully Paid
-5165837,Fully Paid
-9007891,Fully Paid
-6717818,Current
-8580811,Fully Paid
-6054601,Fully Paid
-3290955,Current
-1096018,Fully Paid
-1227350,Fully Paid
-5155490,Fully Paid
-5639139,Current
-8835214,Current
-1184916,Fully Paid
-8559952,Fully Paid
-4565868,Current
-5244943,Fully Paid
-1552508,Fully Paid
-3526840,Current
-1142586,Fully Paid
-7945948,Current
-3643851,Charged Off
-1135666,Fully Paid
-6159144,Current
-1524583,Fully Paid
-10066851,Fully Paid
-1034319,Fully Paid
-1120546,Fully Paid
-8284988,Fully Paid
-5855268,Charged Off
-9048419,Fully Paid
-4795266,Current
-9766380,Fully Paid
-2311455,Fully Paid
-8996385,Current
-1462823,Fully Paid
-4885143,Charged Off
-9855639,Fully Paid
-3488066,Fully Paid
-6635026,Fully Paid
-7368195,Fully Paid
-9614831,Current
-1239207,Fully Paid
-6518637,Fully Paid
-9755449,Current
-2375863,Fully Paid
-8375455,Fully Paid
-1693184,Fully Paid
-1362208,Current
-5776185,Current
-9385073,Current
-8998175,Fully Paid
-1558124,Fully Paid
-3237588,Current
-6290438,Current
-5376027,Current
-3640137,Current
-1164166,Fully Paid
-7072361,Fully Paid
-4777316,Charged Off
-3287171,Current
-6550782,Fully Paid
-7069813,Current
-1518172,Fully Paid
-1547255,Fully Paid
-1388084,Fully Paid
-5195703,Charged Off
-1579561,Fully Paid
-7085757,Fully Paid
-3696950,Fully Paid
-5166415,Fully Paid
-7372520,Current
-1621555,Fully Paid
-3066620,Fully Paid
-5936531,Fully Paid
-3237991,Current
-6837344,Current
-8915268,Current
-1217760,Fully Paid
-1259400,Fully Paid
-3638632,Charged Off
-1223309,Charged Off
-5895223,Current
-8158253,Current
-2435218,Fully Paid
-6105592,Fully Paid
-1549543,Fully Paid
-8356291,Charged Off
-3299906,Fully Paid
-1944996,Fully Paid
-5694660,Current
-4654814,Fully Paid
-3155331,Fully Paid
-4528182,Current
-4282206,Charged Off
-7707784,Fully Paid
-1110012,Fully Paid
-8987633,Fully Paid
-7342606,Fully Paid
-9205313,Current
-3726285,Fully Paid
-7700910,Current
-6716987,Fully Paid
-4788012,Fully Paid
-2584887,Fully Paid
-10178055,Late (31-120 days)
-5640461,Charged Off
-6297695,Current
-3351374,Fully Paid
-1478046,Fully Paid
-1263674,Fully Paid
-7265401,Current
-7094812,Current
-5777656,Fully Paid
-7276401,Fully Paid
-8617261,Charged Off
-8365060,Current
-1179580,Fully Paid
-7686151,Current
-2075384,Charged Off
-1634915,Fully Paid
-3631155,Current
-1550404,Fully Paid
-3730418,Current
-6736132,Current
-1077404,Charged Off
-5979702,Charged Off
-5768473,Late (31-120 days)
-7674672,Charged Off
-3810973,In Grace Period
-1598391,Charged Off
-6158616,Fully Paid
-6549460,Fully Paid
-5455222,Current
-1572504,Fully Paid
-1694879,Fully Paid
-6886336,Current
-9134840,Current
-9746227,Current
-1165954,Fully Paid
-1684309,Fully Paid
-9776684,Current
-6386404,Charged Off
-1161675,Fully Paid
-3374764,Fully Paid
-3665406,Fully Paid
-1600802,Fully Paid
-2486298,Fully Paid
-4314592,Current
-6169143,Current
-1602794,Fully Paid
-4196461,Charged Off
-1298784,Fully Paid
-1377413,Fully Paid
-5115694,Current
-1292982,Fully Paid
-6311576,Current
-4455195,Fully Paid
-6926439,Current
-1350495,Charged Off
-1186082,Fully Paid
-9175348,Fully Paid
-7626896,Current
-3372630,Current
-2379629,Fully Paid
-1235500,Fully Paid
-3524818,Fully Paid
-6306977,Fully Paid
-1694815,Fully Paid
-3727384,Fully Paid
-9405138,Current
-1287514,Fully Paid
-7387631,Current
-1463681,Fully Paid
-5615744,Fully Paid
-1242976,Charged Off
-7075832,Charged Off
-1497553,Fully Paid
-8946315,Fully Paid
-7070027,Current
-6572598,Fully Paid
-6935924,Fully Paid
-1866965,Fully Paid
-5125481,Late (31-120 days)
-7092951,Charged Off
-7504637,Charged Off
-1414480,Current
-6115613,Current
-7099063,Fully Paid
-1097982,Fully Paid
-4196756,Charged Off
-6888872,Fully Paid
-1244701,Charged Off
-8979190,Current
-5779862,Fully Paid
-5156201,Charged Off
-7726220,Current
-1274377,Fully Paid
-5609595,Current
-8647426,Current
-3805673,Current
-1398779,Fully Paid
-1392326,Fully Paid
-3160260,Fully Paid
-3145948,Charged Off
-1350200,Charged Off
-2487583,Fully Paid
-5788452,Fully Paid
-3294009,Charged Off
-7376404,Fully Paid
-10044688,Current
-5185168,Current
-3290513,Fully Paid
-4281977,Fully Paid
-9228005,Current
-3353212,Fully Paid
-2836994,Charged Off
-7456076,Current
-1374986,Fully Paid
-8694603,Current
-3809970,Current
-8835574,Charged Off
-3667259,Fully Paid
-2434879,Fully Paid
-5125674,Fully Paid
-1437826,Fully Paid
-7082521,Fully Paid
-1611512,Fully Paid
-2905351,Current
-3365731,Fully Paid
-7375004,Current
-10129206,Current
-6169052,Current
-8805741,Current
-8285748,Current
-8366271,Fully Paid
-1379802,Current
-6616544,Current
-5938640,Fully Paid
-2897074,Fully Paid
-1676849,Fully Paid
-5774825,In Grace Period
-6539757,Current
-2276176,Charged Off
-7648483,Current
-2086176,Fully Paid
-9765741,Current
-5763404,Fully Paid
-6552344,Current
-3637869,Fully Paid
-8984587,Fully Paid
-4624626,Charged Off
-8619967,Fully Paid
-5435139,Fully Paid
-4277368,Fully Paid
-1585309,Current
-3134579,Current
-2308098,Fully Paid
-7647194,Current
-4565953,Fully Paid
-5967802,Current
-3928649,Charged Off
-3298173,Late (31-120 days)
-1284305,Fully Paid
-1275505,Fully Paid
-5755986,Current
-7720905,Current
-7679775,Current
-3005284,Current
-7649760,Current
-1587548,Fully Paid
-9716674,Charged Off
-1816495,Fully Paid
-5084924,Current
-3921162,Charged Off
-5966497,Current
-1610609,Fully Paid
-1399362,Fully Paid
-1547667,Fully Paid
-1111686,Fully Paid
-6565493,Charged Off
-10097574,Current
-7615213,Current
-2311138,Fully Paid
-1433675,Fully Paid
-4291940,Charged Off
-7656405,Current
-3525709,Fully Paid
-5674565,Current
-8557300,Charged Off
-1695720,Charged Off
-7494636,Current
-6465233,Fully Paid
-8967870,Current
-1616076,Fully Paid
-3487093,Current
-6189256,Current
-7372343,Fully Paid
-7368389,Fully Paid
-1296336,Fully Paid
-5705875,Fully Paid
-3297184,Fully Paid
-9028376,Current
-1449804,Fully Paid
-2091077,Fully Paid
-4624613,Current
-9395021,Current
-1297994,Fully Paid
-1513975,Fully Paid
-1137086,Fully Paid
-5798956,Current
-1418795,Fully Paid
-1164463,Fully Paid
-1422127,Fully Paid
-6578555,Fully Paid
-1573121,Fully Paid
-7214714,Fully Paid
-5938310,Fully Paid
-8214789,Fully Paid
-3301058,Current
-5978213,Fully Paid
-3434644,Fully Paid
-8966603,Current
-4557430,Current
-5184842,Current
-4566755,Charged Off
-5855890,Fully Paid
-6160418,Charged Off
-6208600,Current
-8609432,Current
-5635790,Fully Paid
-1204570,Fully Paid
-3845024,Fully Paid
-7058320,Fully Paid
-1473238,Fully Paid
-6329843,Fully Paid
-2087238,Fully Paid
-4557242,Fully Paid
-1406578,Fully Paid
-8596586,Current
-1636196,Fully Paid
-7340588,Current
-8598601,Current
-1590112,Fully Paid
-3925371,Current
-1421565,Fully Paid
-8995770,Current
-3527633,Fully Paid
-6894774,Fully Paid
-10077882,Fully Paid
-1442364,Fully Paid
-1392175,Fully Paid
-3725959,In Grace Period
-6605557,Current
-1594442,Fully Paid
-9194727,Current
-8015368,Fully Paid
-5026915,Charged Off
-6605786,Current
-2414665,Fully Paid
-6577628,Fully Paid
-6306696,Fully Paid
-10117147,Fully Paid
-3487546,Charged Off
-7496031,Fully Paid
-9867828,Charged Off
-8976380,Charged Off
-1337087,Charged Off
-4314817,Fully Paid
-7094453,Fully Paid
-4375036,Charged Off
-1627867,Fully Paid
-1240827,Fully Paid
-3917632,Fully Paid
-1865332,Fully Paid
-6566692,Fully Paid
-3382102,Current
-6595587,Fully Paid
-2635396,Charged Off
-7354706,Fully Paid
-8866342,Current
-5027795,Current
-6614667,Current
-9238017,Current
-1272235,Charged Off
-8314650,Fully Paid
-1364414,Fully Paid
-7048212,Fully Paid
-2935682,Fully Paid
-9048433,Fully Paid
-4375227,Charged Off
-1328182,Fully Paid
-9867422,Fully Paid
-8215231,Fully Paid
-1575076,Fully Paid
-1224045,Fully Paid
-7699697,Fully Paid
-6764805,Current
-7584901,Current
-8999924,Current
-7926433,Fully Paid
-8127505,Fully Paid
-4285093,Fully Paid
-1074081,Fully Paid
-5935522,Current
-6168206,Fully Paid
-9208583,Current
-2298556,Fully Paid
-4302151,Current
-3925947,Current
-8876194,Fully Paid
-2369683,Current
-5627721,Current
-2299972,Fully Paid
-8137066,Fully Paid
-6647070,Current
-8364852,Current
-5704715,Fully Paid
-5124880,Fully Paid
-6917398,Current
-1160327,Fully Paid
-6704799,Charged Off
-3157444,Fully Paid
-1392356,Fully Paid
-3497761,Charged Off
-8625267,Charged Off
-3849926,Current
-8960876,Current
-6541270,Fully Paid
-1598221,Charged Off
-6896419,Current
-6331114,Current
-6908611,Fully Paid
-3219297,Charged Off
-5610146,Fully Paid
-1277900,Fully Paid
-8995645,Current
-3445650,Current
-5364707,Current
-8916012,Current
-8977310,Current
-5875348,Fully Paid
-3628186,Fully Paid
-5615729,Fully Paid
-1515454,Fully Paid
-3163818,Charged Off
-6974714,Late (31-120 days)
-3379299,Charged Off
-5785020,Current
-3633646,Fully Paid
-3349012,Fully Paid
-4766875,Current
-1551598,Fully Paid
-4547101,Current
-7067075,Fully Paid
-6889518,Charged Off
-8755782,Fully Paid
-10158937,Current
-1339446,Fully Paid
-5616051,Charged Off
-1278722,Fully Paid
-5156167,Current
-6167997,Fully Paid
-3544638,Current
-1300985,Fully Paid
-3346363,Fully Paid
-7936901,Fully Paid
-1584331,Fully Paid
-5095428,Current
-5980171,Fully Paid
-1457836,Fully Paid
-1608805,Charged Off
-10127686,Current
-6706898,Charged Off
-5938488,Fully Paid
-4299468,Charged Off
-6915738,Current
-3630544,Current
-4557578,Current
-1682993,Fully Paid
-5155965,Current
-2226515,Fully Paid
-9424710,Current
-1186111,Fully Paid
-6737387,Fully Paid
-1506600,Fully Paid
-2897001,Fully Paid
-1240466,Charged Off
-4786479,Current
-2828087,Charged Off
-5949546,Current
-1178925,Fully Paid
-5344976,Fully Paid
-6570544,Current
-1331254,Fully Paid
-1075377,Charged Off
-7935140,Fully Paid
-5770169,Charged Off
-3148470,Charged Off
-1564519,Fully Paid
-8995818,Current
-6534778,Current
-9866558,Current
-7341631,Current
-8185145,Current
-8975806,Current
-1605408,Fully Paid
-1185038,Fully Paid
-3184924,Fully Paid
-1222467,Charged Off
-2015188,Fully Paid
-1157273,Fully Paid
-3097081,Fully Paid
-1689226,Charged Off
-9187249,Current
-5114828,Fully Paid
-1636861,Fully Paid
-1504124,Fully Paid
-5783700,Fully Paid
-3215307,Fully Paid
-1552060,Fully Paid
-6828736,Fully Paid
-5787816,Current
-1425658,Fully Paid
-3496717,Fully Paid
-8571354,Fully Paid
-5545409,Charged Off
-1225354,Fully Paid
-1433496,Fully Paid
-3196909,Charged Off
-10155318,Current
-6536380,Current
-5606403,Fully Paid
-8504744,Fully Paid
-3636301,Current
-1164680,Fully Paid
-1148108,Charged Off
-1356011,Fully Paid
-2308192,Fully Paid
-2094470,Fully Paid
-2091664,Current
-9827589,Fully Paid
-1209906,Current
-6284679,Current
-9826064,Fully Paid
-9867469,Current
-1349663,Fully Paid
-8981978,Fully Paid
-4465363,Fully Paid
-9666110,Late (31-120 days)
-4528344,Fully Paid
-3379455,Fully Paid
-8194887,Current
-1612296,Fully Paid
-8658214,Fully Paid
-6734896,Fully Paid
-8135221,Current
-3186843,Fully Paid
-1635231,Fully Paid
-4684880,Current
-5904824,Fully Paid
-6581766,Current
-3215214,Fully Paid
-6617030,Fully Paid
-8666171,Current
-3236645,Current
-7052844,Fully Paid
-2367685,Fully Paid
-2295783,Fully Paid
-4787344,Fully Paid
-8545498,Charged Off
-4885238,Fully Paid
-7066118,Fully Paid
-3150714,Charged Off
-1208830,Fully Paid
-4305527,Current
-4186960,Fully Paid
-7945726,Charged Off
-1350040,Charged Off
-5145474,Current
-3187358,Fully Paid
-4784979,Fully Paid
-1597051,Fully Paid
-4865216,Current
-1382644,Fully Paid
-9855912,Current
-4307814,Fully Paid
-5525214,Current
-3525838,Fully Paid
-1689455,Charged Off
-1260869,Fully Paid
-1462487,Charged Off
-5779281,Fully Paid
-6582992,Current
-5825520,Fully Paid
-2085801,Fully Paid
-9204882,Current
-3185911,Fully Paid
-1343866,Charged Off
-8957869,Current
-6325040,Late (31-120 days)
-1383061,Charged Off
-5607127,Current
-2294643,Fully Paid
-6520689,Fully Paid
-3639854,Current
-5785211,Charged Off
-8610728,Current
-3631527,Fully Paid
-3638100,Fully Paid
-5788033,Fully Paid
-1380597,Fully Paid
-8636431,Current
-1569248,Fully Paid
-1143471,Fully Paid
-9194685,Current
-8504947,Fully Paid
-7052061,Current
-4455622,Fully Paid
-1466535,Charged Off
-3929622,Fully Paid
-1362317,Fully Paid
-1102713,Charged Off
-1384769,Fully Paid
-5782579,Fully Paid
-3161719,Current
-8555496,Current
-4299571,Fully Paid
-3204618,Current
-7834642,Fully Paid
-1325999,Fully Paid
-8127510,Current
-7069239,Current
-4435758,Fully Paid
-1322033,Fully Paid
-1122235,Fully Paid
-1914733,Fully Paid
-1520433,Fully Paid
-4157338,Fully Paid
-8145945,Current
-4425271,Charged Off
-1081977,Charged Off
-5525842,Charged Off
-8756133,Charged Off
-6595990,Current
-1161784,Fully Paid
-5630426,Fully Paid
-6581800,Current
-9065632,Current
-3699980,Fully Paid
-8638421,Current
-1589043,Fully Paid
-5629434,Current
-6569440,Current
-2906872,Fully Paid
-9197923,Current
-6875081,Fully Paid
-8979274,Charged Off
-9816463,Charged Off
-8605446,Current
-5815497,Current
-6205574,Charged Off
-5946222,Fully Paid
-2217098,Fully Paid
-1576666,Charged Off
-3638116,Current
-5166830,Current
-6995305,Fully Paid
-5026118,Current
-1407018,Current
-1158771,Fully Paid
-4556272,Charged Off
-6125667,Current
-6918015,Fully Paid
-3528503,Charged Off
-1224764,Current
-1584782,Fully Paid
-5789920,Current
-10194569,Fully Paid
-5948772,Fully Paid
-2295081,Fully Paid
-1614676,Fully Paid
-1689118,Fully Paid
-4166922,Fully Paid
-1402244,Fully Paid
-4276015,Fully Paid
-2307022,Fully Paid
-6697632,Fully Paid
-1098392,Charged Off
-9175306,Current
-3185176,Fully Paid
-1501158,Charged Off
-8535261,Current
-1511459,Fully Paid
-7064035,Current
-7585004,Fully Paid
-9124916,Fully Paid
-6938122,Fully Paid
-7719745,Fully Paid
-1520294,Fully Paid
-6706531,Current
-1431276,Charged Off
-2372366,Fully Paid
-9198056,Charged Off
-7618571,Charged Off
-1855122,Current
-7636890,Current
-9195448,Fully Paid
-7054937,Current
-1249184,Fully Paid
-4558954,Fully Paid
-5606986,Current
-3349540,Charged Off
-6315162,Current
-4528067,Fully Paid
-3703356,Fully Paid
-3154142,Fully Paid
-6516061,Current
-1472085,Fully Paid
-7535945,Current
-1384906,Charged Off
-1470548,Fully Paid
-5345595,Current
-3198749,Late (31-120 days)
-3675175,Current
-6209074,Fully Paid
-5969251,Current
-6885507,Current
-3150731,Fully Paid
-5791515,Current
-8647112,Current
-3288309,Current
-7052951,Fully Paid
-4784752,Current
-9236824,Charged Off
-1636316,Fully Paid
-4124747,Charged Off
-1422015,Charged Off
-5825037,Fully Paid
-5525676,Fully Paid
-1570470,Fully Paid
-4527117,Current
-3005206,Fully Paid
-1151906,Fully Paid
-5782379,Current
-4795823,Fully Paid
-2985035,Current
-1311595,Fully Paid
-4567623,Current
-2905823,Fully Paid
-8835559,Current
-9000626,Current
-7657327,Current
-3360279,Fully Paid
-4455141,Current
-3346741,Current
-4278175,Charged Off
-4435377,Current
-5686276,Current
-5025415,Fully Paid
-2087490,Charged Off
-7640029,Fully Paid
-1857128,Fully Paid
-5773392,Current
-3287997,Fully Paid
-2435586,Fully Paid
-4175002,Fully Paid
-5065002,Charged Off
-4166263,Fully Paid
-7946274,Current
-5959452,Late (31-120 days)
-1200863,Fully Paid
-4465426,Late (31-120 days)
-7667983,Fully Paid
-7097791,Fully Paid
-6298173,Fully Paid
-5174697,Fully Paid
-3353565,Charged Off
-8785048,Fully Paid
-6297834,Fully Paid
-3016303,Fully Paid
-7627534,Fully Paid
-3147511,Charged Off
-8626685,Fully Paid
-1433363,Charged Off
-6548580,Fully Paid
-3145997,Current
-8955232,Charged Off
-5354833,Charged Off
-8484833,Current
-8524713,Fully Paid
-7659360,Fully Paid
-5794601,Fully Paid
-8775156,Current
-7305756,Current
-2216992,Fully Paid
-1419801,Fully Paid
-1724855,Fully Paid
-7724874,Current
-1681535,Fully Paid
-7276607,Fully Paid
-1314884,Charged Off
-1225109,Fully Paid
-4301605,Charged Off
-6187202,Current
-3366469,Fully Paid
-6394876,Current
-1254356,Fully Paid
-4074697,Charged Off
-4084960,Charged Off
-9624830,Current
-5196212,Fully Paid
-1570618,Current
-6705388,Current
-1529035,Fully Paid
-4557093,Fully Paid
-1092676,Fully Paid
-1458160,Fully Paid
-4766973,Current
-1320320,Fully Paid
-9424953,Fully Paid
-4306169,Fully Paid
-1604465,Fully Paid
-1099284,Fully Paid
-4125065,Current
-9835541,Fully Paid
-3219924,Current
-6594967,Fully Paid
-5194590,Current
-1676311,Fully Paid
-1577623,Fully Paid
-1568270,Charged Off
-8968675,Fully Paid
-9644705,Current
-10079228,Fully Paid
-2371882,Fully Paid
-1385943,Fully Paid
-5185776,Current
-1457543,Fully Paid
-8866248,Fully Paid
-1505786,Charged Off
-8669787,Current
-3382376,Late (31-120 days)
-6522367,Fully Paid
-8365866,Fully Paid
-8958805,Current
-8155821,Current
-6580983,Fully Paid
-3235757,Fully Paid
-1457645,Fully Paid
-1187487,Fully Paid
-2375155,Current
-1526148,Fully Paid
-1485978,Fully Paid
-5787227,Fully Paid
-9066818,Current
-1076754,Charged Off
-6954935,Fully Paid
-2091088,Fully Paid
-6694920,Current
-5949733,Current
-1462572,Fully Paid
-8965133,Current
-1460588,Fully Paid
-3807178,Fully Paid
-1426140,Fully Paid
-8646605,Fully Paid
-1366900,Fully Paid
-1676823,Fully Paid
-6617741,Current
-2371105,In Grace Period
-4376413,Fully Paid
-9196806,Charged Off
-1625858,Fully Paid
-8627573,Current
-2219255,Fully Paid
-9215177,Fully Paid
-1609611,Fully Paid
-1293319,Fully Paid
-8619006,In Grace Period
-8815354,Current
-1459352,Fully Paid
-6719746,Fully Paid
-2377197,Fully Paid
-7957067,Fully Paid
-5626179,Current
-4278128,Fully Paid
-8979500,Charged Off
-1307448,Fully Paid
-8386337,Fully Paid
-6188848,Current
-4525443,Current
-1249030,Fully Paid
-4375667,Charged Off
-1515668,Fully Paid
-8544903,Fully Paid
-4465288,Fully Paid
-1592616,Fully Paid
-3240016,Charged Off
-5774828,Fully Paid
-1383951,Fully Paid
-4291360,Current
-2215439,Fully Paid
-7341890,Fully Paid
-8646731,Fully Paid
-5095145,Current
-6929662,Fully Paid
-6938545,Late (16-30 days)
-3726843,Current
-1188970,Fully Paid
-2044895,Fully Paid
-3198844,Current
-6542526,Current
-1548107,Fully Paid
-4435166,Fully Paid
-1475216,Fully Paid
-5545592,Fully Paid
-6522631,Charged Off
-1528398,Fully Paid
-1396836,Fully Paid
-3921297,Fully Paid
-1686931,Fully Paid
-6177958,Current
-3487721,Fully Paid
-6175865,Fully Paid
-7689786,Current
-8568403,Current
-1161498,Charged Off
-6311626,Fully Paid
-1364775,Current
-5415620,Fully Paid
-6160507,Fully Paid
-4167194,Current
-1237004,Fully Paid
-4568101,Fully Paid
-1341732,Fully Paid
-1125761,Fully Paid
-1486825,Fully Paid
-3414771,Current
-3675031,Fully Paid
-1636349,Fully Paid
-4767876,Fully Paid
-9827298,Fully Paid
-3806208,Charged Off
-1364256,Charged Off
-5763031,Fully Paid
-7646744,Current
-8648874,Current
-6717418,Current
-4125100,Current
-5895449,Current
-7946962,Current
-3806990,Current
-4557054,Fully Paid
-1363032,Fully Paid
-5435824,Charged Off
-5607578,Fully Paid
-8580733,Fully Paid
-6581597,Fully Paid
-5964791,Fully Paid
-3537837,Current
-3703782,Current
-9035413,Current
-1370993,Charged Off
-4224642,In Grace Period
-8856074,Fully Paid
-3497440,Charged Off
-10076407,Fully Paid
-8515025,Current
-1489481,Fully Paid
-9209097,Fully Paid
-3640865,Current
-2084250,Fully Paid
-4045118,Fully Paid
-4548730,Fully Paid
-3354566,Fully Paid
-1362351,Fully Paid
-3105806,Fully Paid
-3288020,Fully Paid
-5629612,Current
-1551012,Fully Paid
-7114666,Current
-3630710,Fully Paid
-2227156,Fully Paid
-6546489,Current
-8615682,Current
-7306730,Current
-10144802,Fully Paid
-9788353,Fully Paid
-2274752,Fully Paid
-5705795,Current
-8965778,Fully Paid
-3922840,Fully Paid
-9656244,Fully Paid
-4095240,Fully Paid
-5085470,Fully Paid
-3372604,Fully Paid
-9077199,Current
-7649698,Charged Off
-6551509,Fully Paid
-1159632,Fully Paid
-7525144,Current
-5706058,Charged Off
-7070703,Current
-1856653,Fully Paid
-1519349,Fully Paid
-7083846,Fully Paid
-7339149,Current
-1417718,Fully Paid
-1623114,Charged Off
-7854779,Fully Paid
-3356235,Fully Paid
-10084890,Charged Off
-5594609,Current
-6695275,Current
-1603318,Fully Paid
-7701388,Current
-5793834,Current
-1622974,Fully Paid
-1167408,Charged Off
-1101630,Fully Paid
-8876583,Current
-9795511,Fully Paid
-4567015,Charged Off
-9795837,Fully Paid
-1510491,Fully Paid
-9235091,Fully Paid
-9767256,Fully Paid
-7306001,Current
-4528222,Fully Paid
-7093628,Fully Paid
-8885686,Current
-3365852,Current
-3348634,Current
-1444517,Fully Paid
-3382220,Fully Paid
-1223719,Current
-1396857,Fully Paid
-6084643,Current
-8846627,Current
-8966505,Fully Paid
-1471513,Fully Paid
-8157437,Current
-5609674,Current
-5104779,Charged Off
-6614563,Current
-1224498,Charged Off
-8996502,Current
-1681889,Fully Paid
-1693570,Fully Paid
-1208422,Charged Off
-1516196,Fully Paid
-6539349,Current
-1201417,Charged Off
-1330299,Fully Paid
-1334686,Fully Paid
-1410669,Fully Paid
-3595988,Fully Paid
-6567898,Fully Paid
-7046273,Fully Paid
-7306074,Current
-3922587,Late (31-120 days)
-5535465,Charged Off
-6926934,Current
-7067284,Fully Paid
-1247956,Fully Paid
-7455853,Fully Paid
-5685682,Fully Paid
-7296413,Charged Off
-7680612,Fully Paid
-7696654,Current
-8636024,Current
-5876033,Fully Paid
-6065297,Charged Off
-8648891,Fully Paid
-1685438,Charged Off
-1239785,Fully Paid
-9776158,Current
-8982208,Current
-4174768,Current
-5035145,Current
-8988571,Current
-3014913,Fully Paid
-6330764,Fully Paid
-1621493,Fully Paid
-5960388,Current
-7063670,Fully Paid
-8954596,Late (31-120 days)
-7916661,Current
-6168088,Charged Off
-1236318,Fully Paid
-6889174,Fully Paid
-1521904,Fully Paid
-4614932,Fully Paid
-4195433,Fully Paid
-6299399,Fully Paid
-5948144,Current
-1688989,Fully Paid
-5036955,Fully Paid
-1454668,Fully Paid
-1575645,Current
-3534591,In Grace Period
-7680739,Fully Paid
-9767515,Fully Paid
-1676902,Fully Paid
-8775063,Current
-1500588,Fully Paid
-6837131,Current
-1492958,Fully Paid
-1551668,Fully Paid
-6316002,Fully Paid
-5695690,Current
-7956127,Current
-5095863,Fully Paid
-8495192,Current
-6285575,Current
-3066090,Fully Paid
-2484942,Fully Paid
-5607225,Fully Paid
-1149294,Fully Paid
-3155185,Current
-6546888,Fully Paid
-9217989,Current
-7687336,Current
-3289422,Current
-10069068,Current
-6374648,Current
-1469742,Charged Off
-2935185,Charged Off
-7454611,Current
-3194735,Charged Off
-5627543,Fully Paid
-9045556,Current
-2935624,Current
-9825879,Fully Paid
-1585957,Fully Paid
-6697424,Charged Off
-8284908,Current
-3294616,In Grace Period
-4196399,Current
-3368235,Fully Paid
-6835530,Fully Paid
-6625996,Current
-1230317,Fully Paid
-7334666,Current
-1416734,Fully Paid
-6495188,Fully Paid
-3484747,Fully Paid
-3234694,Charged Off
-5895164,Fully Paid
-5958358,Fully Paid
-9025262,Current
-1626751,Fully Paid
-4724603,Current
-1509014,Fully Paid
-3367085,Fully Paid
-10138372,Fully Paid
-3695847,Fully Paid
-7365345,Current
-9255196,Current
-5445705,Current
-5618445,Fully Paid
-9736619,Current
-1209790,Fully Paid
-3374509,Fully Paid
-9765140,Fully Paid
-1263472,Fully Paid
-7065067,Current
-1378769,Charged Off
-1383538,Charged Off
-1391508,Charged Off
-1141606,Fully Paid
-7378261,Current
-6929625,Current
-3007325,Fully Paid
-1628278,Fully Paid
-1197891,Fully Paid
-2838245,Charged Off
-6208249,Fully Paid
-4455835,Fully Paid
-8604750,Current
-1286676,Fully Paid
-7048823,Fully Paid
-8495239,Fully Paid
-7514619,Current
-7648435,Current
-7382969,Fully Paid
-5784260,Current
-5875910,Current
-2185561,Current
-4195661,Current
-6521818,Fully Paid
-3376900,Current
-8095079,Fully Paid
-3811099,Fully Paid
-6838119,Charged Off
-1619134,Fully Paid
-2087271,Fully Paid
-1523196,Current
-6582470,Current
-1614748,Fully Paid
-8629763,Current
-5365944,Current
-4767389,Current
-9604967,Current
-6789595,Current
-9239496,Current
-3356695,Fully Paid
-5627838,Charged Off
-7616765,Current
-5705022,Current
-8647412,Charged Off
-1603125,Fully Paid
-5344732,Fully Paid
-5938165,Current
-7255056,Current
-1119167,Fully Paid
-7266169,Current
-2085942,Fully Paid
-1597082,Fully Paid
-6515722,Current
-3927244,Fully Paid
-9035678,Current
-6637873,Current
-6454873,Fully Paid
-9010414,Fully Paid
-5196838,Current
-1447861,Fully Paid
-8054690,Current
-4787215,Fully Paid
-6475258,Current
-5759432,Current
-6735379,Current
-7434649,Current
-4547628,Fully Paid
-5637119,Current
-1425752,Fully Paid
-1078936,Late (31-120 days)
-3188935,Current
-1159899,Charged Off
-9047667,Current
-6897689,Current
-7370727,Current
-7342864,Current
-2379160,Fully Paid
-1100023,Current
-7679023,Current
-8644769,Current
-8495091,Fully Paid
-9855067,Fully Paid
-5535473,Current
-1151911,Charged Off
-3240175,Current
-6565406,Current
-5705781,Current
-1367203,Fully Paid
-1506301,Fully Paid
-7666118,Current
-1250125,Fully Paid
-5445842,Current
-5685422,Fully Paid
-5629546,Current
-1856329,Fully Paid
-9055015,Fully Paid
-6605342,Fully Paid
-9011792,Current
-2985013,Fully Paid
-5778069,Fully Paid
-8806178,Current
-1137851,Fully Paid
-8606703,Fully Paid
-6210400,Fully Paid
-1097115,Charged Off
-1166214,Fully Paid
-1624906,Fully Paid
-7244675,Current
-1249753,Fully Paid
-1531045,Fully Paid
-1382738,Fully Paid
-1604472,Current
-7376490,Charged Off
-1489624,Fully Paid
-1499003,Fully Paid
-5936066,Fully Paid
-4624933,Current
-6517072,Current
-5038403,Current
-1141464,Charged Off
-3352516,Fully Paid
-8659858,Current
-1116014,Fully Paid
-6708968,Current
-1157732,Fully Paid
-1092926,Fully Paid
-3015911,Charged Off
-1524096,Fully Paid
-1471285,Charged Off
-8627517,Fully Paid
-6310891,Current
-6310039,Current
-8684639,Fully Paid
-9634610,Current
-7342585,Fully Paid
-10095575,Current
-1255074,Fully Paid
-4307685,Current
-10136039,Current
-6596574,Fully Paid
-1540118,Current
-3239036,Charged Off
-10137092,Charged Off
-6545690,Late (31-120 days)
-1686031,Fully Paid
-9838143,Current
-6699073,Charged Off
-1468952,Fully Paid
-5885466,Fully Paid
-1373511,Fully Paid
-6541844,Fully Paid
-3707097,Current
-10166295,Fully Paid
-5854888,Fully Paid
-5769338,Fully Paid
-2083312,Fully Paid
-8995681,Current
-1612001,Fully Paid
-9054760,Fully Paid
-1262933,Fully Paid
-1223295,Fully Paid
-2584722,Fully Paid
-5146381,Current
-9164572,Fully Paid
-5616439,Charged Off
-1214661,Fully Paid
-1138775,Fully Paid
-9224779,Current
-6530955,Current
-6966249,Current
-1457235,Fully Paid
-1692134,Fully Paid
-1403167,Fully Paid
-2080770,Fully Paid
-1188771,Fully Paid
-8146897,Current
-2825388,Current
-10104828,Current
-8964723,Fully Paid
-8356199,Current
-1431466,Current
-1351014,Fully Paid
-1401498,Charged Off
-5617900,Fully Paid
-8555819,Current
-8638591,Charged Off
-8128193,Fully Paid
-5780321,Current
-8659998,Current
-6835021,Charged Off
-8998773,Current
-5434918,Fully Paid
-9645104,Current
-1578249,Fully Paid
-3633888,Fully Paid
-2824761,Current
-1402765,Fully Paid
-3774653,Current
-1229903,Fully Paid
-3348792,Fully Paid
-1680044,Charged Off
-6167580,Fully Paid
-7636925,Current
-7006156,Current
-5545391,Fully Paid
-5394585,Fully Paid
-1263975,Current
-3916793,Current
-1389238,Fully Paid
-6555084,Current
-6541628,Current
-8136968,Current
-10166301,Fully Paid
-1526606,Fully Paid
-4454983,Current
-1544135,Fully Paid
-1611223,Fully Paid
-1421115,Current
-1330681,Fully Paid
-1116786,Fully Paid
-7664564,Fully Paid
-3352408,Current
-5957932,Late (31-120 days)
-8765772,Fully Paid
-6714987,Current
-3149654,Fully Paid
-4537163,Fully Paid
-9044562,Fully Paid
-3154115,Current
-1496441,Charged Off
-7370901,Fully Paid
-1441069,Fully Paid
-5505957,Fully Paid
-5365964,Current
-7666860,Fully Paid
-1634708,Charged Off
-1340732,Fully Paid
-3286150,Charged Off
-1531296,Fully Paid
-7088639,Fully Paid
-7696597,Current
-1241726,Charged Off
-3104972,Current
-8364773,Current
-1619300,Fully Paid
-7628180,Current
-6535066,Current
-3004573,Fully Paid
-4274723,Fully Paid
-3369210,Charged Off
-4537074,Current
-5696706,Current
-5696494,Fully Paid
-3106969,Fully Paid
-2275076,Current
-5875165,Charged Off
-4785128,Fully Paid
-4548853,Current
-1443298,Fully Paid
-7369702,Current
-5095841,Current
-6396056,Fully Paid
-4424813,Fully Paid
-9724633,Current
-4788238,Current
-7449720,Fully Paid
-7708200,Charged Off
-8205090,Current
-1314559,Charged Off
-5784394,Current
-7669339,Current
-7617215,Current
-1479864,Fully Paid
-1103859,Fully Paid
-5555067,Late (31-120 days)
-5966356,Charged Off
-1482990,Fully Paid
-1179858,Fully Paid
-1143936,Fully Paid
-1383008,Fully Paid
-2373338,Current
-1169997,Charged Off
-4307632,Fully Paid
-3931678,Current
-10138326,Current
-1268515,Fully Paid
-9037692,Current
-1495061,Fully Paid
-1336373,Fully Paid
-8591020,Charged Off
-2085037,Fully Paid
-3220487,Current
-9075530,Current
-4299755,Fully Paid
-3294083,Current
-10176035,Late (31-120 days)
-4291295,Charged Off
-6570861,Fully Paid
-8294667,Fully Paid
-6698159,Fully Paid
-6839608,Charged Off
-9774738,Current
-9077329,Fully Paid
-6156668,Current
-2935124,Fully Paid
-5245063,Current
-4546506,Fully Paid
-8590558,Current
-9189527,Fully Paid
-1243781,Fully Paid
-1269535,Fully Paid
-3844851,Charged Off
-8577428,Fully Paid
-3524862,Fully Paid
-6925796,Current
-1456319,Fully Paid
-1577197,Fully Paid
-1159656,Fully Paid
-1516874,Fully Paid
-6839413,Charged Off
-3638437,Current
-2837836,Fully Paid
-1218003,Fully Paid
-3219143,Current
-5958646,Fully Paid
-3293256,Charged Off
-7276728,Current
-3696236,Current
-5788721,Fully Paid
-1170251,Fully Paid
-9614595,Current
-8577339,Fully Paid
-8385555,Current
-2474614,Fully Paid
-1589691,Fully Paid
-8765730,Fully Paid
-9225282,Fully Paid
-4287988,Fully Paid
-6928497,Current
-7004782,Current
-5043004,Fully Paid
-7256834,Fully Paid
-6568782,Current
-5797033,Current
-3187205,Current
-3097714,Current
-3351197,Fully Paid
-1611447,Charged Off
-3664566,Fully Paid
-6878692,Current
-8628928,Current
-6521854,Fully Paid
-1477011,Fully Paid
-3497084,Fully Paid
-2836655,Fully Paid
-9007195,Current
-9655047,Fully Paid
-8646445,Current
-6317134,Current
-6739148,Current
-3700461,Current
-9775732,Current
-8118271,Current
-6054592,Current
-8647444,Current
-1446433,Charged Off
-1414269,Fully Paid
-5895151,Fully Paid
-7706118,Fully Paid
-1544056,Fully Paid
-9766686,Charged Off
-1089362,Fully Paid
-1114806,Fully Paid
-9055704,Late (31-120 days)
-6939259,Fully Paid
-4776485,Charged Off
-1573568,Charged Off
-2089962,Fully Paid
-7705097,Charged Off
-1080709,Fully Paid
-4985431,Current
-1440569,Fully Paid
-5609005,Charged Off
-1405504,Fully Paid
-5835664,Fully Paid
-6876619,Fully Paid
-7627956,Fully Paid
-1547140,Fully Paid
-5855515,Fully Paid
-1826261,Fully Paid
-3485541,Fully Paid
-5956778,Current
-7707513,Current
-5769260,Current
-1596927,Fully Paid
-7917267,Current
-8977098,Fully Paid
-5175347,Current
-5773057,Current
-1108553,Fully Paid
-6315358,Charged Off
-1390290,Fully Paid
-5104912,Charged Off
-8640114,Charged Off
-7068465,Fully Paid
-7388609,Current
-5639678,Fully Paid
-5979635,Fully Paid
-3359403,Current
-1108041,Current
-3147421,Current
-6764562,Current
-4537382,Fully Paid
-1358003,Fully Paid
-1151100,Fully Paid
-2005014,Fully Paid
-7714659,Current
-4574756,Current
-5606464,Current
-5815506,Current
-1278849,In Grace Period
-2214612,Fully Paid
-5695829,Fully Paid
-1503785,Fully Paid
-1059721,Fully Paid
-5773602,Fully Paid
-2076446,Fully Paid
-5610908,Current
-3631311,Fully Paid
-4444867,Current
-6465305,Current
-10135197,Current
-4786935,Charged Off
-6522145,Fully Paid
-4795946,Current
-9026469,Current
-7605027,Current
-1467896,Fully Paid
-3727977,Charged Off
-3525771,Fully Paid
-5555092,Current
-6572563,Fully Paid
-7266202,Current
-6188473,Current
-1545178,Fully Paid
-1129066,Fully Paid
-6395128,Fully Paid
-2215087,Fully Paid
-5628626,Charged Off
-1508082,Fully Paid
-1272172,Fully Paid
-1144723,Fully Paid
-5385735,Current
-6075191,Fully Paid
-1287908,Charged Off
-4796363,Fully Paid
-1513396,Fully Paid
-1410506,Fully Paid
-3379227,Fully Paid
-1381070,Fully Paid
-6520004,Charged Off
-1199361,Fully Paid
-6245449,Fully Paid
-8955980,Charged Off
-1246584,Fully Paid
-5781601,Current
-4445543,Fully Paid
-6290084,Fully Paid
-4305172,Fully Paid
-6827390,Fully Paid
-8865196,Fully Paid
-8785116,Current
-8155319,Current
-3486647,Current
-8626696,Charged Off
-10145537,Fully Paid
-7709145,Current
-2836688,Fully Paid
-1367122,Fully Paid
-7615842,Current
-6536725,Current
-3148850,Fully Paid
-3628373,Fully Paid
-2604986,Current
-6306888,Fully Paid
-1030172,Fully Paid
-1392247,Fully Paid
-1557800,Fully Paid
-9065174,Fully Paid
-2634915,Fully Paid
-5166684,Fully Paid
-1429378,Fully Paid
-3358035,Fully Paid
-4306228,Charged Off
-1693010,Fully Paid
-4295435,Charged Off
-1372024,Fully Paid
-1341276,Charged Off
-7366347,Current
-8118170,Current
-7495736,Current
-8575133,Current
-6396123,Current
-8765304,Current
-1904891,Fully Paid
-5637411,Current
-1294414,Fully Paid
-9175179,Fully Paid
-7068896,Fully Paid
-7718141,Current
-3349387,Charged Off
-3380879,Current
-2379503,Fully Paid
-2375983,Fully Paid
-2082524,Charged Off
-6289941,Fully Paid
-3287341,Fully Paid
-5977799,Current
-1157671,Charged Off
-3154745,Fully Paid
-2300539,Fully Paid
-1565181,Charged Off
-7448748,Fully Paid
-6301859,Current
-3155037,Current
-7699560,Current
-2378569,Fully Paid
-6285786,Current
-5885132,Fully Paid
-3358136,Fully Paid
-1377115,Fully Paid
-5365153,Current
-8958409,Current
-5796523,Fully Paid
-6886750,Charged Off
-4225056,Current
-3241085,Charged Off
-1440599,Fully Paid
-8405590,Charged Off
-1425570,Fully Paid
-2154573,Fully Paid
-7698488,Charged Off
-1261042,Fully Paid
-3666088,Charged Off
-6414606,Fully Paid
-7370602,Fully Paid
-6414634,Current
-6445014,Current
-3239016,Current
-3195792,Current
-6255435,Fully Paid
-5195073,Current
-5938427,Current
-5224762,Fully Paid
-1238343,Fully Paid
-6187483,Charged Off
-7069022,Fully Paid
-7697529,Current
-1401175,Fully Paid
-9604928,Current
-4155468,Fully Paid
-5936122,Current
-1625399,Fully Paid
-1126049,Charged Off
-1622454,Fully Paid
-5760732,Current
-6936972,Current
-5648676,Fully Paid
-1333800,Fully Paid
-8295627,Current
-4186828,Charged Off
-1627642,Fully Paid
-9624736,Fully Paid
-3355622,Fully Paid
-5787087,Fully Paid
-7305397,Fully Paid
-1365614,Fully Paid
-1431758,Fully Paid
-4295132,Fully Paid
-4287039,Current
-1855001,Fully Paid
-6965020,Current
-1514749,Fully Paid
-5635979,Current
-5776216,Current
-3107040,Fully Paid
-9815976,Fully Paid
-1284693,Fully Paid
-4225350,Fully Paid
-4797321,Charged Off
-3221626,Fully Paid
-6808219,Fully Paid
-5759237,Fully Paid
-5782882,Current
-6310505,Current
-7719458,Current
-6548481,Fully Paid
-3375062,Current
-6525365,Current
-6166844,Fully Paid
-7659190,Current
-5645946,Fully Paid
-5767018,Current
-7366171,Current
-1485393,Fully Paid
-9788160,Fully Paid
-5794971,Charged Off
-8984595,Fully Paid
-5186223,Charged Off
-6527631,Current
-1683170,Fully Paid
-1531853,Fully Paid
-3700076,Current
-1537374,Current
-3676307,Current
-3486327,Current
-6647524,Current
-1816803,Fully Paid
-7706654,Current
-5354723,Charged Off
-7436459,Current
-1172371,Fully Paid
-3186621,Current
-8064707,Charged Off
-1261997,Fully Paid
-3637562,Current
-1359973,Charged Off
-3666309,Fully Paid
-1252296,Fully Paid
-5799257,Current
-10116938,Current
-1382386,Fully Paid
-4277017,Fully Paid
-7716480,Current
-1634981,Fully Paid
-1477358,Fully Paid
-7337573,Fully Paid
-6406175,Charged Off
-9934853,Current
-5186715,Fully Paid
-3347838,Late (31-120 days)
-1250797,Fully Paid
-5783810,Current
-1086537,Fully Paid
-5788334,Current
-6315845,Charged Off
-7164575,Current
-2476072,Current
-7339264,Current
-3015379,Fully Paid
-8915984,Current
-5029202,Fully Paid
-3015884,Fully Paid
-6519848,Current
-9774649,Charged Off
-3289699,Current
-7935502,Fully Paid
-3107621,Current
-4794603,Fully Paid
-1503850,Fully Paid
-7354718,Fully Paid
-1262318,Fully Paid
-1217529,Fully Paid
-9199519,Current
-8385654,Fully Paid
-9217167,Current
-2295433,Fully Paid
-2837665,Fully Paid
-8126043,Late (31-120 days)
-6178218,Late (31-120 days)
-3784644,Current
-6596860,Fully Paid
-7956426,Fully Paid
-1955455,Fully Paid
-1122567,Current
-5791901,Charged Off
-9876748,Fully Paid
-8135241,Current
-3195382,Fully Paid
-7267021,Current
-10105191,Charged Off
-2895205,Fully Paid
-6296900,Current
-1496270,Fully Paid
-2444981,Fully Paid
-8205097,Fully Paid
-3919279,Fully Paid
-10067319,Fully Paid
-2365214,Late (31-120 days)
-6938261,Fully Paid
-6326091,Fully Paid
-4975171,Charged Off
-5036415,Fully Paid
-3057004,Current
-4300180,Fully Paid
-5640392,Fully Paid
-1280183,Fully Paid
-1456802,Fully Paid
-5955983,Charged Off
-4310075,Current
-1504526,Fully Paid
-1300640,Fully Paid
-8568636,Current
-5608960,Current
-5029878,Charged Off
-1272036,Fully Paid
-6718714,Current
-1483059,Fully Paid
-3638696,Current
-4375623,Fully Paid
-6244891,Current
-5545660,Fully Paid
-6520399,Current
-4924731,Charged Off
-6291432,Fully Paid
-7449931,Late (31-120 days)
-7074407,Fully Paid
-4455768,Current
-3635634,Fully Paid
-6570837,Fully Paid
-5835553,Fully Paid
-3638119,Fully Paid
-3299283,Fully Paid
-1098565,Fully Paid
-1680401,Fully Paid
-9215774,Current
-7355220,Fully Paid
-7618292,Current
-1384448,Fully Paid
-9334617,Current
-3627586,Fully Paid
-3106183,Current
-5798528,Current
-1954717,Current
-10078474,Current
-1139611,Fully Paid
-9675092,Fully Paid
-1855810,Fully Paid
-3377319,Current
+4279729,Charged Off
+6645593,Fully Paid
+2474581,Current
+3914754,Fully Paid
+6827729,Fully Paid
+2435146,Current
+3696028,Fully Paid
+7936417,Fully Paid
+1549935,Fully Paid
+1226763,Fully Paid
+5036604,Fully Paid
+7094683,Fully Paid
+7345183,Fully Paid
+9914870,Fully Paid
+4557037,Charged Off
+3198167,Charged Off
+5781469,Current
+9454789,Late (31-120 days)
+9007148,Current
+3351464,Charged Off
+9715895,Current
+2014901,Current
+5043038,Current
 1695163,Fully Paid
-7387446,Charged Off
-1102217,Charged Off
-6595449,Current
-1603015,Fully Paid
-1262977,Fully Paid
-1227269,Charged Off
-4300916,Current
-2309073,Fully Paid
-7385776,Current
-3358019,Current
-6134815,Fully Paid
-5038756,Current
-8986252,Current
-4526409,Charged Off
-6547563,Current
-1693500,Charged Off
-5935459,Current
-3265314,Current
-1258039,Fully Paid
-10098415,Fully Paid
-9994756,In Grace Period
-3198869,Fully Paid
-6125334,Fully Paid
-5125749,Current
-1218225,Charged Off
-3633734,Current
-5799980,Current
-1454787,Fully Paid
-1627724,Fully Paid
-7098029,Fully Paid
-4554731,Current
-1113404,Fully Paid
-1119035,Current
-8814923,Current
-2646144,Current
-10178121,Current
-1127947,Fully Paid
-7339009,Fully Paid
-3642658,Charged Off
-3846244,Fully Paid
-5038698,Fully Paid
-1151042,Fully Paid
-6616953,Charged Off
-9189321,Fully Paid
-1328363,Charged Off
-6178141,Current
-1589284,Fully Paid
-1411601,Charged Off
-1625382,Fully Paid
-1302381,Fully Paid
-7381648,Fully Paid
-9847727,Charged Off
-1386325,Fully Paid
-8856528,Fully Paid
-1420774,Charged Off
-1614535,Fully Paid
-7286490,Current
-1550048,Fully Paid
-1529026,Fully Paid
-1569769,Fully Paid
-6571341,Current
-6545610,Fully Paid
-7314645,Charged Off
-8775712,Current
-7046818,Current
-6572061,Charged Off
-8590111,Fully Paid
-7374885,Fully Paid
-3706608,Current
-9816548,Current
-5758454,Current
-4255367,Current
-5154743,Current
-1483891,Fully Paid
-1242011,Fully Paid
-3696487,Current
-6535000,Current
-9745740,Charged Off
-6855134,Fully Paid
-1552383,Fully Paid
-3006120,Current
-5958068,Current
-8619359,Fully Paid
-3355529,Charged Off
-2594900,Fully Paid
-3455531,Fully Paid
-8786074,Late (31-120 days)
-1336220,Fully Paid
-3677019,Current
-3381894,Current
-1557145,Fully Paid
-1686064,Fully Paid
-9186537,Current
-6288574,Late (31-120 days)
-3187614,Fully Paid
-4548176,Fully Paid
-6714609,Current
-7052519,Charged Off
-6395842,Fully Paid
-6647794,Current
-3236889,Fully Paid
-6615312,Fully Paid
-7436707,Late (31-120 days)
-3625308,Fully Paid
-6826699,Fully Paid
-10175530,Current
-2380483,Fully Paid
-7627449,In Grace Period
-6386521,Current
-8617673,Current
-8714628,Current
-6295241,Fully Paid
-7665482,Fully Paid
-5194780,Current
-6806412,Charged Off
-6694670,Fully Paid
-3147765,Fully Paid
-6735215,Charged Off
-6820051,Fully Paid
-7658801,Current
-1436703,Current
-4104596,Default
-7645911,Current
-5788398,Fully Paid
-9218370,Current
-10158731,Current
-8555672,Current
-7076234,Current
-8905421,Fully Paid
-4074885,Charged Off
-7389665,Current
-2895248,Current
-7368138,Fully Paid
-7676674,Current
-3345073,Current
-6906141,Current
-3382380,Current
-1172233,Fully Paid
-8618389,Current
-6906640,Fully Paid
-7070206,Fully Paid
-3605490,Current
-7708710,Current
-2227461,Fully Paid
-1621748,Fully Paid
-7915907,Current
-5782456,Fully Paid
-9754886,Fully Paid
-7064750,Fully Paid
-7584853,Fully Paid
-1337146,Charged Off
-7371731,Charged Off
-1368482,Fully Paid
-9225004,Current
-6179516,In Grace Period
-5789338,Late (31-120 days)
-7047316,Fully Paid
-1120017,Fully Paid
-7446161,Fully Paid
-5628872,Current
-10157349,Current
-2365268,Fully Paid
-5796984,Current
-2368360,Fully Paid
-7086101,Fully Paid
-6291064,Fully Paid
-6569170,Current
-10089093,Fully Paid
-6789950,Fully Paid
-6157214,Current
-2088793,Fully Paid
-1687863,Fully Paid
-7626197,Current
-1344022,Current
-1569046,Fully Paid
-6290290,Current
-3525606,Fully Paid
-6844883,Charged Off
-7370715,Fully Paid
-8054790,Charged Off
-3666727,Fully Paid
-6955176,Current
-4196048,Current
-6877974,Current
-1435809,Fully Paid
-6325365,Current
-9238792,Current
-5937145,Current
-3454909,Current
-2645669,Fully Paid
-5424835,Charged Off
-5177155,Current
-6235267,Current
-6154678,In Grace Period
-4704822,Current
-6290114,Charged Off
-3381367,Current
-3537642,Current
-3264795,Fully Paid
-1424267,Fully Paid
-1434307,Current
-6887399,Current
-5945331,Current
-6179426,Current
-8115702,Fully Paid
-1371355,Fully Paid
-7726041,Current
-1529869,Fully Paid
-6518896,Fully Paid
-5375674,Late (31-120 days)
-1684878,Fully Paid
-9237596,Charged Off
-2864914,Fully Paid
+6285008,Current
+7935639,Current
+3016963,Current
+2486447,Current
+7721281,Current
+7382784,Current
+5405155,Fully Paid
+1545726,Fully Paid
+2078866,Fully Paid
+6310270,Charged Off
+2054851,Fully Paid
+3639940,Fully Paid
+4767695,Charged Off
+5610206,Fully Paid
+8935057,Current
+5696233,Current
+8557637,Current
+1250632,Fully Paid
+3705529,Fully Paid
+2309105,Fully Paid
+8118343,Charged Off
+3922197,Fully Paid
 1618264,Fully Paid
-8976317,Current
-1553205,Fully Paid
-4280346,Fully Paid
-9695252,Current
-6290425,Current
-8776118,Fully Paid
-8978004,Fully Paid
-6815675,Charged Off
-4425953,Charged Off
-1479969,Current
-6207559,Fully Paid
-3805316,Fully Paid
-8589512,Current
-9175164,Current
-9047786,Current
-2744720,Charged Off
-9646545,Fully Paid
-10085184,Charged Off
-1148933,Fully Paid
-2485485,Fully Paid
-6734905,Fully Paid
-5615884,Current
-6528533,Fully Paid
-1635455,Fully Paid
-10126862,Current
-1955329,Charged Off
-1325315,Fully Paid
-4525716,Current
-6298380,Current
-2896076,Fully Paid
-1584953,Fully Paid
-3221126,Fully Paid
-3095494,Current
-8845642,Current
-1264045,Fully Paid
-1414221,Fully Paid
-4767590,Fully Paid
-3164353,Fully Paid
-3676201,Late (31-120 days)
-6156544,Current
-8987120,Current
-3108869,Fully Paid
-1097686,Fully Paid
-1443153,Fully Paid
-1494950,Fully Paid
-5949309,Fully Paid
-1261326,Fully Paid
-1690204,Current
-1321600,Charged Off
-6905381,Fully Paid
-6285838,Fully Paid
-5875153,Fully Paid
-5385255,Current
-7708560,Fully Paid
-7336439,Fully Paid
-6395491,Fully Paid
-1683225,Charged Off
-5038007,Current
-6807233,Current
-6625115,Charged Off
-8579736,Current
-6576807,Fully Paid
-1529606,Fully Paid
-6414609,Current
-7584730,Fully Paid
-5214912,Current
-6707012,Current
-1428422,Fully Paid
-3299612,Current
-3921807,Fully Paid
-1112361,Fully Paid
-3159724,Charged Off
-3298367,Current
-9218158,Current
-2005270,Fully Paid
-6898963,Fully Paid
-7655888,Current
-1318512,Charged Off
-8626556,Current
-1452731,Fully Paid
-7074987,Current
-5616881,Fully Paid
-1202112,Fully Paid
-5757027,Current
-1219943,Fully Paid
-6730108,Current
-1176901,Fully Paid
-7627891,Fully Paid
-2214857,Fully Paid
-6569505,Charged Off
-1606250,Fully Paid
-5435710,Fully Paid
-6385345,Fully Paid
-1069685,Fully Paid
-4064871,Fully Paid
-8987178,Fully Paid
-4064713,Current
-3065739,Current
-8648898,Late (31-120 days)
-9238583,Current
-5791005,Current
-10084593,Charged Off
-7687343,Current
-4547755,Fully Paid
-4310249,Fully Paid
-3005368,Fully Paid
-1177395,Fully Paid
-7368143,Current
-7305760,Current
-1388427,Fully Paid
-5957850,Current
-1571841,Fully Paid
-3157574,Fully Paid
-1550468,Fully Paid
-3356812,Charged Off
-8944743,Charged Off
-1173477,Fully Paid
-1203849,Fully Paid
-8987688,Charged Off
-3098472,Current
-9674959,Current
-2090146,Fully Paid
-6529089,Current
-9384937,Fully Paid
-3055824,Fully Paid
-3931818,Charged Off
-2945238,Fully Paid
-3368823,Fully Paid
-6539206,Current
-3846727,Current
-2174889,Fully Paid
-6835311,Current
-4375818,Current
-3696873,Current
-1532831,Fully Paid
-1601493,Fully Paid
-2369727,Fully Paid
-5055073,Current
-3932014,Fully Paid
-4566334,Fully Paid
-1505326,Fully Paid
-1855386,Fully Paid
-3370558,Fully Paid
-6929321,Fully Paid
-7076739,Current
-10125267,Current
-8555618,Current
-4175581,Fully Paid
-7436969,Fully Paid
-8558624,Current
-3919685,Fully Paid
-1510106,Fully Paid
-5434611,Fully Paid
-8914980,Current
-1410526,Fully Paid
-1419748,Fully Paid
-5759233,Fully Paid
-8997774,Fully Paid
-7446826,Fully Paid
-6416480,Current
-4235214,Fully Paid
-1157049,Fully Paid
-5696361,Fully Paid
-1286376,Fully Paid
-3188356,Current
-8637447,Charged Off
-5705976,Fully Paid
-8636014,Current
-1449528,Charged Off
-6186933,Current
-8366571,Current
-8668270,Fully Paid
-5424706,Current
-7264784,Current
-4884989,Current
-5706687,Current
-6331163,Current
-3218355,Fully Paid
-3631323,Current
-7093486,Fully Paid
-3377307,Current
-5624684,Charged Off
-1401542,Charged Off
-7372369,Fully Paid
-6331787,Current
-1202174,Fully Paid
-5937985,Late (31-120 days)
-6935584,Fully Paid
-6395888,Current
-3644588,Current
-1625868,Fully Paid
-3300284,Fully Paid
-8364877,Charged Off
-8524942,Current
-8975959,Current
-5610838,Fully Paid
-6374757,Current
-5625787,Fully Paid
-10078057,Current
-2311541,Fully Paid
-2827665,Late (31-120 days)
-9055892,Fully Paid
-6300308,Current
-1278034,Fully Paid
-6516989,Current
-6605391,Fully Paid
-3334691,Charged Off
-9394732,Current
-1288165,Fully Paid
-5095856,Fully Paid
-7618575,Late (31-120 days)
-8146828,Fully Paid
-9876916,Fully Paid
-1171591,Fully Paid
-3147339,Late (31-120 days)
-1249301,Fully Paid
-6298237,Charged Off
-4535263,Fully Paid
-6300692,Fully Paid
-1344478,Fully Paid
-6159162,Current
-3293260,Fully Paid
-5801525,Fully Paid
-4375099,In Grace Period
-5384831,Fully Paid
-2435569,Fully Paid
-1361808,Current
-3809767,Current
-5115138,Fully Paid
-1577461,Fully Paid
-1411904,Fully Paid
-5935335,Current
-1298165,Fully Paid
-5634910,Fully Paid
-1401612,Fully Paid
-1108871,Fully Paid
-3534969,Fully Paid
-3486484,Fully Paid
-1586434,Fully Paid
-4125415,Fully Paid
-8599597,Current
-1580325,Fully Paid
-6157447,Current
-9695126,Fully Paid
-9746635,Current
-2935379,Fully Paid
-1299450,Fully Paid
-10136758,Current
-7075271,Late (31-120 days)
-3355907,Fully Paid
-9646515,Current
-4310468,Fully Paid
-3292633,Current
-5856040,Fully Paid
-2089177,Fully Paid
-1680852,Fully Paid
-7905318,Fully Paid
-1549621,Fully Paid
-3625118,Charged Off
-1611776,Current
-1401207,Fully Paid
-3289642,Current
-5704864,Fully Paid
-3699449,Charged Off
-1428186,Fully Paid
-9826606,Charged Off
-7265546,Current
-5766548,Fully Paid
-5757068,Fully Paid
-9217192,Current
-3107715,Fully Paid
-1115139,Fully Paid
-3146971,Fully Paid
-1225696,Fully Paid
-1429577,Fully Paid
-1193758,Fully Paid
-7371332,Fully Paid
-2305235,Fully Paid
-8065110,Current
-5895331,Current
-5244868,Fully Paid
-9714910,Current
-1675428,Current
-4554795,Charged Off
-7098033,Fully Paid
-6806590,Charged Off
-5615516,Current
-8117228,Fully Paid
-3485557,Fully Paid
-1432226,Charged Off
-1120515,Fully Paid
-7086507,Charged Off
-4538572,Fully Paid
-1200455,Fully Paid
-2225258,Fully Paid
-2284662,Fully Paid
-7594963,Current
-7072702,Current
-1502442,Fully Paid
-1319471,Fully Paid
-1627449,Fully Paid
-6454777,Fully Paid
-1286017,Charged Off
-9010001,Charged Off
-4784793,Fully Paid
-6994841,Fully Paid
-4255214,Fully Paid
-6964897,Fully Paid
-7668472,Current
-3675972,Fully Paid
-4564572,Charged Off
-8967825,Charged Off
-5647697,Current
-1544754,Fully Paid
-4245663,Fully Paid
-8955089,Current
-8755849,Late (31-120 days)
-6094691,Current
-3698910,Charged Off
-3353395,Fully Paid
-7726355,Fully Paid
-5704562,Current
-3368737,Current
-6717551,Current
-1335821,Fully Paid
-7535907,Current
-7354615,Current
-4164976,Current
-5799408,Fully Paid
-8966327,Current
-9215415,Current
-1386365,Fully Paid
-1130342,Charged Off
-1288824,Fully Paid
-1232877,Fully Paid
-6887169,Current
-8265858,Fully Paid
-7275913,Fully Paid
-3159686,Current
-3095999,Charged Off
-1281882,Fully Paid
-8966419,Fully Paid
-1280288,Fully Paid
-1546800,Fully Paid
-4435410,Fully Paid
-3366445,Fully Paid
-1571221,Fully Paid
-4527818,Fully Paid
-2365066,Fully Paid
-3356616,Charged Off
-1073040,Fully Paid
-5696752,Fully Paid
-6567331,Current
-1608809,Charged Off
-3484619,Current
-8534714,Current
+5505522,Fully Paid
+6300276,Fully Paid
+7341722,Current
+4797679,Current
+1528343,Fully Paid
+1508418,Fully Paid
+7667342,Current
+6406337,Current
+5424980,Charged Off
+9806901,In Grace Period
+8646552,Fully Paid
+5004860,Current
+1323521,Fully Paid
+7435829,Fully Paid
+2074925,Fully Paid
+5791053,Current
+3485574,Current
+7436912,Charged Off
+6540175,Fully Paid
+7687642,Current
+7045469,In Grace Period
+1490372,Fully Paid
+1550787,Fully Paid
+5956460,Fully Paid
+1197433,Fully Paid
+3915229,Fully Paid
+10086667,Fully Paid
+4765960,Charged Off
+6331661,Current
+1540185,Fully Paid
+7376429,Fully Paid
+9077661,Current
+5650561,In Grace Period
+1323184,Fully Paid
+5765994,Charged Off
+5626493,Fully Paid
+3163044,Current
+9227651,Current
+2005341,Fully Paid
+1465013,Fully Paid
+1532826,Fully Paid
+5761315,Current
+9189373,Fully Paid
+5754652,Fully Paid
+1273339,Fully Paid
+1944589,Fully Paid
+7618287,Fully Paid
+3848093,Current
+8971763,Fully Paid
+6548481,Fully Paid
+6994678,Fully Paid
+7295221,Current
+1683520,Fully Paid
+6827012,Current
+1228107,Fully Paid
+1243920,Fully Paid
+1169781,Fully Paid
+7184588,Late (31-120 days)
+6286150,Current
+5793098,Current
+7085282,Current
+8815616,Current
+6297749,Fully Paid
+7424693,Current
+1447926,Fully Paid
+6308046,Current
+9255052,Current
+3074664,Current
+3292510,Current
+8567376,Fully Paid
+1824944,Fully Paid
+10107880,Current
+9744726,Fully Paid
+5640572,Current
+1097671,Fully Paid
+1570649,Fully Paid
+6917306,Fully Paid
+1345255,Fully Paid
+9766565,Current
+4556334,Current
+1543458,Fully Paid
+5025627,Current
+1601941,Fully Paid
+9066250,Current
+6165772,Current
+3218862,Fully Paid
+6517081,Charged Off
+9835847,Current
+4234971,Charged Off
+8619241,Current
+1480394,Fully Paid
+8127769,Current
+6736634,Current
+5944969,Charged Off
+2894833,Fully Paid
+5760021,Current
+4375800,Fully Paid
+9187335,Fully Paid
+10117314,Fully Paid
+2434961,Current
+3595052,Fully Paid
+5028204,Current
+7454831,Current
+1074567,Fully Paid
+6538688,Current
+2307405,Current
+2374646,Fully Paid
+3376648,Fully Paid
+3005492,Charged Off
+6416369,Fully Paid
+7071224,Current
+9514780,Current
+1273164,Fully Paid
+1460226,Fully Paid
+10139040,Current
+9857002,Current
+1358895,Fully Paid
+8865535,Fully Paid
+7295476,Fully Paid
+7342800,Current
+3218268,Charged Off
+1549022,Fully Paid
+1149394,Fully Paid
+1322980,Fully Paid
+1569863,Charged Off
+9874600,Fully Paid
+6519679,Fully Paid
+8205100,Current
+2225486,Fully Paid
+9175276,Current
+7617539,Current
+6929000,Current
+1433019,Fully Paid
+5874631,Fully Paid
+6474878,Current
+3374625,Fully Paid
+1264090,Fully Paid
+7096188,Fully Paid
+9237343,Current
+6697156,Current
+4175335,Charged Off
+2369922,Fully Paid
+2635473,Fully Paid
+5894883,Current
+3057625,Current
+4788027,Fully Paid
+1689722,Fully Paid
+5196839,Fully Paid
+9764976,Fully Paid
+6580946,Fully Paid
+1452299,Fully Paid
+1695361,Fully Paid
+3347102,Current
+3931550,Charged Off
+8556918,Current
+7375799,Fully Paid
+1177312,Current
+6525172,Fully Paid
+8404726,Fully Paid
+1414529,Fully Paid
+6966021,Fully Paid
+5780791,Current
+4434612,Fully Paid
+7386985,Current
+2286440,Fully Paid
+4334760,Fully Paid
+6605512,Fully Paid
+6395946,Fully Paid
+2894930,Fully Paid
+7070759,Fully Paid
+6582018,Charged Off
+3237985,Fully Paid
+7070315,Charged Off
+4314573,Late (31-120 days)
+10096453,Fully Paid
+6706403,Current
+3348951,In Grace Period
+2085039,Fully Paid
+2228612,Current
+2225193,Fully Paid
+1337847,Fully Paid
+3595383,Fully Paid
+4125210,Fully Paid
+1498681,Charged Off
+5027905,Current
 1259213,Fully Paid
-7382655,Current
-3215503,Fully Paid
-5787395,Fully Paid
-1535970,Fully Paid
-6566704,Current
-6094634,Fully Paid
-1405605,Fully Paid
-6918385,Current
-6827121,Fully Paid
-9807462,Current
-3605787,Fully Paid
-1140223,Fully Paid
-6178092,Current
-1351893,Fully Paid
-1383449,Charged Off
-6908001,Fully Paid
-3730498,Current
-6705931,Fully Paid
-8567234,Fully Paid
-7069774,Charged Off
-8866181,Fully Paid
-1865923,Fully Paid
-4298365,Current
-1137667,Fully Paid
-3642572,Late (31-120 days)
-7844785,Current
-5825217,Fully Paid
-9715333,Current
-7564814,Current
-6596202,Current
-4290873,Charged Off
-3354750,Current
-8905998,Current
-3098874,Charged Off
-1495986,Charged Off
-1422080,Fully Paid
-4534853,Current
-3644267,Fully Paid
-8971419,Fully Paid
-5105031,Current
-1635146,Charged Off
-6596160,Current
-7615398,Current
-5624702,Current
-7956458,Charged Off
-3006056,Fully Paid
-5648136,Fully Paid
-5784024,Fully Paid
-1619218,Fully Paid
-5948846,Current
-1467243,Fully Paid
+4185390,Fully Paid
+6546868,Current
+9164835,Fully Paid
+6034566,Fully Paid
+2594780,Fully Paid
+1111335,Fully Paid
+9225255,Fully Paid
+2574807,Current
+3644175,Fully Paid
+5036015,Fully Paid
+7080483,Fully Paid
+9787837,Current
+7440104,Fully Paid
+6522482,Fully Paid
+1433664,Fully Paid
+1483011,Fully Paid
+4176076,Current
+9227409,Fully Paid
+1369610,Fully Paid
+6465209,Fully Paid
+4444674,Current
+6528735,Charged Off
+7062853,Fully Paid
+1543088,Fully Paid
+1567968,Fully Paid
+6627164,Current
+5635293,Fully Paid
+5791728,Current
+4558692,Fully Paid
+1481102,Fully Paid
+1098632,Charged Off
+3808640,Current
+6529363,Fully Paid
+9204722,Current
+1503431,Fully Paid
+2306587,Charged Off
+8856063,Fully Paid
+4806860,Fully Paid
+4215146,Fully Paid
+8669509,Fully Paid
+6935479,Current
+1619537,Fully Paid
+6907364,Current
+5435185,Fully Paid
+3376522,Fully Paid
+9027707,Current
+6160650,Fully Paid
+2077929,Fully Paid
+7688211,Current
+3055284,Fully Paid
+1480499,Fully Paid
+3106519,Current
+5115647,Fully Paid
+606676,Fully Paid
+7668535,Charged Off
+7096763,Current
+1147946,Fully Paid
+4084960,Charged Off
+2084165,Fully Paid
+7385658,Current
+1132362,Fully Paid
+1242011,Fully Paid
+4424598,Current
+7285295,Fully Paid
+5177327,Charged Off
+3300162,Fully Paid
+8755398,Current
+3537978,Fully Paid
+6157415,Current
+1299285,Charged Off
+8405016,Fully Paid
+1429334,Current
+7101675,Fully Paid
+2090017,Charged Off
+7684782,Charged Off
+7297033,Fully Paid
+2378381,Fully Paid
+9195998,Current
+1282750,Charged Off
+5950007,Charged Off
+3186508,Fully Paid
+1158988,Fully Paid
+3626148,Current
+1511038,Fully Paid
+9766380,Fully Paid
+7077630,Current
+3414841,Fully Paid
+8354672,Current
+1199379,Fully Paid
+5637204,Current
+3535780,Current
+9057964,Current
+8586385,Fully Paid
+1523146,Fully Paid
+5757575,Current
+2935216,Fully Paid
+7094000,Current
+1200761,Fully Paid
+7066435,Current
+9067454,Fully Paid
+4215344,Current
+7637094,Current
+8094951,Current
+4796586,Fully Paid
+5645891,Current
+8285382,Fully Paid
+2078382,Fully Paid
+3294667,Fully Paid
+2311061,Fully Paid
+3674633,Fully Paid
+6616227,Fully Paid
+2294939,Late (31-120 days)
+4425928,Fully Paid
+5968299,Fully Paid
+1589626,Current
+6914639,Current
+6729142,Fully Paid
+1569055,Fully Paid
+5948603,Current
+5646901,Charged Off
+3239629,Current
+1562507,Fully Paid
+3293139,Charged Off
+4556339,Current
+8024822,Current
+6646101,Current
+1539564,Fully Paid
+5175812,Fully Paid
+8295028,Current
+5607322,Fully Paid
+8126874,Current
+4806496,Current
+8405539,Current
+1272591,Fully Paid
+1247240,Fully Paid
+8960418,Current
+1455320,Fully Paid
+1575991,Fully Paid
+8395188,Fully Paid
+8574641,Fully Paid
+8405616,Fully Paid
+2524726,Fully Paid
+8589182,Current
+2307906,Fully Paid
+6075131,Fully Paid
+9817912,Current
+1524427,Current
+2229412,Current
+6157491,Fully Paid
+9115325,Current
+6286997,Charged Off
+7696947,Current
+1083199,Fully Paid
+7069194,Current
+1126652,Fully Paid
+1469644,Charged Off
+2184791,Fully Paid
+2382805,Charged Off
+1352293,Charged Off
+1175009,Fully Paid
+8014759,Current
+5039363,Fully Paid
+9715764,Fully Paid
+2077754,Fully Paid
+4297852,Late (31-120 days)
+9075973,Current
+8576168,Current
+3732808,Fully Paid
+1601518,Fully Paid
+4549185,Current
+6626463,Fully Paid
+1158269,Charged Off
+3064637,Fully Paid
+10128084,Fully Paid
+1389825,Fully Paid
+1494473,Fully Paid
+7067703,Fully Paid
+4255518,Current
+3216567,Fully Paid
+2088950,Fully Paid
+1121555,Fully Paid
+8185338,Fully Paid
+7678180,Charged Off
+4614609,Current
+6539669,Fully Paid
+3154851,Fully Paid
+1494930,Charged Off
+7314563,Current
+3095043,Fully Paid
+9198399,Fully Paid
+7388088,Current
+5334581,Fully Paid
+7314779,Fully Paid
+1855275,Charged Off
+7088490,Current
+1500534,Charged Off
+6596206,Late (16-30 days)
+3631643,Charged Off
+1555671,Fully Paid
+9634672,Fully Paid
+3064727,Current
+9754940,Current
+6824625,Current
+3299362,Fully Paid
+2828830,Fully Paid
+3234885,Fully Paid
+2865144,Fully Paid
+5174658,Current
+1151073,Charged Off
+5040480,Current
+4185182,Current
+5978043,Charged Off
+7727101,Fully Paid
+3378588,Fully Paid
+4528574,Fully Paid
+7068799,Fully Paid
+4569086,Fully Paid
+6764772,Current
+1335557,Charged Off
+1143950,Fully Paid
+2383545,Fully Paid
+9857904,Current
+10146706,Fully Paid
+1164460,Fully Paid
+1609912,Fully Paid
+10075671,Current
+1247135,Fully Paid
+9005329,Current
+3349241,Fully Paid
+1475584,Fully Paid
+9036669,Current
+1606760,Fully Paid
+1825126,Fully Paid
+2838442,Current
+8575672,Fully Paid
+3925078,Fully Paid
+1570295,Charged Off
+5796504,Fully Paid
+6646167,Current
+3383957,Fully Paid
+4806840,Current
+3346294,Charged Off
+1693919,Fully Paid
+6170110,Fully Paid
+9726305,Current
+1421097,Fully Paid
+6975454,Fully Paid
+6718968,Fully Paid
+1562953,Fully Paid
+7082008,Fully Paid
+7704756,Current
+9065601,Current
+1281458,Charged Off
+6326200,Charged Off
+1428957,Fully Paid
+7617833,Fully Paid
+10099525,Fully Paid
+6578774,Fully Paid
+6887383,Current
+3497295,Current
+8294831,Current
+1092103,Charged Off
+2635113,Fully Paid
+8914920,Fully Paid
+6549090,Current
+8961665,Current
+2605325,Fully Paid
+6331673,Fully Paid
+6546101,Fully Paid
+6636245,Current
+1331823,Fully Paid
+3527577,Fully Paid
+1130980,Fully Paid
+3927516,Current
+1106028,Charged Off
+7648551,Fully Paid
+2075828,Fully Paid
+6177859,Current
+6577351,Fully Paid
+5782096,Charged Off
+1385731,Current
+3145945,Fully Paid
+5949887,Charged Off
+8978238,Current
+1384948,Fully Paid
+1365196,Fully Paid
+6838179,Charged Off
+6255613,Fully Paid
+3665481,Current
+1535665,Fully Paid
+1214210,Fully Paid
+8596965,Current
+3067353,Current
+1319097,Charged Off
+4538495,Fully Paid
+2379141,Fully Paid
+1457114,Fully Paid
+5204744,Charged Off
+7725866,Current
+8785212,Fully Paid
+4425442,Fully Paid
+6715840,Current
+3364928,Current
+3928363,Fully Paid
+5785088,Fully Paid
+1537704,Current
+2635088,Fully Paid
+5948150,Fully Paid
+1370275,Charged Off
+3725194,Current
+8824569,Fully Paid
+6910016,Fully Paid
+1205928,Current
+1411644,Fully Paid
+6522329,Charged Off
+1482531,Fully Paid
+5956802,Fully Paid
+1342840,Charged Off
+2081755,Fully Paid
+5940378,Current
+3666438,Current
+8980407,Current
+6552083,Current
+6179888,Fully Paid
+6295125,Fully Paid
+1434138,Fully Paid
+3805337,Fully Paid
+7089405,Fully Paid
+5975899,Current
+3161636,Fully Paid
+4245582,Fully Paid
+1119682,Fully Paid
+8556317,Fully Paid
+9706346,Fully Paid
+1734888,Fully Paid
+5966600,Current
+1091152,Fully Paid
+3285459,Current
+6583709,Fully Paid
+7224706,Current
+6189405,Fully Paid
+6735344,Current
+4289683,Current
+2377108,Fully Paid
+5789484,Current
+3218952,Charged Off
+3527101,Fully Paid
+1303027,Fully Paid
+8494946,Fully Paid
 3145807,Fully Paid
-9114627,Current
-3638595,Fully Paid
-6539735,Charged Off
-3445543,Fully Paid
-3727410,Fully Paid
-6714805,Fully Paid
-6206018,Current
-1387908,Fully Paid
-3732695,Current
-9675500,Charged Off
-10148625,Fully Paid
-7051433,Current
-7937031,Fully Paid
-1437427,Fully Paid
-2825489,Fully Paid
-1326651,Fully Paid
-3161931,Fully Paid
-1509587,Fully Paid
-1282474,Fully Paid
-1378681,Fully Paid
-3705647,Fully Paid
-8991657,Charged Off
-1117776,Fully Paid
-2935391,Fully Paid
-6916896,Current
-1335248,Fully Paid
-1683863,Current
-7657804,Current
-7707661,Late (16-30 days)
-8414592,Current
-5114910,Current
-1621115,Charged Off
-5744690,Current
-7956496,Current
-3812390,Current
-1245815,Fully Paid
-1477958,Current
-7619598,Current
-3150682,Charged Off
-3218697,Fully Paid
-7276468,Current
-9614563,Current
-3289982,Fully Paid
-6828385,Fully Paid
-8981436,Fully Paid
-1128394,Fully Paid
-2906539,Fully Paid
-1253947,Current
-10107821,Fully Paid
-1330333,Charged Off
-5796407,Fully Paid
-2090668,Charged Off
-6517228,Current
-1453206,Fully Paid
-3217412,Current
-6582478,Current
-9807987,Current
-2225016,Fully Paid
-1061580,Charged Off
-8636571,Current
-8554654,Fully Paid
-1593028,Fully Paid
-1343911,Charged Off
-3351562,Fully Paid
-9424896,Current
-8579368,Fully Paid
-8148221,Current
-7680314,Fully Paid
-4566688,Charged Off
-6166582,Charged Off
-6084601,Current
-7367966,Current
-7275811,Charged Off
-2744639,Current
-7098958,Fully Paid
-1592106,Fully Paid
-1616370,Charged Off
-3729908,Fully Paid
-1609389,Fully Paid
-5773282,Fully Paid
-4034953,Fully Paid
-6189082,Fully Paid
-1590367,Fully Paid
-10098720,Current
-7045329,Current
-5975525,Fully Paid
-6570787,Fully Paid
-2373535,Fully Paid
-3915634,Fully Paid
-8567519,Current
-5627988,Current
-2306560,Fully Paid
-1483763,Fully Paid
-8944800,Current
-1429248,Charged Off
-5035573,Current
-6317373,Charged Off
-1677407,Fully Paid
-8998397,Current
-5405076,Current
-2894709,Fully Paid
-6305424,Current
-5956113,Current
-7336616,Fully Paid
-7376370,Late (31-120 days)
-6905436,Fully Paid
-1206742,Fully Paid
-3355504,Current
-2371314,Fully Paid
-1628022,Fully Paid
-9778437,Current
-1358634,Fully Paid
-8566345,Fully Paid
-1348949,Fully Paid
-7638407,Charged Off
-1544804,Fully Paid
-2475306,Fully Paid
-4566686,Current
-5795837,Current
-1382174,Fully Paid
-6296123,Current
-6919150,Current
-6170935,Fully Paid
-1226562,Fully Paid
-7645357,Fully Paid
-5801483,Current
-5455356,Fully Paid
-1216909,Fully Paid
-9037379,Fully Paid
-1257319,Charged Off
-7336931,Fully Paid
-6726188,Fully Paid
-4994564,Fully Paid
-2228981,Fully Paid
-6907944,Fully Paid
-3155009,Current
-1078823,Fully Paid
-3537857,Current
-2307535,Fully Paid
-8616838,Current
-9036263,Fully Paid
-5166342,Current
-7094450,Current
-7720846,Current
-8628083,Current
-1562738,Fully Paid
-7691381,Current
-1255238,Fully Paid
-2081773,Fully Paid
-6404806,Current
-7067959,Current
-5555462,Current
-1690370,Fully Paid
-1403131,Fully Paid
-1287075,Fully Paid
-9239404,Current
-2874872,Current
-1422587,Charged Off
-7274710,Current
-1523834,Fully Paid
-3703912,Fully Paid
-5345208,Fully Paid
-3347578,Fully Paid
-8607405,Current
-3734054,Fully Paid
-4278439,Fully Paid
-8975891,Fully Paid
-8560832,Fully Paid
-5605352,Current
-1432196,Fully Paid
-10098435,Fully Paid
-5758811,Fully Paid
-8999975,Fully Paid
-5185241,Fully Paid
-3698348,Fully Paid
-8968379,Fully Paid
-6206983,Fully Paid
-1189546,Fully Paid
-1240180,Charged Off
-1208427,Fully Paid
-1080220,Fully Paid
-7276204,Late (31-120 days)
-4785511,Fully Paid
-9787669,Current
-1460023,Fully Paid
-6518075,Current
-7057831,Charged Off
-8608465,Charged Off
-2894701,Fully Paid
-1421509,Fully Paid
-6786029,Fully Paid
-5947288,Current
-9245056,Current
-1429893,Charged Off
-9444981,Fully Paid
-2015016,Fully Paid
-1219736,Current
-3733657,Current
-7699111,Current
-1439104,Fully Paid
-2276333,Fully Paid
-5036070,Fully Paid
-1560496,Charged Off
-1210245,Fully Paid
-5956180,Fully Paid
-10067705,Current
-7058125,Charged Off
-2825234,Fully Paid
-1362363,Fully Paid
-8116232,Current
-8264727,Current
-9646020,Charged Off
-1550676,Current
-6205054,Current
-8155198,Fully Paid
-1693895,Fully Paid
-1086790,Charged Off
-7687726,Current
-10098355,Fully Paid
-3149425,Current
-6225069,Current
-1128692,Fully Paid
-9208263,Current
-7728959,Fully Paid
-7092516,Charged Off
-6996130,Fully Paid
-1447125,Charged Off
-9197540,Current
-6190031,Current
-1291028,Fully Paid
-1489888,Charged Off
-2484644,Fully Paid
-3234833,Current
-2373198,Charged Off
-1419049,Late (31-120 days)
-8586565,Current
-1252278,Fully Paid
-3630604,Fully Paid
-1414308,Charged Off
-2827482,Fully Paid
-6170403,Charged Off
-7639437,Current
-1432295,Fully Paid
-8306318,Fully Paid
-4785781,Fully Paid
-7584703,Fully Paid
-2276689,Fully Paid
-3370978,Charged Off
-5630857,Fully Paid
-3144577,Current
-1385161,Charged Off
-5704660,Fully Paid
-3066804,Current
-3666614,Charged Off
-5039020,Current
-7097969,Current
-9777540,Fully Paid
-7696887,Current
-8959157,Fully Paid
-3495333,Current
-1688639,Charged Off
-9665076,Late (31-120 days)
-4539255,Current
-4289497,Charged Off
-10106777,Charged Off
-1692665,Fully Paid
-8054916,Fully Paid
-1465960,Fully Paid
-1144847,Fully Paid
-1623912,Fully Paid
-4775397,Fully Paid
-3667567,Fully Paid
-5134597,Fully Paid
-1695540,Fully Paid
-6937957,Current
-3917629,Fully Paid
-7068246,Fully Paid
-3006501,Charged Off
-9716698,Current
-6094979,Fully Paid
-3628992,Current
-6321797,Current
-9057726,Current
-6704818,Current
-3703109,Fully Paid
-6167749,Current
-2734577,Fully Paid
-5782022,Current
-5027388,Current
-3376554,Current
-5037868,Current
-1237439,Fully Paid
-4539245,Current
-9604632,Current
-2087408,Fully Paid
-7306230,Current
-8816374,Late (31-120 days)
-3915296,Current
-8405479,Current
-6224921,Current
-9035838,Current
-9835204,Current
-1387253,Fully Paid
-6535894,Fully Paid
-7098729,Current
-3666568,Current
-2477017,Current
-1684018,Fully Paid
-3725342,Charged Off
-9766701,Current
-1081337,Fully Paid
-7047206,Fully Paid
-6525147,Fully Paid
-3349607,Fully Paid
-4094860,Current
-7676208,Current
-3535822,Current
-3285388,Charged Off
-3237312,Fully Paid
-1305068,Fully Paid
-3932689,Charged Off
-7050346,Charged Off
-5763809,Current
-1407776,Fully Paid
-2368904,Fully Paid
-3373492,Fully Paid
-4155486,Charged Off
-5714966,Current
-7946512,Current
-8485154,Fully Paid
-6819825,Current
-1209855,Charged Off
-7725259,Charged Off
-9665320,Current
-5196965,Current
-8655474,Fully Paid
-8015026,Current
-8629677,Current
-7306654,Current
-1415702,Fully Paid
-8567273,Current
-7056413,Fully Paid
-4287301,Current
-6316170,Late (31-120 days)
-3629808,Late (31-120 days)
-3847444,Fully Paid
-3196042,Charged Off
-7636976,Current
-3186852,Current
-6818295,Charged Off
-1624256,Fully Paid
-5535577,Current
-8981018,Current
-8835424,Current
-7699936,Current
-5938370,Charged Off
-5364728,Fully Paid
-9695172,Current
-1477807,Charged Off
-7382267,Current
-5145086,Current
-6325406,Fully Paid
-8854950,Fully Paid
-2974572,Late (31-120 days)
-6582828,Current
-4777047,Current
-7684741,Fully Paid
-7447945,Current
-4288586,Late (31-120 days)
-1224624,Charged Off
-7355538,Fully Paid
-5976061,Fully Paid
-5978783,Fully Paid
-9734723,Current
-6177189,Fully Paid
-1568269,Charged Off
-6875769,Current
-7057242,Current
-7446716,Fully Paid
-5626389,Current
-6582655,Fully Paid
-9777370,Fully Paid
-1255162,Fully Paid
-8997068,Current
-3352769,Fully Paid
-1613680,Fully Paid
-1180437,Fully Paid
-1385470,Fully Paid
-3186921,Fully Paid
-3643526,Fully Paid
-4184677,Charged Off
-1410085,Fully Paid
-8504876,Fully Paid
-6265081,Current
-6926243,Current
-1627752,Fully Paid
-1080768,Fully Paid
-8148574,Current
-3525853,Charged Off
-5798897,Current
-8146869,Fully Paid
-1141326,Fully Paid
-1492194,Fully Paid
-2379304,Fully Paid
-2094115,Fully Paid
-8560276,Current
-1482478,Fully Paid
-2216760,Charged Off
-3704804,Fully Paid
-7719529,Fully Paid
-1077104,Fully Paid
-5406035,Fully Paid
-10138354,Current
-5029459,Current
-3164005,Current
-7342494,Current
-6817310,Current
-5607053,Current
-4798266,Current
-3352719,Current
-4165990,Fully Paid
-7664951,Current
-1460617,Fully Paid
-1167396,Fully Paid
-5609568,Fully Paid
-1593812,Current
-3700190,Current
-1114062,Fully Paid
-2381074,Fully Paid
-2895750,Fully Paid
-4526163,Fully Paid
-1406677,Fully Paid
-1866620,Fully Paid
-5065101,Fully Paid
-3155942,Current
-5535289,Current
-9002004,Current
-1682216,Late (31-120 days)
-1524656,Charged Off
-3694865,Current
-7629840,Charged Off
-6317397,Current
-2896942,Fully Paid
-7628661,Current
-1622459,Fully Paid
-5793570,Current
-1251724,Charged Off
-6594628,Late (31-120 days)
-6317861,Fully Paid
-4155809,Current
-4305370,Current
-5185993,Charged Off
-7724725,Fully Paid
-4286701,Fully Paid
-3630871,Charged Off
-1089433,Current
-2015193,Fully Paid
-9044585,Current
-1555081,Fully Paid
-4104624,Current
-5949586,Current
-5761072,Fully Paid
-4255298,Current
-1308008,Fully Paid
-1138919,Fully Paid
-6736760,Fully Paid
-1519600,Fully Paid
-2093634,Fully Paid
-5085339,Fully Paid
-2228501,Fully Paid
-4299961,Fully Paid
-6156081,Fully Paid
-2218383,Fully Paid
-1493112,Fully Paid
-4734639,Current
-1272476,Fully Paid
-3239837,Charged Off
-8214655,Current
-4286024,Current
-9008219,Fully Paid
-7854664,Current
-9827370,Current
-6521276,Current
-1678960,Fully Paid
-8126772,Fully Paid
-5948423,Current
-1227178,Fully Paid
-5781028,Charged Off
-2024593,Fully Paid
-8405720,Current
-6697742,Current
-8305356,Current
-6996214,Fully Paid
-2371433,Charged Off
-3628789,Current
-3665345,Current
-7440888,Current
-2828771,Fully Paid
-1078101,Fully Paid
-8895043,Current
-7096311,Current
-3524822,Fully Paid
-9804949,Charged Off
-4185462,Fully Paid
-1151564,Fully Paid
-1570926,Charged Off
-3335687,Current
-5616997,Current
-6190735,Charged Off
-7679375,Fully Paid
-6185487,Current
-2838284,Fully Paid
-8885470,Fully Paid
-1219921,Fully Paid
-3355232,Current
-3350818,Current
-1343255,Fully Paid
-2874709,Current
-6327422,Current
-1513596,Fully Paid
-9037305,Current
-1029150,Fully Paid
-8625688,Charged Off
-8965887,Current
-1526108,Charged Off
-1505911,Charged Off
-7524973,Charged Off
-5625188,Fully Paid
-5761412,Current
-1113000,Fully Paid
-4166617,Current
-1696385,Fully Paid
-7266706,Charged Off
-1394425,Charged Off
-5695329,Fully Paid
-2306091,Charged Off
-10177807,Current
-6626544,Fully Paid
-8966255,Fully Paid
-8619924,Current
-2369604,Fully Paid
-7091791,Current
-7371675,Current
-7936551,Fully Paid
-6898491,Fully Paid
-2645368,Charged Off
-4894652,Current
-8775849,Fully Paid
-9634900,Fully Paid
-9205791,Current
-6927267,Current
-1120070,Fully Paid
-1582571,Fully Paid
-6385964,Current
-10155804,Current
-1333922,Charged Off
-4536225,Fully Paid
-1494346,Fully Paid
-1235554,Fully Paid
-1260548,Fully Paid
-7706220,Current
-5965522,Charged Off
-5964954,Current
-7340208,Fully Paid
-5781532,Current
-9067511,Fully Paid
-9236583,Fully Paid
-7101379,Fully Paid
-3186624,Fully Paid
-7710649,Fully Paid
-2297154,Fully Paid
-7386677,Current
-1576583,Fully Paid
-9715530,Charged Off
-8600345,Current
-6542051,Charged Off
-8385930,Fully Paid
-3845310,Charged Off
-3676896,Current
-4045005,Current
-6583185,Fully Paid
-4234883,Current
-3667504,Current
-6319418,Fully Paid
-3725596,Current
-8395705,Current
-1607368,Fully Paid
-1485827,Late (31-120 days)
-1307495,Fully Paid
-3377315,Current
-1221254,Fully Paid
-1501901,Fully Paid
-5696555,Fully Paid
-6695358,Current
-2296070,Fully Paid
-8924565,Charged Off
-3927069,Charged Off
-3926220,Fully Paid
-1375146,Fully Paid
-4535309,Current
-8514586,Current
-3927431,Fully Paid
-6938471,Fully Paid
-2366482,Fully Paid
-5615928,Fully Paid
-10084876,Current
-1420008,Fully Paid
-7690483,Current
-5935039,Fully Paid
-6306374,Charged Off
-7714970,Fully Paid
-6918624,Current
-7721274,Current
-2364984,Current
-6975873,Fully Paid
-3239961,Current
-4195209,Fully Paid
-1417767,Charged Off
-7342620,Fully Paid
-5704579,Current
-1464458,Current
-3380464,Current
-675613,Fully Paid
-3528699,Fully Paid
-9218481,Fully Paid
-7964728,Fully Paid
-5185649,Fully Paid
-4297575,Fully Paid
-3217426,Current
-5696467,Fully Paid
-5705330,Late (16-30 days)
-1458600,Current
-4555668,Current
-10155082,Current
-3928903,Fully Paid
-1342616,Fully Paid
-7604819,Current
-3218225,Current
-9795381,Fully Paid
-7063479,Current
-1464553,Fully Paid
-4196146,Fully Paid
-4784980,Current
-3640992,Current
-8915804,Current
-10167394,Current
-7616850,Charged Off
-8557027,Current
-8915089,Current
-6720075,Current
-9244943,Fully Paid
-6606364,Current
-5040036,Fully Paid
-8204571,Current
-1443593,Fully Paid
-2896436,Current
-4984765,Current
-1407398,Fully Paid
-1466695,Fully Paid
-1337307,Fully Paid
-6647745,Fully Paid
-1623707,Fully Paid
-7101330,Fully Paid
-9514804,Current
-1459232,Fully Paid
-6936546,Current
-9824667,Current
-10077235,Fully Paid
-6917082,Charged Off
-5967825,Current
-6928616,Fully Paid
-1346776,Fully Paid
-7355500,Current
-1504437,Fully Paid
-5375443,Current
-9265075,Current
-1152214,Fully Paid
-5795121,Current
-1090034,Fully Paid
-7275851,Fully Paid
-5979483,Fully Paid
-4765407,Charged Off
+9554958,Current
+10084790,Current
+5025195,Fully Paid
+1521966,Fully Paid
+5771262,Fully Paid
+3486839,Charged Off
+6284696,Late (31-120 days)
+7619698,Current
+3497780,Charged Off
+1194334,Fully Paid
+7387505,Current
+3161959,Current
+3105184,Fully Paid
+9384644,Current
+3285147,Current
+7376981,Current
+9524796,Current
+1207297,Fully Paid
+7696502,Current
+4157072,Charged Off
+7082820,Fully Paid
+7092203,Current
+5606258,Late (31-120 days)
+1141811,Fully Paid
+1619113,Fully Paid
+7440797,Fully Paid
+3846711,Fully Paid
+4290024,Charged Off
+1287909,Charged Off
+1427164,Fully Paid
+7584897,Fully Paid
+3924951,Fully Paid
+1323071,Fully Paid
+1341407,Fully Paid
+9056962,Current
+1380388,Fully Paid
+1467363,Fully Paid
+6527601,Current
+6708197,Fully Paid
+7296467,Fully Paid
+4435879,Fully Paid
+6210182,Fully Paid
+6522989,Fully Paid
+7696599,Current
+5155547,Current
+2218506,Current
+3241095,Fully Paid
+6185445,Current
+8610558,Charged Off
+8558403,Charged Off
+1291374,Fully Paid
+7705126,Current
+1580741,Fully Paid
+3355580,Fully Paid
+3498257,Fully Paid
+7719169,Charged Off
+4864770,Fully Paid
+1637642,Current
+8795900,Charged Off
+5865889,Current
+8637095,Current
+1239805,Fully Paid
+3157205,Fully Paid
+3485255,Current
+4305333,Fully Paid
+3094719,Charged Off
+6616940,Fully Paid
+5355230,Current
+1390816,Charged Off
+1252324,Fully Paid
+10105190,Current
+9001573,Fully Paid
+7619741,Current
+3066070,Current
+1073533,Fully Paid
+5617122,Current
+6186457,Current
+7707390,Current
+9584601,Charged Off
+1344597,Charged Off
+6835892,Current
+6135023,Current
+4786382,Fully Paid
+2945018,Current
+5934707,Fully Paid
+3675778,Charged Off
+6165677,Fully Paid
+8585790,Fully Paid
+1489147,Fully Paid
+2595375,Fully Paid
+2378038,Fully Paid
+1523397,Fully Paid
+2827776,Current
+1589058,Fully Paid
+7072640,Current
+2365599,Fully Paid
+7098776,Fully Paid
+3706344,Current
+1510681,Fully Paid
+3134587,Charged Off
+7081950,Fully Paid
+1817018,Charged Off
+5814844,Current
+6529226,Current
+6646559,Fully Paid
+1078258,Fully Paid
+3454988,Fully Paid
+2906075,Fully Paid
+4538402,Fully Paid
+1537648,Fully Paid
+1466698,Fully Paid
+8996788,Fully Paid
+8576346,Current
+6786909,Fully Paid
+1402335,Fully Paid
+1179804,Fully Paid
+1297167,Fully Paid
+7675261,Current
+4324811,Current
+1427899,Fully Paid
+1396471,Fully Paid
+1412444,Fully Paid
+8925554,Fully Paid
+5616872,Charged Off
+5770004,Current
+7721130,Current
+1444931,Fully Paid
+3537210,Current
+3488574,Charged Off
+1259370,Current
+8960948,Fully Paid
+4548015,Current
+2224970,Charged Off
+1545734,Current
+4296429,Current
+1527256,Fully Paid
+6515670,Charged Off
+1682879,Fully Paid
+1427660,Fully Paid
+7710239,Current
+1514600,Fully Paid
+7675006,Late (31-120 days)
+5965454,Charged Off
+8649735,Fully Paid
+3929404,Current
+7915438,Current
+7342608,Current
+6298378,Fully Paid
+4375199,Current
+6725533,Current
+9827908,Current
+1816545,Fully Paid
+1519736,Charged Off
+2379408,Current
+7069753,Charged Off
+1540728,Fully Paid
+1357896,Fully Paid
+8265393,Current
+1400347,Fully Paid
+1817007,Fully Paid
+5125836,Current
+7381386,Current
+1261326,Fully Paid
+5815803,Charged Off
+5610321,Current
+1195402,Fully Paid
+5793721,Current
+1465611,Charged Off
+5948307,Fully Paid
+8984664,Fully Paid
+8894749,Current
+4225632,Fully Paid
+1493993,Fully Paid
+1110985,Current
+1347010,Fully Paid
+1373966,Charged Off
+3698889,In Grace Period
+6934987,Current
+5979857,Fully Paid
+1390442,Fully Paid
+2595645,Fully Paid
+2514974,Charged Off
+3065723,Current
+3291959,Current
+1856644,Current
+7045761,Charged Off
+4549264,Current
+1349260,Charged Off
+6265599,Fully Paid
+7088819,Current
+1287568,Fully Paid
+10077834,Fully Paid
+1945608,Current
+1144745,Charged Off
+1473276,Charged Off
+6301220,Fully Paid
+5792671,Current
+4797133,Fully Paid
+3921944,Current
+5779276,Fully Paid
+5041042,Fully Paid
+8665788,Current
+1380367,Fully Paid
+1471996,Charged Off
+1489481,Fully Paid
+1386746,Charged Off
+6235246,Fully Paid
+4105242,Fully Paid
+6578086,Fully Paid
+7495662,Fully Paid
+1472626,Fully Paid
+4175905,Late (31-120 days)
+5525877,Charged Off
+6839683,Current
+9784699,Current
+8659268,Fully Paid
+1616134,Fully Paid
+5415899,Current
+6095077,Fully Paid
+5619736,Current
+4594778,Current
+6178008,Fully Paid
+8235449,Current
+7515057,Current
+6580932,Fully Paid
+1179748,Fully Paid
+6175384,Charged Off
+5786324,Fully Paid
+3365475,Current
+3378605,Charged Off
+1573304,Fully Paid
+9216715,Current
+3216640,Fully Paid
+3527383,Charged Off
+1226663,Fully Paid
+9228983,Late (31-120 days)
+8284736,Current
+4566334,Fully Paid
+1141136,Fully Paid
+9027887,Current
+8567467,Fully Paid
+3217278,Fully Paid
+5765759,Current
+1258347,Fully Paid
+7668879,Current
+1500816,Fully Paid
+3627652,Fully Paid
+8136928,Current
+1676966,Fully Paid
+2375764,Charged Off
+1328921,Fully Paid
+8960412,Current
+1172856,Fully Paid
+8836377,Current
+9796145,Charged Off
+1684544,Fully Paid
+4300916,Current
+9845461,Current
+3285938,Current
+7711350,Current
+7645426,Fully Paid
+6827599,Fully Paid
+1399830,Fully Paid
+1550718,Fully Paid
+1200696,Fully Paid
+1914787,Charged Off
+4764844,Fully Paid
+5815725,Charged Off
+3641668,Current
+8305558,Current
+3106891,Fully Paid
+5967995,Current
+8154860,Current
+7605211,Current
+6186612,Current
+5815512,Fully Paid
+8215378,Current
+6522103,Current
+4215556,Current
+1293326,Fully Paid
+5619314,Fully Paid
+5715223,Fully Paid
+8629056,Current
+1695962,Late (31-120 days)
+1676731,Fully Paid
+1394467,Fully Paid
+8285045,Current
+3606023,Current
+4215679,Fully Paid
+8616436,Current
+1201582,Charged Off
+1430205,Charged Off
+1173760,Fully Paid
+7706085,Current
+3918170,Fully Paid
+1567687,Fully Paid
+1226067,Charged Off
+8355700,Current
+1048645,Fully Paid
+1422202,Fully Paid
+7055711,Current
+3494951,Current
+8576172,Current
+5454942,Current
+1185483,Fully Paid
+6875441,Fully Paid
+3495606,Current
+3264582,Current
+6553238,In Grace Period
+1202921,Fully Paid
+1355202,Current
+8755894,Current
+6375119,Current
+1954994,Fully Paid
+1373551,Fully Paid
+1469341,Fully Paid
+1375143,Fully Paid
+1106836,Fully Paid
+2486142,Current
+4974995,Fully Paid
+5384760,In Grace Period
+1520570,Fully Paid
+9125360,Charged Off
+3350617,Current
+6125782,Charged Off
+1194639,Fully Paid
+1210361,Charged Off
+6734830,Fully Paid
+3378866,Charged Off
+4796901,Current
+7916227,Charged Off
+1563455,Fully Paid
+7495207,Current
+8977974,Current
+5025467,Fully Paid
+1453056,Fully Paid
+6625500,Fully Paid
+1454928,Charged Off
+1364398,Charged Off
+6474734,Fully Paid
+3729706,Fully Paid
+1120056,Current
+9785397,Current
+3370304,Fully Paid
+734839,Charged Off
+5967085,Current
+2835364,Charged Off
+6331197,Fully Paid
+7070437,Current
+2371310,Fully Paid
+6726978,Fully Paid
+8914918,Fully Paid
+3204692,Current
+7285412,Charged Off
+1389905,Fully Paid
+2477250,Fully Paid
+7436820,Fully Paid
+2828057,Fully Paid
+6935003,Fully Paid
+7048658,In Grace Period
+4175196,Fully Paid
+1137769,Fully Paid
+1312669,Fully Paid
+3196105,Charged Off
+9695043,Charged Off
+1442757,Charged Off
+5626065,Fully Paid
+3347617,Fully Paid
+6888126,Current
+6328290,Current
+1317507,Fully Paid
+7052801,Current
+7718179,Current
+4528795,Fully Paid
+6516145,Current
+6170763,Fully Paid
+3300089,Fully Paid
+5620567,Charged Off
+9817073,Fully Paid
+1148989,Fully Paid
+1601671,Fully Paid
+7015287,Current
+9265258,Fully Paid
+6552122,Fully Paid
+8637418,Current
+2835742,Current
+6549602,Current
+7656683,Fully Paid
+8285271,Fully Paid
+8834706,Fully Paid
+1125806,Fully Paid
+3348094,Current
+3144706,Fully Paid
+8991949,Fully Paid
+5957667,Fully Paid
+3350823,Current
+1400200,Charged Off
+3358418,Fully Paid
+1517170,Fully Paid
+1235027,Fully Paid
+8571416,Charged Off
+3292736,Fully Paid
+6311797,Fully Paid
+5365102,Fully Paid
+4767671,Current
+1581002,Fully Paid
+3454914,Fully Paid
+6298118,Current
+1954799,Current
+6527504,Current
+1246360,Fully Paid
+3067114,Current
+7714820,Fully Paid
+1104065,Fully Paid
+2371475,Charged Off
+2300894,Fully Paid
+1519151,Fully Paid
