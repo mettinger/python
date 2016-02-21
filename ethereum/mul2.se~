@@ -1,0 +1,4 @@
+
+def double(s):
+    return(s * 2)
+

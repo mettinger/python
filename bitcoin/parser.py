@@ -2,7 +2,7 @@
 
 from blocktools import * 
 
-blockfile = "/Users/mettinger/Library/Application Support/Bitcoin/blocks/blk00033.dat"
+blockfile = "/Users/mettinger/Library/Application Support/Bitcoin/blocks/blk00035.dat"
 
 with open(blockfile, 'rb') as blockfile: 
       print "Magic Number:\t %8x" % uint4(blockfile) 
@@ -26,7 +26,7 @@ with open(blockfile, 'rb') as blockfile:
       print "Script Length\t %d" % script_len 
       script_sig = blockfile.read(script_len) 
       print "ScriptSig\t %s" % hashStr(script_sig) 
-      print "ScriptSig\t %s" % hashStr(script_sig).decode('hex') 
+      #print "ScriptSig\t %s" % hashStr(script_sig).decode('hex') 
       print "Seq Num\t\t %8x" % uint4(blockfile) 
 
       print "Outputs\t\t %s" % varint(blockfile) 

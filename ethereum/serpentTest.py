@@ -1,12 +1,5 @@
-import serpent
-from pyethereum import tester, utils, abi
 
-serpent_code = '''
-def multiply(a):
-return(a*2)
-'''
-
-s = tester.state()
-c = s.abi_contract(serpent_code)
-o = c.multiply(5)
-print(str(o))
+from ethereum import tester as t
+s = t.state()
+c = s.abi_contract('mul2.se')
+print c.double(42)
