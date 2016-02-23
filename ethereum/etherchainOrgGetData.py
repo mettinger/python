@@ -1,4 +1,4 @@
-#%%
+#%% PARSE ETHEREUM BLOCK FROM ETHERCHAIN.ORG WEBSITE
 
 import urllib2
 
