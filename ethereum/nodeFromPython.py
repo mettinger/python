@@ -1,4 +1,4 @@
-#%%
+#%% CALL THE NODE API TO ETHEREUM FROM PYTHON
 
 from subprocess import call, check_output
 
