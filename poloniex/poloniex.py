@@ -1,11 +1,15 @@
+#%%
+
 import urllib
 import urllib2
 import json
 import time
 import hmac,hashlib
+import time
+
 
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
-    return time.mktime(time.strptime(datestr, format))
+    return int(time.mktime(time.strptime(datestr, format)))
 
 class poloniex:
     def __init__(self, APIKey, Secret):
@@ -34,7 +38,11 @@ class poloniex:
             ret = urllib2.urlopen(urllib2.Request('https://poloniex.com/public?command=' + command + '&currencyPair=' + str(req['currencyPair'])))
             return json.loads(ret.read())
         elif(command == "returnMarketTradeHistory"):
-            ret = urllib2.urlopen(urllib2.Request('https://poloniex.com/public?command=' + "returnTradeHistory" + '&currencyPair=' + str(req['currencyPair'])))
+            if 'start' in req:
+                requestString = 'https://poloniex.com/public?command=' + "returnTradeHistory" + '&currencyPair=' + str(req['currencyPair']) + '&start=' + str(req['start']) + '&end=' + str(req['end'])
+                ret = urllib2.urlopen(urllib2.Request(requestString))
+            else:
+                ret = urllib2.urlopen(urllib2.Request('https://poloniex.com/public?command=' + "returnTradeHistory" + '&currencyPair=' + str(req['currencyPair'])))
             return json.loads(ret.read())
         else:
             req['command'] = command
@@ -134,3 +142,48 @@ class poloniex:
     # response      Text containing message about the withdrawal
     def withdraw(self, currency, amount, address):
         return self.api_query('withdraw',{"currency":currency, "amount":amount, "address":address})
+        
+        
+def hourlyDataPull(startHour, endHour, currencyPair = 'BTC_ETH'):
+    dataDict = {}
+    poloniexAPI = poloniex('', '')
+    i = 0
+    for thisStart in range(startHour, endHour, 3600):
+        print "hour: " + str(i)
+        req = {'currencyPair': currencyPair, 'start': thisStart, 'end': thisStart + 3600}
+        dataDict[thisStart] = poloniexAPI.api_query('returnMarketTradeHistory',req)
+        time.sleep(.25)
+        i += 1
+    return dataDict
+    
+#%%
+
+# APIKey and Secret are required!        
+APIKey = ''
+Secret = ''
+
+poloniexAPI = poloniex(APIKey, Secret)
+req = {'currencyPair':'BTC_ETH', 'start':'2016-07-24 00:00:00', 'end':'2016-07-26 10:00:00'}
+history = poloniexAPI.api_query('returnMarketTradeHistory',req)
+
+#%%
+
+startHour = createTimeStamp('2016-07-24 00:00:00')
+endHour = createTimeStamp('2016-07-25 00:00:00')
+
+hourlyData = hourlyDataPull(startHour, endHour)
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
