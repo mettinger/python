@@ -5,7 +5,7 @@ import urllib2
 import json
 import time
 import hmac,hashlib
-import time
+import sqlite3
 
 
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
@@ -149,13 +149,61 @@ def hourlyDataPull(startHour, endHour, currencyPair = 'BTC_ETH'):
     poloniexAPI = poloniex('', '')
     i = 0
     for thisStart in range(startHour, endHour, 3600):
-        print "hour: " + str(i)
-        req = {'currencyPair': currencyPair, 'start': thisStart, 'end': thisStart + 3600}
+        if i % 24 == 0:
+            print "begin day: " + str(i / 24)
+        req = {'currencyPair': currencyPair, 'start': thisStart, 'end': thisStart + 3599}
         dataDict[thisStart] = poloniexAPI.api_query('returnMarketTradeHistory',req)
         time.sleep(.25)
         i += 1
     return dataDict
     
+def sqliteInsert(cursor, thisTrade):
+    
+    amount = float(thisTrade['amount'])
+    date = str(thisTrade['date'])
+    globalTradeID = int(thisTrade['globalTradeID'])
+    rate = float(thisTrade['rate'])
+    total = float(thisTrade['total'])
+    tradeID = int(thisTrade['tradeID'])
+    tradeType = 1 if thisTrade['type'] == 'buy' else 0
+    try:
+        queryString = "INSERT INTO trades ('amount', 'date', 'globalTradeID', 'rate', 'total', 'tradeID', 'type') \
+                        VALUES (%s,'%s',%s,%s,%s,%s,%s)" % \
+                        (amount, date, globalTradeID, rate, total, tradeID, tradeType)
+        cursor.execute(queryString)
+    except:
+        print('Insert error: ' + queryString)
+        pass
+    
+
+def hourlyDataPullDB(startHour, endHour, sqliteFile, currencyPair = 'BTC_ETH'):
+    poloniexAPI = poloniex('', '')
+    i = 0
+    conn = sqlite3.connect(sqliteFile)
+    cursor = conn.cursor()
+    for thisStart in range(startHour, endHour, 3600):
+        if i % 24 == 0:
+            print "begin day: " + str(i / 24)
+        req = {'currencyPair': currencyPair, 'start': thisStart, 'end': thisStart + 3599}
+        queryResult = poloniexAPI.api_query('returnMarketTradeHistory',req)
+        for thisTrade in queryResult:
+            sqliteInsert(cursor, thisTrade)
+        conn.commit()
+        time.sleep(.25)
+        i += 1
+    
+    conn.close()
+    
+
+#%%
+
+startHour = createTimeStamp('2016-07-20 00:00:00')
+endHour = createTimeStamp('2016-07-26 00:00:00')
+sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
+
+#hourlyData = hourlyDataPull(startHour, endHour)
+hourlyDataPullDB(startHour, endHour, sqliteFile)
+
 #%%
 
 # APIKey and Secret are required!        
@@ -163,18 +211,10 @@ APIKey = ''
 Secret = ''
 
 poloniexAPI = poloniex(APIKey, Secret)
-req = {'currencyPair':'BTC_ETH', 'start':'2016-07-24 00:00:00', 'end':'2016-07-26 10:00:00'}
+start = createTimeStamp('2015-08-07 00:00:00')
+end = createTimeStamp('2015-08-08 00:00:00')
+req = {'currencyPair':'BTC_ETH', 'start': start, 'end': end}
 history = poloniexAPI.api_query('returnMarketTradeHistory',req)
-
-#%%
-
-startHour = createTimeStamp('2016-07-24 00:00:00')
-endHour = createTimeStamp('2016-07-25 00:00:00')
-
-hourlyData = hourlyDataPull(startHour, endHour)
-# rem
-
-
 
     
 
