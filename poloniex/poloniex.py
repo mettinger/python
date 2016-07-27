@@ -142,8 +142,14 @@ class poloniex:
     # response      Text containing message about the withdrawal
     def withdraw(self, currency, amount, address):
         return self.api_query('withdraw',{"currency":currency, "amount":amount, "address":address})
-        
-        
+    
+    # Rolls out trade history starting at startHour and endhour by performing consecutive pull requests         
+    # Inputs:
+    # startHour     The begining date
+    # endHour       The ending date 
+    # currencyPair  The currency to withdrawl
+    # Outputs: 
+    # response      A dictionary containing the trade history
 def hourlyDataPull(startHour, endHour, currencyPair = 'BTC_ETH'):
     dataDict = {}
     poloniexAPI = poloniex('', '')
