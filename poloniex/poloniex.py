@@ -6,6 +6,8 @@ import json
 import time
 import hmac,hashlib
 import time
+import config
+
 
 
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
@@ -164,9 +166,9 @@ def hourlyDataPull(startHour, endHour, currencyPair = 'BTC_ETH'):
     
 #%%
 
-# APIKey and Secret are required!        
-APIKey = ''
-Secret = ''
+# Add APIkey and Secret to "config.py"     
+APIKey = config.poloniex_key
+Secret = config.poloniex_secret
 
 poloniexAPI = poloniex(APIKey, Secret)
 req = {'currencyPair':'BTC_ETH', 'start':'2016-07-24 00:00:00', 'end':'2016-07-26 10:00:00'}
@@ -179,6 +181,8 @@ endHour = createTimeStamp('2016-07-25 00:00:00')
 
 hourlyData = hourlyDataPull(startHour, endHour)
 # rem
+
+
 
 
 
