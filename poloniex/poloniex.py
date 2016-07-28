@@ -222,6 +222,8 @@ endHourString = '2016-07-28 00:00:00'
 
 sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
 
+#%%
+
 hourlyData = hourlyDataPull(startHourString, endHourString)
 
 #%%
