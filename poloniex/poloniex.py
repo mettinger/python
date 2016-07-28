@@ -209,6 +209,7 @@ startHour = createTimeStamp('2016-07-20 00:00:00')
 endHour = createTimeStamp('2016-07-26 00:00:00')
 sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
 
+#hourlyData = hourlyDataPull(startHour, endHour)
 hourlyDataPullDB(startHour, endHour, sqliteFile)
 
 #%%
@@ -223,12 +224,9 @@ end = createTimeStamp('2015-08-08 00:00:00')
 req = {'currencyPair':'BTC_ETH', 'start': start, 'end': end}
 history = poloniexAPI.api_query('returnMarketTradeHistory',req)
 
-#%%
 
-startHour = createTimeStamp('2016-07-24 00:00:00')
-endHour = createTimeStamp('2016-07-25 00:00:00')
 
-hourlyData = hourlyDataPull(startHour, endHour)
+
 
     
 
