@@ -224,7 +224,6 @@ end = createTimeStamp('2015-08-08 00:00:00')
 req = {'currencyPair':'BTC_ETH', 'start': start, 'end': end}
 history = poloniexAPI.api_query('returnMarketTradeHistory',req)
 
-# test
 
 
 
