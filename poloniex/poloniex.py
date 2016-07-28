@@ -205,6 +205,9 @@ def hourlyDataPullDB(startHour, endHour, sqliteFile, currencyPair = 'BTC_ETH'):
 
 #%%
 
+APIKey = config.poloniex_key
+Secret = config.poloniex_secret
+
 startHour = createTimeStamp('2016-07-20 00:00:00')
 endHour = createTimeStamp('2016-07-26 00:00:00')
 sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
@@ -213,10 +216,7 @@ sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
 hourlyDataPullDB(startHour, endHour, sqliteFile)
 
 #%%
-
-# Add APIkey and Secret to "config.py"     
-APIKey = config.poloniex_key
-Secret = config.poloniex_secret
+   
 
 poloniexAPI = poloniex(APIKey, Secret)
 start = createTimeStamp('2015-08-07 00:00:00')
