@@ -4,9 +4,8 @@ import numpy as np
 
 from deer.agent import NeuralAgent
 from deer.q_networks.q_net_theano import MyQNetwork
-from PoloniexEnvironment import PoloniexEnvironment
+from poloniex_env import PoloniexEnvironment
 
-from Toy_env import MyEnv as Toy_env
 
 
 import deer.experiment.base_controllers as bc
@@ -50,4 +49,4 @@ if __name__ == "__main__":
 		controllers_to_disable=[0, 1]))
         
     # --- Run the experiment ---
-	agent.run(n_epochs=100, epoch_length=1000)
+	agent.run(n_epochs=10, epoch_length=1000)

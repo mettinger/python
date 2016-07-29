@@ -172,6 +172,28 @@ def hourlyDataPull(startHour, endHour, currencyPair = 'BTC_ETH'):
         time.sleep(.25)
         i += 1
     return dataDict
+
+def pullTradeHistory(startHour, endHour, currencyPair = 'BTC_ETH'):
+    if type(startHour) == str:
+        startHour = createTimeStamp(startHour)
+        
+    if type(endHour) == str:
+        endHour = createTimeStamp(endHour)
+        
+    history = []
+    poloniexAPI = poloniex('', '')
+    i = 0
+
+    print "Start: ", time.asctime(time.localtime(startHour))
+    print "End:", time.asctime(time.localtime(endHour))
+    for thisStart in range(startHour, endHour, 3600):
+        req = {'currencyPair': currencyPair, 'start': thisStart, 'end': thisStart + 3599}
+        result = poloniexAPI.api_query('returnMarketTradeHistory',req) 
+        print  "Pulling :",  time.asctime(time.localtime(thisStart)), " -> ", time.asctime(time.localtime(thisStart + 3599))," n: ", len(result) 
+        history = history + result
+        time.sleep(.25)
+        i += 1
+    return history
     
 # insert a trade in the sqlite database
 def sqliteInsert(cursor, thisTrade):
