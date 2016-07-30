@@ -6,7 +6,6 @@ import json
 import time
 import hmac,hashlib
 import sqlite3
-#import config
 
 
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
@@ -231,7 +230,7 @@ hourlyData = hourlyDataPull(startHourString, endHourString)
 insertDataPull(hourlyData, sqliteFile)
 
 #%%
-#rem   
+
 '''
 testFlag = 0
 if testFlag:
