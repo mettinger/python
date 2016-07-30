@@ -230,6 +230,7 @@ hourlyData = hourlyDataPull(startHourString, endHourString)
 insertDataPull(hourlyData, sqliteFile)
 
 #%%
+#rem
 
 '''
 testFlag = 0
