@@ -9,18 +9,35 @@ import matplotlib.pyplot as plt
 import theano
 import copy
 
+import poloniex as pol
+import pandas as pd
+
+
+def loadSeries():
+	startHourString = '2016-07-28 00:00:00'
+	endHourString = '2016-07-28 23:00:00'
+	data = pol.pullTradeHistory(startHourString, endHourString) 
+	history = pd.DataFrame(data)
+	history = history.apply(lambda x: pd.to_numeric(x, errors='ignore')) 
+	history['date'] = pd.to_datetime(history['date'], unit='s')
+	price = history[['date','rate']]
+	price = price.groupby('date')['rate'].mean()
+	price = price.resample('1Min', how='ohlc')
+	return price['close'].values.tolist()
+
 class PoloniexEnvironment( Environment ): 
+
+
 
 
 	def __init__( self ):
 		
 		""" Initialize environment.
         """
-		self.prices_full = [ ]  ### insert poloniex timeseries here
-		for i in range (1000):
-			price = np.array([0.,0.,0.,-1.,0.,1.,0., 0., 0.])
-			self.prices_full.extend(price.tolist())
+       
+		self.prices_full = loadSeries() ### insert poloniex timeseries here
 
+		print " Price history has " , len(self.prices_full), " examples"
 
 		self.prices_train = self.prices_full[ :len(self.prices_full)//2 ]
 		self.prices_valid = self.prices_full[ len(self.prices_full)//2: ]
@@ -63,12 +80,15 @@ class PoloniexEnvironment( Environment ):
             included between 0 included and nActions() excluded.
 		"""
 		reward = 0
+		asset_price = self.prices[ self.counter - 1 ] 
 		if (action == 0 and self.holding == 1):
-			reward =  self.prices[ self.counter - 1 ] - 0.02
+			reward =  asset_price - asset_price*0.01
+			#reward =  asset_price
 			self.holding = 0
 
 		if (action == 1 and self.holding == 0):
-			reward = - self.prices[ self.counter - 1 ] - 0.02
+			reward = - asset_price - asset_price*0.01
+			#reward = asset_price
 			self.holding = 1
 
 		self.observation = [ self.prices[ self.counter ], self.holding ]
@@ -112,7 +132,10 @@ class PoloniexEnvironment( Environment ):
 
 		"""
 
-		return False
+		if( self.counter >= len(self.prices)):
+			return True
+		else:
+			return False
 
 	def observe( self ):
 		"""Get a list of punctual observations on all subjects composing this environment.
@@ -142,8 +165,8 @@ class PoloniexEnvironment( Environment ):
 		print ("Summary Perf")
         
 		observations = test_data_set.observations()
-		prices = observations[0][100:200]
-		invest = observations[1][100:200]
+		prices = observations[0][:]
+		invest = observations[1][:]
         
 		steps=np.arange(len(prices))
 		steps_long=np.arange(len(prices)*10)/10.
