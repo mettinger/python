@@ -210,16 +210,24 @@ def createPoloniexTable(sqliteFile):
     cursor.execute(tableCreationQuery)
     conn.close()
     
+def sampleDatabase(sqlliteFile, rowLimit):
+    query = "select * from trades limit %s" % str(rowLimit)
+    conn = sqlite3.connect(sqliteFile)
+    cursor = conn.cursor()
+    cursor.execute(query)
+    results = cursor.fetchall()
+    conn.close()
+    return results
     
 #%%
 
-APIKey = ''
-Secret = ''
+APIKey = '52G13ARZ-JZGF01R9-PPKHEOFW-A06W239X'
+Secret = 'd20add2032f0e2851159e369a418797053b26fbdf087bf83dab67531760942c455fc24d8226730ece9879612c8e545689b11fe8187a622b4b62c7bb1a31b4c1f'
 
 startHourString = '2016-06-01 00:00:00'
 endHourString = '2016-07-28 00:00:00'
 
-sqliteFile = '/Users/mark/Data/poloniexBTC_ETH.sqlite'
+sqliteFile = '/Users/marke/Data/poloniexBTC_ETH.sqlite'
 
 #%%
 
@@ -228,6 +236,10 @@ hourlyData = hourlyDataPull(startHourString, endHourString)
 #%%
 
 insertDataPull(hourlyData, sqliteFile)
+
+#%%
+
+createPoloniexTable(sqliteFile)
 
 #%%
 
