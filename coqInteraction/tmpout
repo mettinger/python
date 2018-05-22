@@ -1,0 +1,109 @@
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Prelude
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Prelude.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Notations
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Notations.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Logic
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Logic.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Datatypes
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Datatypes.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Logic_Type
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Logic_Type.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Specif
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Specif.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Decimal
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Decimal.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Nat
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Nat.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Peano
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Peano.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Wf
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Wf.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Tactics
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Tactics.vo))))
+(Feedback
+ ((doc_id 0) (span_id 0) (route 0)
+  (contents
+   (FileLoaded Coq.Init.Tauto
+    /home/ubuntu/.opam/4.06.1/lib/coq/theories/Init/Tauto.vo))))
+(Feedback
+ ((doc_id 0) (span_id 1) (route 0) (contents (ProcessingIn master))))
+(Feedback ((doc_id 0) (span_id 1) (route 0) (contents Processed)))
+(Answer 0 Ack)
+(Answer 0
+ (Added 2
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 0) (ep 26))
+  NewTip))
+(Answer 0
+ (Added 3
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 27) (ep 33))
+  NewTip))
+(Answer 0
+ (Added 4
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 34) (ep 50))
+  NewTip))
+(Answer 0
+ (Added 5
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 51) (ep 55))
+  NewTip))
+(Answer 0 Completed)
+(Answer 1 Ack)
+(Answer 1
+ (Added 6
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 0) (ep 26))
+  NewTip))
+(Answer 1
+ (Added 7
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 27) (ep 33))
+  NewTip))
+(Answer 1
+ (Added 8
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 34) (ep 50))
+  NewTip))
+(Answer 1
+ (Added 9
+  ((fname ToplevelInput) (line_nb 1) (bol_pos 0) (line_nb_last 1)
+   (bol_pos_last 0) (bp 51) (ep 55))
+  NewTip))
+(Answer 1 Completed)
+(Answer EOF Ack)
+(Answer EOF Completed)
