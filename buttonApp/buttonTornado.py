@@ -15,9 +15,11 @@ def putData(data):
     cur = conn.cursor()
     for thisData in data.split(','):
         try:
-            timestamp, button_id = thisData.split("-")
-            cur.execute("INSERT INTO button_press VALUES ('%s',%s)" % (timestamp.strip(),button_id))
+            timestamp, button_id, info = thisData.split("-")
+            cur.execute("INSERT INTO button_press VALUES ('%s',%s, '%s')" % (timestamp.strip(),button_id,info.strip()))
         except:
+            print("Error: ")
+            print(thisData)
             pass
     conn.commit()
     conn.close()
