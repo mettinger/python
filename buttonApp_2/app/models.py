@@ -24,7 +24,6 @@ class User(UserMixin, db.Model):
         return '<User {}>'.format(self.username)
 
 class ButtonData(db.Model):
-    # CREATE TABLE button_press (timestamp text, button_id int, info text)
     id = db.Column(db.Integer, primary_key=True)
     timestamp = db.Column(db.String(50), index=True)
     button_id = db.Column(db.Integer)
