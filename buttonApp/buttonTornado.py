@@ -2,7 +2,8 @@ import tornado.ioloop
 import tornado.web
 import sqlite3
 
-databasePath = '/home/ubuntu/github/python/buttonApp/two_buttons.db'
+#databasePath = '/home/ubuntu/github/python/buttonApp/two_buttons.db'
+databasePath = '/home/ubuntu/github/python/buttonApp_2/app.db'
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -15,8 +16,9 @@ def putData(data):
     cur = conn.cursor()
     for thisData in data.split(','):
         try:
-            timestamp, button_id, info = thisData.split("-")
-            cur.execute("INSERT INTO button_press VALUES ('%s',%s, '%s')" % (timestamp.strip(),button_id,info.strip()))
+            timestamp, button_id, info, user_id = thisData.split("-")
+            #cur.execute("INSERT INTO button_press VALUES ('%s',%s, '%s')" % (timestamp.strip(),button_id,info.strip()))
+            cur.execute("INSERT INTO button_data (timestamp, button_id, user_id, info) VALUES ('%s',%s, %s, '%s')" %(timestamp.strip(), button_id, user_id, info.strip()))
         except:
             print("Error: ")
             print(thisData)

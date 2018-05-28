@@ -6,7 +6,7 @@ from app.models import User
 from flask_login import current_user, login_user
 from flask_login import logout_user
 from flask_login import login_required
-from flask import send_file
+from flask import send_file, make_response
 
 from flask import request
 from werkzeug.urls import url_parse
@@ -59,23 +59,15 @@ def download():
     cur.execute("select * from button_data where user_id = %s" % str(user_id))
     all_data = cur.fetchall()
     conn.close()
-    
-    return str(all_data)
-        
-    
-    '''
-    try:
-        #with tempfile.NamedTemporaryFile(mode='w') as fp:
-        with open('./app/data.txt','w') as fp:
-            for thisData in all_data:
-                fp.write(str(thisData) + '\n')
-        return send_file('data.txt', attachment_filename='data.txt')
-        #return render_template('download.html', title='Download', dynamic_data = 'success')
-        
-    except Exception as e:
-        dynamic_data = str(e)
-        return render_template('download.html', title='Download', dynamic_data = dynamic_data)
-    '''
+      
+    csv = str(all_data)[1:-1]
+    response = make_response(csv)
+    cd = 'attachment; filename=mycsv.csv'
+    response.headers['Content-Disposition'] = cd 
+    response.mimetype='text/csv'
+
+    return response
+
     
 @app.route('/register', methods=['GET', 'POST'])
 def register():
