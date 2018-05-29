@@ -17,6 +17,21 @@ from app.forms import RegistrationForm
 import sqlite3
 import tempfile
 
+from bokeh.plotting import figure
+from bokeh.resources import CDN
+from bokeh.embed import file_html
+from bokeh.mpl import to_bokeh
+
+import datetime
+import numpy as np
+
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+import seaborn as sns
+sns.set()
+
+import mpld3
+
 
 
 @app.route('/')
@@ -48,27 +63,6 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
-@app.route('/download')
-def download():
-    conn = sqlite3.connect("./app.db")
-    cur = conn.cursor()
-    
-    cur.execute("select * from user")
-    user_id = cur.fetchone()[0]
-    
-    cur.execute("select * from button_data where user_id = %s" % str(user_id))
-    all_data = cur.fetchall()
-    conn.close()
-      
-    csv = str(all_data)[1:-1]
-    response = make_response(csv)
-    cd = 'attachment; filename=mycsv.csv'
-    response.headers['Content-Disposition'] = cd 
-    response.mimetype='text/csv'
-
-    return response
-
-    
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
@@ -82,6 +76,72 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+def user_id_get(username):
+    
+    conn = sqlite3.connect("./app.db")
+    cur = conn.cursor()
+    cur.execute("select * from user where username = '%s'" % username)
+    user_id = cur.fetchone()[0]
+    conn.close()
+    return user_id
+    
+def user_data_all_get(user_id):
+    
+    conn = sqlite3.connect("./app.db")
+    cur = conn.cursor()
+    cur.execute("select * from button_data where user_id = %s" % str(user_id))
+    all_data = cur.fetchall()
+    conn.close()
+    return all_data
+    
+@app.route('/download')
+def download():
+    
+    user_id = user_id_get(current_user.username)
+    all_data = user_data_all_get(user_id)
+      
+    csv = str(all_data)[1:-1]
+    response = make_response(csv)
+    cd = 'attachment; filename=mycsv.csv'
+    response.headers['Content-Disposition'] = cd 
+    response.mimetype='text/csv'
+
+    return response
+
+def string_to_datetime(datetime_string):
+    year,month,day,hour,minute,second,millisecond = [int(i) for i in datetime_string.split('.')]
+    return datetime.datetime(*[year,month,day,hour,minute,second,millisecond * 1000])
+
+def timedeltas(timestampData):
+    datetimes = [string_to_datetime(thisTimeStamp[1]) for thisTimeStamp in timestampData]
+    deltas = [(datetimes[i] - datetimes[i-1]).total_seconds() for i in range(1,len(datetimes))]
+    return deltas
+
+@app.route('/plot')
+def plot():
+    
+    user_id = user_id_get(current_user.username)
+    results = user_data_all_get(user_id)
+    
+    deltas = timedeltas(results)
+    time_points = np.cumsum(deltas)
+    
+    x = [0]
+    y = [0]
+    for i in time_points:
+        x.extend([i,i,i])
+        y.extend([0,1,0])
+    
+    fig = plt.figure()
+    plt.plot(x,y,'-')
+    
+    html = mpld3.fig_to_html(fig)
+    #plot = to_bokeh(fig)
+    #html = file_html(plot, CDN, "my plot")
+    return html
+    
+
 
 
 

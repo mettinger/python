@@ -1,9 +1,9 @@
 <html>
     <head>
         {% if title %}
-        <title>{{ title }} - Microblog</title>
+        <title>{{ title }} - Two Buttons</title>
         {% else %}
-        <title>Welcome to Microblog</title>
+        <title>Welcome to Two Buttons</title>
         {% endif %}
     </head>
     <body>
@@ -14,7 +14,8 @@
             <a href="{{ url_for('login') }}">Login</a>
             {% else %}
             <a href="{{ url_for('logout') }}">Logout</a>
-            <a href="{{ url_for('download') }}">Download My Data</a>
+            <a href="{{ url_for('download') }}">Download</a>
+            <a href="{{ url_for('plot') }}">Plot</a>
             {% endif %}
         </div>
         <hr>

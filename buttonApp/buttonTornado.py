@@ -7,7 +7,6 @@ databasePath = '/home/ubuntu/github/python/buttonApp_2/app.db'
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        #self.write("Hello, world")
         data = self.get_argument('data')
         putData(data)
 
