@@ -99,9 +99,9 @@ def user_data_all_get(user_id):
 def download():
     
     user_id = user_id_get(current_user.username)
-    all_data = user_data_all_get(user_id)
+    all_data = [str(i) for i in user_data_all_get(user_id)]
       
-    csv = str(all_data)[1:-1]
+    csv = "\n".join(all_data)
     response = make_response(csv)
     cd = 'attachment; filename=mycsv.csv'
     response.headers['Content-Disposition'] = cd 
