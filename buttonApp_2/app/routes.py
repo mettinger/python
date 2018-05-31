@@ -31,8 +31,45 @@ import seaborn as sns
 sns.set()
 
 import mpld3
+import sys
+
+# PRINT TO CONSOLE: print(string_of_interest, file=sys.stderr)
+
+# HELPER FUNCTIONS
+
+def db_query_read(queryString):
+    
+    conn = sqlite3.connect("./app.db")
+    cur = conn.cursor()
+    cur.execute(queryString)
+    result = cur.fetchall()
+    conn.close()
+    return result
+    
+def user_id_get(username):
+    
+    queryString = "select id from user where username = '%s'" % username
+    user_id = db_query_read(queryString)[0][0]
+    return user_id
+    
+def user_data_all_get(user_id):
+    
+    queryString = "select * from button_data where user_id = %s" % str(user_id)
+    all_data = db_query_read(queryString)
+    return all_data
+
+def string_to_datetime(datetime_string):
+    year,month,day,hour,minute,second,millisecond = [int(i) for i in datetime_string.split('.')]
+    return datetime.datetime(*[year,month,day,hour,minute,second,millisecond * 1000])
+
+def timedeltas(timestampData):
+    datetimes = [string_to_datetime(thisTimeStamp[1]) for thisTimeStamp in timestampData]
+    deltas = [(datetimes[i] - datetimes[i-1]).total_seconds() for i in range(1,len(datetimes))]
+    return deltas
 
 
+
+# ROUTES
 
 @app.route('/')
 @app.route('/index')
@@ -40,6 +77,23 @@ import mpld3
 def index():
     return render_template('index.html', title='Home')
 
+@app.route('/loginApp/<data>')
+def loginApp(data):
+    
+    username, password = data.split("-")
+    try:
+        user = User.query.filter_by(username=username).first()
+        if not user.check_password(password):
+            returnString = "Username or Password Error..."
+        else:
+            queryString = "select id from user where username = '%s'" % username
+            userID = db_query_read(queryString)[0][0]
+            returnString = str(userID)
+    except:
+        returnString = "Username or Password Error..."
+        
+    response = make_response(returnString)
+    return response
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -76,24 +130,6 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
-
-def user_id_get(username):
-    
-    conn = sqlite3.connect("./app.db")
-    cur = conn.cursor()
-    cur.execute("select * from user where username = '%s'" % username)
-    user_id = cur.fetchone()[0]
-    conn.close()
-    return user_id
-    
-def user_data_all_get(user_id):
-    
-    conn = sqlite3.connect("./app.db")
-    cur = conn.cursor()
-    cur.execute("select * from button_data where user_id = %s" % str(user_id))
-    all_data = cur.fetchall()
-    conn.close()
-    return all_data
     
 @app.route('/download')
 def download():
@@ -109,14 +145,6 @@ def download():
 
     return response
 
-def string_to_datetime(datetime_string):
-    year,month,day,hour,minute,second,millisecond = [int(i) for i in datetime_string.split('.')]
-    return datetime.datetime(*[year,month,day,hour,minute,second,millisecond * 1000])
-
-def timedeltas(timestampData):
-    datetimes = [string_to_datetime(thisTimeStamp[1]) for thisTimeStamp in timestampData]
-    deltas = [(datetimes[i] - datetimes[i-1]).total_seconds() for i in range(1,len(datetimes))]
-    return deltas
 
 @app.route('/plot')
 def plot():
