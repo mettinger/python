@@ -51,39 +51,3 @@
         {% block app_content %}{% endblock %}
     </div>
 {% endblock %}
-
-<!--
-<html>
-    <head>
-        {% if title %}
-        <title>{{ title }} - Two Buttons</title>
-        {% else %}
-        <title>Welcome to Two Buttons</title>
-        {% endif %}
-    </head>
-    <body>
-        <div>
-            Two Buttons:
-            <a href="{{ url_for('index') }}">Home</a>
-            {% if current_user.is_anonymous %}
-            <a href="{{ url_for('login') }}">Login</a>
-            {% else %}
-            <a href="{{ url_for('logout') }}">Logout</a>
-            <a href="{{ url_for('download') }}">Download</a>
-            <a href="{{ url_for('plot') }}">Plot</a>
-            {% endif %}
-        </div>
-        <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
-        {% block temp_content %}{% endblock %}
-    </body>
-</html> 
--->

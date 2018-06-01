@@ -1,0 +1,100 @@
+2018-06-01 16:38:30,566 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/home/ubuntu/github/python/buttonApp_2/app/models.py", line 24, in get_reset_password_token
+    return jwt.encode(
+NameError: name 'jwt' is not defined
+2018-06-01 16:39:37,457 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-01 16:40:02,258 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-01 16:40:09,922 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 22, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2018-06-01 16:41:08,176 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-01 16:41:19,249 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 25, in send_password_reset_email
+    user=user, token=token),
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.txt
+2018-06-01 16:43:33,026 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-01 16:43:48,835 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 27, in send_password_reset_email
+    user=user, token=token))
+  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 16, in send_email
+    Thread(target=send_async_email, args=(app, msg)).start()
+NameError: name 'send_async_email' is not defined
+2018-06-01 16:45:04,513 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-01 16:46:15,227 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
