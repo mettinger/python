@@ -16,12 +16,12 @@ class Config(object):
     ADMINS = ['your-email@example.com']
     '''
     
-    MAIL_SERVER='localhost'
-    MAIL_PORT=8025
-    MAIL_USE_TLS=0
-    MAIL_USERNAME=''
-    MAIL_PASSWORD=''
-    ADMINS = ['jettinger35@gmail.com']
+    MAIL_SERVER='smtp.googlemail.com'
+    MAIL_PORT=587
+    MAIL_USE_TLS=1
+    MAIL_USERNAME='twobuttonsapp@gmail.com'
+    MAIL_PASSWORD='matw1@iAmThat'
+    ADMINS = ['twobuttonsapp@gmail.com']
     
     
     

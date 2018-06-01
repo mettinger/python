@@ -22,7 +22,6 @@ import tempfile
 from bokeh.plotting import figure
 from bokeh.resources import CDN
 from bokeh.embed import file_html
-from bokeh.mpl import to_bokeh
 
 import datetime
 import numpy as np
@@ -137,7 +136,7 @@ def register():
 def download():
     
     user_id = user_id_get(current_user.username)
-    all_data = [str(i) for i in user_data_all_get(user_id)]
+    all_data = ['timestamp, button_id, text_info'] + [str((i[1],i[2],i[4])) for i in user_data_all_get(user_id)]
       
     csv = "\n".join(all_data)
     response = make_response(csv)
@@ -154,9 +153,13 @@ def plot():
     user_id = user_id_get(current_user.username)
     results = user_data_all_get(user_id)
     
+    
     deltas = timedeltas(results)
     time_points = np.cumsum(deltas)
     
+    datetimes = [thisTimeStamp[1] for thisTimeStamp in results]
+    
+    '''
     x = [0]
     y = [0]
     for i in time_points:
@@ -167,8 +170,29 @@ def plot():
     plt.plot(x,y,'-')
     
     html = mpld3.fig_to_html(fig)
-    #plot = to_bokeh(fig)
-    #html = file_html(plot, CDN, "my plot")
+    '''
+    
+    colors = ["blue" if i[2] == 0 else "red" for i in results[1:]]
+    plot = figure(title="Events: Blue = Button 0, Red = Button 1")
+    for i in range(len(time_points)):
+        this_sec = time_points[i]
+        #this_sec = datetimes[i+1]
+        this_color = colors[i]
+        
+        plot.line([this_sec, this_sec], [0,1], line_color=this_color)
+        plot.circle([this_sec, this_sec], [0,1], fill_color=this_color, line_color=this_color, size=6)
+        
+    plot.yaxis.major_tick_line_color = None  # turn off y-axis major ticks
+    plot.yaxis.minor_tick_line_color = None  # turn off y-axis minor ticks
+    
+    plot.yaxis.major_label_text_font_size = '0pt'  # turn off y-axis tick labels
+
+    plot.background_fill_color = "LightGrey"
+    plot.background_fill_alpha = 0.2
+    
+    plot.xaxis.axis_label = "Seconds from first button event"
+    
+    html = file_html(plot, CDN, "my plot")
     return html
     
 @app.route('/reset_password_request', methods=['GET', 'POST'])
