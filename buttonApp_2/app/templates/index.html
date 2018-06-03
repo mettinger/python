@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-    <h1>Hi, {{ current_user.username }}!</h1>
+    <h1>Hi {{ current_user.username }}, welcome to Two Buttons!</h1>
+    <h3> Currently available: </h3>
+    <ul>
+      <li>Download your data in CSV format.</li>
+      <li>A simple plot of your data.</li>
+    </ul>
+
+    <h3> Planned future additions: </h3>
+    <ul>
+      <li>Data editing interface.</li>
+      <li>A variety of data visualizations.</li>
+    </ul>
 {% endblock %}

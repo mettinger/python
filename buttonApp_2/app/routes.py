@@ -136,7 +136,7 @@ def register():
 def download():
     
     user_id = user_id_get(current_user.username)
-    all_data = ['timestamp, button_id, text_info'] + [str((i[1],i[2],i[4])) for i in user_data_all_get(user_id)]
+    all_data = ['timestamp, button_id, text_info'] + [str(i[1]) + ',' + str(i[2]) + ',' + str(i[4]) for i in user_data_all_get(user_id)]
       
     csv = "\n".join(all_data)
     response = make_response(csv)
