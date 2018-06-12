@@ -21,7 +21,8 @@ import tempfile
 
 from bokeh.plotting import figure
 from bokeh.resources import CDN
-from bokeh.embed import file_html
+from bokeh.embed import file_html, components
+from bokeh.models import Title
 
 import datetime
 import numpy as np
@@ -33,6 +34,8 @@ sns.set()
 
 import mpld3
 import sys
+from math import pi
+import numpy as np
 
 # PRINT TO CONSOLE: print(string_of_interest, file=sys.stderr)
 
@@ -146,37 +149,70 @@ def download():
 
     return response
 
-
 @app.route('/plot')
 def plot():
     
     user_id = user_id_get(current_user.username)
     results = user_data_all_get(user_id)
     
+    if len(results) == 0:
+        return "No data yet...";
+    
+    deltas = timedeltas(results)
+    time_points = [0] + list(np.cumsum(deltas))
+    
+    timeStrings = [i[1] for i in results]
+    
+    colors = ["blue" if i[2] == 0 else "red" for i in results]
+    plot = figure()
+    for i in range(len(time_points)):
+        this_sec = time_points[i]
+        this_color = colors[i]
+        
+        plot.line([this_sec, this_sec], [0,1], line_color=this_color)
+        plot.circle([this_sec, this_sec], [0,1], fill_color=this_color, line_color=this_color, size=6)
+    
+    a = time_points
+    plot.xaxis.ticker = a
+    plot.xaxis.major_label_overrides = {a[i]:timeStrings[i] for i in range(len(a))}
+    #p.xaxis.major_label_overrides = {1: 'A', 2: 'B', 3: 'C'}
+    
+    
+    plot.yaxis.major_tick_line_color = None  # turn off y-axis major ticks
+    plot.yaxis.minor_tick_line_color = None  # turn off y-axis minor ticks
+    
+    plot.yaxis.major_label_text_font_size = '0pt'  # turn off y-axis tick labels
+    
+    plot.xaxis.major_label_orientation = -pi/4
+
+    plot.background_fill_color = "LightGrey"
+    plot.background_fill_alpha = 0.2
+    
+    plot.xaxis.axis_label = "Timestamp"
+    
+    #plot.add_layout(Title(text="      Try ZOOM for a closer look."), 'above')
+    plot.add_layout(Title(text="Tip: Timestamps on the x-axis may be overlapping and messy.  Try ZOOM for a closer look."), 'above')
+    plot.add_layout(Title(text="Events: Blue = Button 0, Red = Button 1 ",text_font_size="16pt"), 'above')
+
+    script, div = components(plot)
+
+    return render_template("plot.html", the_div=div, the_script=script)
+
+    
+
+@app.route('/plot_old')
+def plot_old():
+    
+    user_id = user_id_get(current_user.username)
+    results = user_data_all_get(user_id)
     
     deltas = timedeltas(results)
     time_points = np.cumsum(deltas)
-    
-    datetimes = [thisTimeStamp[1] for thisTimeStamp in results]
-    
-    '''
-    x = [0]
-    y = [0]
-    for i in time_points:
-        x.extend([i,i,i])
-        y.extend([0,1,0])
-    
-    fig = plt.figure()
-    plt.plot(x,y,'-')
-    
-    html = mpld3.fig_to_html(fig)
-    '''
     
     colors = ["blue" if i[2] == 0 else "red" for i in results[1:]]
     plot = figure(title="Events: Blue = Button 0, Red = Button 1")
     for i in range(len(time_points)):
         this_sec = time_points[i]
-        #this_sec = datetimes[i+1]
         this_color = colors[i]
         
         plot.line([this_sec, this_sec], [0,1], line_color=this_color)
@@ -192,8 +228,12 @@ def plot():
     
     plot.xaxis.axis_label = "Seconds from first button event"
     
-    html = file_html(plot, CDN, "my plot")
-    return html
+    script, div = components(plot)
+
+    return render_template("plot.html", the_div=div, the_script=script)
+
+    #html = file_html(plot, CDN, "my plot")
+    #return html
     
 @app.route('/reset_password_request', methods=['GET', 'POST'])
 def reset_password_request():
@@ -224,6 +264,14 @@ def reset_password(token):
         flash('Your password has been reset.')
         return redirect(url_for('login'))
     return render_template('reset_password.html', form=form)
+
+@app.route('/install_android_app')
+def installAndroidApp():
+     return send_file('/home/ubuntu/github/python/buttonApp_2/app/static/app-release.apk', as_attachment=True)
+        
+        
+        
+        
 
 
 

@@ -1,4 +1,4 @@
-2018-06-01 16:38:30,566 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+2018-06-04 15:11:12,427 ERROR: Exception on /install_android_app [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,16 +12,31 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 20, in send_password_reset_email
-    token = user.get_reset_password_token()
-  File "/home/ubuntu/github/python/buttonApp_2/app/models.py", line 24, in get_reset_password_token
-    return jwt.encode(
-NameError: name 'jwt' is not defined
-2018-06-01 16:39:37,457 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 16:40:02,258 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 16:40:09,922 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 230, in installAndroidApp
+    send_file('/static/app-release.apk', as_attachment=True)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/helpers.py", line 549, in send_file
+    file = open(filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/static/app-release.apk'
+2018-06-04 15:12:45,842 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-04 15:13:10,320 ERROR: Exception on /install_android_app [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-04 15:17:20,414 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-04 15:24:23,413 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-04 15:28:28,824 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-04 18:34:59,354 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-04 18:37:12,215 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 00:20:32,621 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 10:24:08,784 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 10:24:23,700 ERROR: Exception on /plot [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -35,13 +50,19 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 22, in send_password_reset_email
-    sender=app.config['ADMINS'][0],
-NameError: name 'app' is not defined
-2018-06-01 16:41:08,176 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 16:41:19,249 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 197, in plot
+    script, div = components(plot)
+NameError: name 'components' is not defined
+2018-06-05 10:36:53,607 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 10:39:50,737 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 10:42:55,701 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 10:43:29,335 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 11:58:59,117 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 12:00:33,325 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 12:01:22,115 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:03:27,813 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:03:42,294 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:03:48,182 ERROR: Exception on /plot2 [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -55,27 +76,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 25, in send_password_reset_email
-    user=user, token=token),
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
-    return self._get_source_fast(environment, template)
-  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: email/reset_password.txt
-2018-06-01 16:43:33,026 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 16:43:48,835 ERROR: Exception on /reset_password_request [POST] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 156, in plot2
+    plot.vbar(x=timeStrings, top=[1 for i in range(len(timeStrings))])
+TypeError: vbar() missing 1 required positional argument: 'width'
+2018-06-05 17:04:19,204 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:08:49,092 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:08:53,289 ERROR: Exception on /plot2 [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -89,18 +95,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 182, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 27, in send_password_reset_email
-    user=user, token=token))
-  File "/home/ubuntu/github/python/buttonApp_2/app/email.py", line 16, in send_email
-    Thread(target=send_async_email, args=(app, msg)).start()
-NameError: name 'send_async_email' is not defined
-2018-06-01 16:45:04,513 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 16:46:15,227 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 18:58:26,461 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 19:03:17,303 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
-2018-06-01 19:03:25,835 ERROR: Exception on /download [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 164, in plot2
+    this_color = colors[i]
+IndexError: list index out of range
+2018-06-05 17:09:40,782 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:15:49,461 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-05 17:15:53,966 ERROR: Exception on /plot2 [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -114,7 +114,7 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 142, in download
-    csv = "\n".join(all_data)
-TypeError: sequence item 0: expected str instance, tuple found
-2018-06-01 19:04:15,231 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 172, in plot2
+    p.xaxis.ticker = a
+NameError: name 'p' is not defined
+2018-06-05 17:16:11,121 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
