@@ -1,2 +1,40 @@
 2018-06-10 15:50:21,699 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
 2018-06-11 06:16:06,573 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 17:50:47,570 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 17:51:01,533 ERROR: Exception on /vr [GET] [in /home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/github/python/buttonApp_2/app/routes.py", line 121, in vr
+    return render_template('/home/ubuntu/meditationWeb/index.html')
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /home/ubuntu/meditationWeb/index.html
+2018-06-15 17:53:28,267 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 18:01:36,116 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 18:18:44,456 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 18:29:47,532 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-15 18:41:03,614 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-06-21 15:22:11,628 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]

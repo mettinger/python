@@ -32,6 +32,14 @@ def make_app():
     ])
 
 if __name__ == "__main__":
+    
+    port = 8890
+    print("Tornado running on port: " + str(port))
     app = make_app()
-    app.listen(8890)
+    app.listen(port)
     tornado.ioloop.IOLoop.current().start()
+    
+    
+    
+    
+    
