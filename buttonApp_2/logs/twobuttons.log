@@ -40,3 +40,5 @@ jinja2.exceptions.TemplateNotFound: /home/ubuntu/meditationWeb/index.html
 2018-06-21 15:22:11,628 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
 2018-06-22 18:21:18,736 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
 2018-06-26 18:19:15,472 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-07-02 10:40:30,151 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
+2018-07-05 17:26:53,939 INFO: Two Button startup [in /home/ubuntu/github/python/buttonApp_2/app/__init__.py:47]
