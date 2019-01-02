@@ -27,8 +27,11 @@ from bokeh.models import Title
 import datetime
 import numpy as np
 
-import matplotlib.pyplot as plt
-plt.switch_backend('agg')
+import matplotlib
+matplotlib.use('Agg')
+
+#import matplotlib.pyplot as plt
+#plt.switch_backend('agg')
 import seaborn as sns
 sns.set()
 
