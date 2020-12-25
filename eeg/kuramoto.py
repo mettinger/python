@@ -58,11 +58,19 @@ class Kuramoto(object):
         self.dt = 1.
         self.init_phase = np.array(init_values['Y0'])
         self.W = np.array(init_values['W'])
-        self.K = np.array(init_values['K'])
+
+        if type(init_values['K']) == list:
+            self.K = [np.array(i) for i in init_values['K']]
+        else:
+            self.K = np.array(init_values['K'])
 
         self.n_osc = len(self.W)
-        self.m_order = self.K.shape[0]
 
+        if type(self.K) == list:
+            self.m_order = 1
+        else:
+            self.m_order = self.K.shape[0]
+        
         self.noise = noise
 
 
@@ -157,16 +165,23 @@ class Kuramoto(object):
 
         # Set parameters into model
         kODE.set_initial_value(self.init_phase, t[0])
-        kODE.set_f_params((self.W, self.K))
-        kODE.set_jac_params((self.W, self.K))
+        if type(self.K) == list:
+            kODE.set_f_params((self.W, self.K[0]))
+            kODE.set_jac_params((self.W, self.K[0]))
+        else:
+            kODE.set_f_params((self.W, self.K))
+            kODE.set_jac_params((self.W, self.K))
 
         if self._noise != None:
             self.update_noise_params(dt)
 
         phase = np.empty((self.n_osc, len(t)))
-
+        
         # Run ODE integrator
         for idx, _t in enumerate(t[1:]):
+            if type(self.K) == list:
+                kODE.set_f_params((self.W, self.K[idx]))
+                kODE.set_jac_params((self.W, self.K[idx]))
             phase[:,idx] = kODE.y
             kODE.integrate(_t)
 
