@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/scene/480p15/partial_movie_files/DiskWithDipoles/3707651804_2706498881_3148491198.mp4'
