@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/kuramotoScene/480p15/partial_movie_files/Kuramoto/3856570617_343353853_600046244.mp4'
