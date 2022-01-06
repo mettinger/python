@@ -15,7 +15,7 @@ class SphereWithDipoles(ThreeDScene):
             
             self.add(axes)
             self.add(sphere1)
-            self.play(sphere2.animate.shift(axes.c2p(2.0,0,0)), run_time=5, lag_ratio=0.0, rate_func=linear)
+            self.play(sphere2.animate.shift(axes.c2p(4.0,0,0)), run_time=5, lag_ratio=0.0, rate_func=linear)
             
             
     

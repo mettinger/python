@@ -3,19 +3,35 @@ import numpy as np
 
 class Kuramoto(ThreeDScene):
     def construct(self):
-        axes = ThreeDAxes()
         
-        sphere = Sphere(radius = .1)
-        sphere.set_color(RED)
+        '''
+        numStep = 50
+        x = np.linspace(0, 2 * np.pi, numStep)
+        y = np.sin(x)
+        index = 0
+        '''
         
-        tracker = ValueTracker(0)
-        sphere.add_updater(lambda mobject: mobject.move_to(axes.c2p(0.,0., np.sin(tracker.get_value()))))
+        rows, cols = 10,10
+        numStep = 100
+        
+        odePhi = np.load('../odePhi.npy')
+        nOsc, odeStep = odePhi.shape
+        
+        axes = ThreeDAxes()                                            
+        #spheres = [Sphere(radius = .1, center=axes.c2p(row, col, odePhi[(row * cols) + col,0])) for row in range(rows) for col in range(cols)]
+        
+        spheres = [Sphere(radius = .1, center=np.array([row, col, odePhi[(row * cols) + col,0]])) for row in range(rows) for col in range(cols)]
         
         self.set_camera_orientation(phi=75. * DEGREES,theta=-75*DEGREES)
-        tracker.add_updater(lambda mobject, dt: mobject.increment_value(dt))
+        self.add(axes, *spheres)
+        self.move_camera(zoom=.5)
+        
+        '''
+        for i in range(numStep):
+            animations = [spheres[(row * cols) + col].animate.move_to(axes.c2p(row, col, odePhi[(row * cols) + col,i])) for row in range(rows) for col in range(cols)]
+            self.play(*animations, run_time=.01)
+        '''
         
         
-        self.add(axes, sphere, tracker)
-        self.wait(5)
          
         
