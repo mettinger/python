@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/dipoleSphereGraph/480p15/partial_movie_files/dipoleSphereGraph/3163782288_2591155765_1088855621.mp4'
-file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/dipoleSphereGraph/480p15/partial_movie_files/dipoleSphereGraph/2201830969_3493041802_2373292091.mp4'

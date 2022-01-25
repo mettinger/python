@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/sigmoidScene/480p15/partial_movie_files/Sigmoid/3163782288_4132494012_2231716114.mp4'
-file 'file:C:/Users/the_m/github/python/eeg/solidAngleManin/media/videos/sigmoidScene/480p15/partial_movie_files/Sigmoid/2201830969_3493041802_218920571.mp4'

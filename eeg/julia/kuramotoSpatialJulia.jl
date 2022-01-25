@@ -1,14 +1,19 @@
+##
 using Logging: global_logger
 using TerminalLoggers: TerminalLogger
 global_logger(TerminalLogger())
 
 using DifferentialEquations
+using LSODA
 using Random
 using Distributions
 using SpecialPolynomials
 using LinearAlgebra
 using BenchmarkTools
-using Plots
+using DataFrames
+using CSV
+using Dates
+using PlotlyJS
 using StatsPlots
 
 function kernel(r)
@@ -34,7 +39,7 @@ function distance(x0, x1)
     return norm(coord0 - coord1)
 end
 
-function kernelMatrixGet()
+function kernelMatrixGet(nOsc)
     kernelMatrix = zeros(nOsc, nOsc)
     for i in 1:nOsc
         for j in i:nOsc
@@ -46,85 +51,109 @@ function kernelMatrixGet()
     return kernelMatrix
 end
 
-function sinDiffGet(theta)
-    A = zeros(nOsc, nOsc)
+function jac!(J, u, p, t)
+
+    kernelMatrix, W = p
+    cosDiff = cos.(u .- u')
+
+    J .= zeros(nOsc, nOsc)
+
     for i in 1:nOsc
-        for j in i:nOsc
-            A[i, j] = theta[i] - theta[j]
-            A[j, i] = -A[i, j]
+        for j in 1:nOsc
+            J[i,j] = kernelMatrix[i,j] * mean(cosDiff[:,j]) * (-1)^(i == j)
         end
     end
-    A = sin(A)
-    return A
 end
 
 function kuramoto2d!(du, u, p, t)
 
-    #sinDiff = sinDiffGet(theta)
-    #temp = W + dropdims(sum(sinDiff, dims = 2); dims=2)
+    kernelMatrix, W = p
 
-    for i in 1:length(u)
+    #=
+    sinDiff = sin.(u .- u')
+    du .= dropdims(W .+ sum(kernelMatrix .* sinDiff, dims=1)', dims=2)
+    =#
+
+    nOsc = length(W)
+    for i in 1:nOsc
         du[i] = W[i]
-        for j in 1:length(u)
-            du[i] = du[i] + ((K / nOsc) * p[1][i, j] * (sin(u[j] - u[i])))
+        for j in 1:nOsc
+            du[i] = du[i] + (kernelMatrix[i,j]) * sin(u[j] - u[i])
         end
     end
 end
 
-########################
+# ***************************************
+##
+const nOsc = 100
+const upperTimeBound = 30
+const K =  .014 * nOsc
 
-nOsc = 1000
-upperTimeBound = 20.0
-K = 0.01 * nOsc
+const benchmarkFlag = false
+const saveFlag = true
+const plotFlag = true
+const tsit5Flag = false 
+const trivialKernel = true
+const jacFlag = false
+saveat = upperTimeBound/1000.
 
-benchmarkFlag = false
-methodSwitch = 1
-trivialKernel = true
-
-##########################
+# ****************************************
 
 # theta0, W are initial phase, intrinsic freq
-theta0 = 2 * pi * rand(Float64, nOsc);
-W = 0.5 * randn(Float64, nOsc);
+Random.seed!(1234)
+const theta0 = 2 * pi * rand(Float64, nOsc);
+#const W = 0.5 * randn(Float64, nOsc);
+const W = rand(Normal(5, 0.5), nOsc)
 
-if methodSwitch == 1
-    method = Tsit5()
+##
+if tsit5Flag
+    const method = Tsit5()
 else
-    method = RadauIIA5()
+    #const method = RadauIIA5()
+    const method = AutoTsit5(Rosenbrock23()) 
+    #const method = lsoda()
 end
 
 if trivialKernel
-    kernelMatrix = ones((nOsc, nOsc))
+    const kernelMatrix = (K/nOsc) * ones((nOsc, nOsc))
 else
-    kernelMatrix = kernelMatrixGet()
+    const kernelMatrix = (K/nOsc) * kernelMatrixGet(nOsc)
 end
 
-prob = ODEProblem(kuramoto2d!, theta0, (0, upperTimeBound), [kernelMatrix]);
+if jacFlag
+    const jac = jac!
+else
+    const jac = nothing
+end
 
-print("Solving...")
+prob = ODEProblem(kuramoto2d!, theta0, (0, upperTimeBound), [kernelMatrix, W]);
+
+##
+println("Number of oscillators: " * string(nOsc))
+println("Solving...")
 
 if benchmarkFlag
-    @benchmark solve($prob, method = method, reltol = 1e-8, abstol = 1e-8, saveat = 0.1)
+    @btime sol = solve($prob, method = method, saveat = saveat, progress = true, progress_steps = 10, jac=jac)
 else
-    sol = solve(prob, method = method, reltol = 1e-8, abstol = 1e-8, saveat = 0.1, progress = true, progress_steps = 5)
+    sol = solve(prob, method = method, reltol = 1e-8, abstol = 1e-8, saveat = saveat, progress = true, progress_steps = 10, jac=jac)
     print(sol.retcode)
 end
 
-time = sol.t
-u = sol.u
+if saveFlag
+    df = DataFrame(sol)
+    CSV.write("kuramoto_Out_" * Dates.format(now(),"mm-dd-HH-MM") * ".csv" , df)
+end
 
-odePhi = transpose(reduce(hcat, u))
-orderParameterAbs = [abs(sum(exp.(odePhi[i, :] * (0 + 1im)))) for i in 1:length(time)]
-plot(time, orderParameterAbs)
-
-density(vec(W))
-
-plot(cos.(theta0), sin.(theta0), seriestype = :scatter)
-
-x = LinRange(-100, 100, 100)
-y = [kernel(i) for i in x]
-plot(x, y)
-
-heatmap(kernelMatrix)
-
-
+##
+if plotFlag
+    t = sol.t
+    u = sol.u
+    odePhi = transpose(reduce(hcat, u))
+    orderParameterAbs = [abs(sum(exp.(odePhi[i, :] * (0 + 1im)))) for i in 1:length(t)]
+    display(PlotlyJS.plot(t, orderParameterAbs))
+    #=
+    display(PlotlyJS.plot(PlotlyJS.heatmap(z=kernelMatrix)))
+    display(StatsPlots.density(vec(W)))
+    display(PlotlyJS.plot(PlotlyJS.scatter(x=cos.(theta0), y=sin.(theta0), mode="markers")))
+    =#
+end
