@@ -101,7 +101,7 @@ const kernelSwitch = 0
 if kernelSwitch != 2
     const nOsc = 1024 # should be perfect square
     #const K = K_nOsc_Ratio * nOsc
-    const K = 3
+    const K = .5
 end
 
 const upperTimeBound = 30
@@ -153,6 +153,7 @@ prob = ODEProblem(kuramoto2d!, theta0, (0, upperTimeBound), [kernelMatrix, W]);
 
 ##
 println("Number of oscillators: " * string(nOsc))
+println("K: " * string(K))
 println("Solving...")
 
 if benchmarkFlag
@@ -173,7 +174,8 @@ if plotFlag
     u = sol.u
     odePhi = transpose(reduce(hcat, u))
     orderParameterAbs = [abs(sum(exp.(odePhi[i, :] * (0 + 1im)))) for i in 1:length(t)]
-    display(PlotlyJS.plot(t, orderParameterAbs))
+    layout = Layout(title="nOsc: " * string(nOsc) * " K: " * string(K))
+    display(PlotlyJS.plot(t, orderParameterAbs, layout))
     #=
     display(PlotlyJS.plot(PlotlyJS.heatmap(z=kernelMatrix)))
     display(StatsPlots.density(vec(W)))
