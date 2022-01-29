@@ -16,6 +16,7 @@ using Dates
 using PlotlyJS
 using StatsPlots
 
+##
 function kernel(r)
     scale = 10
     amplitudeMultiple = 2
@@ -39,11 +40,24 @@ function distance(x0, x1)
     return norm(coord0 - coord1)
 end
 
-function kernelMatrixGet(nOsc)
+function distanceMatrixGet(nOsc)
+    distanceMatrix = zeros(Float64, nOsc, nOsc)
+    for i in 1:nOsc
+        for j in i:nOsc
+            distanceMatrix[i,j] = distance(i, j)
+            distanceMatrix[j,i] = distanceMatrix[i,j]
+        end
+    end
+    return distanceMatrix
+end
+
+function kernelMatrixGet(distanceMatrix)
+    nOsc = size(distanceMatrix)[1]
     kernelMatrix = zeros(nOsc, nOsc)
     for i in 1:nOsc
         for j in i:nOsc
-            r = distance(i, j)
+            #r = distance(i, j)
+            r = distanceMatrix[i,j]
             kernelMatrix[i, j] = kernel(r)
             kernelMatrix[j, i] = kernelMatrix[i, j]
         end
@@ -69,11 +83,6 @@ function kuramoto2d!(du, u, p, t)
 
     kernelMatrix, W = p
 
-    #=
-    sinDiff = sin.(u .- u')
-    du .= dropdims(W .+ sum(kernelMatrix .* sinDiff, dims=1)', dims=2)
-    =#
-
     nOsc = length(W)
     for i in 1:nOsc
         du[i] = W[i]
@@ -84,26 +93,27 @@ function kuramoto2d!(du, u, p, t)
 end
 
 # ***************************************
+
 ##
-const nOsc = 100
+const K_nOsc_Ratio =  .014
+const kernelSwitch = 0
+
+if kernelSwitch != 2
+    const nOsc = 1024 # should be perfect square
+    #const K = K_nOsc_Ratio * nOsc
+    const K = 3
+end
+
 const upperTimeBound = 30
-const K =  .014 * nOsc
 
 const benchmarkFlag = false
 const saveFlag = true
 const plotFlag = true
 const tsit5Flag = false 
-const trivialKernel = true
 const jacFlag = false
 saveat = upperTimeBound/1000.
 
 # ****************************************
-
-# theta0, W are initial phase, intrinsic freq
-Random.seed!(1234)
-const theta0 = 2 * pi * rand(Float64, nOsc);
-#const W = 0.5 * randn(Float64, nOsc);
-const W = rand(Normal(5, 0.5), nOsc)
 
 ##
 if tsit5Flag
@@ -114,11 +124,24 @@ else
     #const method = lsoda()
 end
 
-if trivialKernel
+if kernelSwitch == 0
     const kernelMatrix = (K/nOsc) * ones((nOsc, nOsc))
-else
-    const kernelMatrix = (K/nOsc) * kernelMatrixGet(nOsc)
+elseif kernelSwitch == 1
+    const distanceMatrix = distanceMatrixGet(nOsc)
+    const kernelMatrix = (K/nOsc) * kernelMatrixGet(distanceMatrix)
+elseif kernelSwitch == 2
+    const distanceMatrix = Matrix{Float64}(DataFrame(CSV.File("distanceMatrix.csv", header=false)))
+    const nOsc = size(distanceMatrix)[1]
+    const K = K_nOsc_Ratio * nOsc
+    const kernelMatrix = (K/nOsc) * kernelMatrixGet(distanceMatrix)
 end
+
+# theta0, W are initial phase, intrinsic freq
+Random.seed!(1234)
+const theta0 = 2 * pi * rand(Float64, nOsc);
+#const W = rand(Normal(5, 0.5), nOsc);
+const W = rand(Cauchy(0, 1), nOsc) # gamma = sigma = 1, mu = 0 => K_c = 2
+
 
 if jacFlag
     const jac = jac!
