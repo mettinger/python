@@ -17,6 +17,10 @@ using PlotlyJS
 using StatsPlots
 
 ##
+function orderParameterGet(phaseVector)
+    return abs(sum(exp.(phaseVector * (0 + 1im))))
+end
+
 function kernel(r)
     scale = 10
     amplitudeMultiple = 2
@@ -56,7 +60,6 @@ function kernelMatrixGet(distanceMatrix)
     kernelMatrix = zeros(nOsc, nOsc)
     for i in 1:nOsc
         for j in i:nOsc
-            #r = distance(i, j)
             r = distanceMatrix[i,j]
             kernelMatrix[i, j] = kernel(r)
             kernelMatrix[j, i] = kernelMatrix[i, j]
@@ -92,41 +95,17 @@ function kuramoto2d!(du, u, p, t)
     end
 end
 
-# ***************************************
+# PARAMETERS TO SET
 
 ##
-const K_nOsc_Ratio =  .014
 const kernelSwitch = 0
-
-if kernelSwitch != 2
-    const nOsc = 1024 # should be perfect square
-    #const K = K_nOsc_Ratio * nOsc
-    const K = .5
-end
-
-const upperTimeBound = 30
-
-const benchmarkFlag = false
-const saveFlag = true
-const plotFlag = true
-const tsit5Flag = false 
-const jacFlag = false
-saveat = upperTimeBound/1000.
-
-# ****************************************
-
-##
-if tsit5Flag
-    const method = Tsit5()
-else
-    #const method = RadauIIA5()
-    const method = AutoTsit5(Rosenbrock23()) 
-    #const method = lsoda()
-end
-
 if kernelSwitch == 0
+    const nOsc = 1024 # should be perfect square
+    const K = 4
     const kernelMatrix = (K/nOsc) * ones((nOsc, nOsc))
 elseif kernelSwitch == 1
+    const nOsc = 1024 # should be perfect square
+    const K = 4 
     const distanceMatrix = distanceMatrixGet(nOsc)
     const kernelMatrix = (K/nOsc) * kernelMatrixGet(distanceMatrix)
 elseif kernelSwitch == 2
@@ -136,12 +115,24 @@ elseif kernelSwitch == 2
     const kernelMatrix = (K/nOsc) * kernelMatrixGet(distanceMatrix)
 end
 
-# theta0, W are initial phase, intrinsic freq
-Random.seed!(1234)
-const theta0 = 2 * pi * rand(Float64, nOsc);
-#const W = rand(Normal(5, 0.5), nOsc);
-const W = rand(Cauchy(0, 1), nOsc) # gamma = sigma = 1, mu = 0 => K_c = 2
+const distributionSwitch = 1
+const upperTimeBound = 100
 
+const saveFlag = true
+const plotFlag = true
+const tsit5Flag = false 
+const jacFlag = false
+saveat = upperTimeBound/1000.
+
+# PARAMETERS END 
+
+##
+if tsit5Flag
+    const method = Tsit5()
+else
+    const method = AutoTsit5(Rosenbrock23()) 
+    #const method = lsoda()
+end
 
 if jacFlag
     const jac = jac!
@@ -149,19 +140,36 @@ else
     const jac = nothing
 end
 
-prob = ODEProblem(kuramoto2d!, theta0, (0, upperTimeBound), [kernelMatrix, W]);
+# theta0, W are initial phase, intrinsic freq
+Random.seed!(1234)
+const theta0 = 2 * pi * rand(Float64, nOsc);
+
+if distributionSwitch == 0
+    const probabilityDistribution = Cauchy(0,1)
+    const distributionTitle = string(probabilityDistribution)
+elseif distributionSwitch == 1
+    const probabilityDistribution = MixtureModel([Normal(-2.0, 1.0), Normal(2.0, 1.0)])
+    const distributionTitle = string(probabilityDistribution.components) * "<br>" * string(probabilityDistribution.prior)
+elseif distributionSwitch == 2
+    const probabilityDistribution = Exponential(2.5)
+    const distributionTitle = string(probabilityDistribution)
+elseif distributionSwitch == 3
+    const probabilityDistribution = MixtureModel([Exponential(2), Normal(5., .5), Normal(7., .5)], [.9,.05,.05])
+    const distributionTitle = string(probabilityDistribution)
+end
+
+const W = rand(probabilityDistribution, nOsc) 
+display(StatsPlots.density(vec(W)))
 
 ##
 println("Number of oscillators: " * string(nOsc))
 println("K: " * string(K))
+println("Natural frequencies: " * string(probabilityDistribution))
 println("Solving...")
 
-if benchmarkFlag
-    @btime sol = solve($prob, method = method, saveat = saveat, progress = true, progress_steps = 10, jac=jac)
-else
-    sol = solve(prob, method = method, reltol = 1e-8, abstol = 1e-8, saveat = saveat, progress = true, progress_steps = 10, jac=jac)
-    print(sol.retcode)
-end
+prob = ODEProblem(kuramoto2d!, theta0, (0, upperTimeBound), [kernelMatrix, W]);
+sol = solve(prob, method = method, reltol = 1e-8, abstol = 1e-8, saveat = saveat, progress = true, progress_steps = 10, jac=jac)
+print(sol.retcode)
 
 if saveFlag
     df = DataFrame(sol)
@@ -173,12 +181,12 @@ if plotFlag
     t = sol.t
     u = sol.u
     odePhi = transpose(reduce(hcat, u))
-    orderParameterAbs = [abs(sum(exp.(odePhi[i, :] * (0 + 1im)))) for i in 1:length(t)]
-    layout = Layout(title="nOsc: " * string(nOsc) * " K: " * string(K))
+    orderParameterAbs = [orderParameterGet(odePhi[i,:]) for i in 1:length(t)]
+    layout = Layout(title="nOsc: " * string(nOsc) * "<br>K: " * string(K) * "<br>" * distributionTitle)
     display(PlotlyJS.plot(t, orderParameterAbs, layout))
-    #=
-    display(PlotlyJS.plot(PlotlyJS.heatmap(z=kernelMatrix)))
-    display(StatsPlots.density(vec(W)))
-    display(PlotlyJS.plot(PlotlyJS.scatter(x=cos.(theta0), y=sin.(theta0), mode="markers")))
-    =#
+    
+    #display(PlotlyJS.plot(PlotlyJS.scatter(x=cos.(odePhi[1000,:]), y=sin.(odePhi[1000,:]), mode="markers")))
+    #display(PlotlyJS.plot(PlotlyJS.heatmap(z=kernelMatrix)))
+    #display(PlotlyJS.plot(PlotlyJS.scatter(x=cos.(theta0), y=sin.(theta0), mode="markers")))
+    
 end
