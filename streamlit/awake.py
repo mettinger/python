@@ -1,10 +1,9 @@
 import streamlit as st
 from shillelagh.backends.apsw.db import connect
 
-connection = connect(":memory:")
-cursor = connection.cursor()
-
 def run_read_query(query):
+    connection = connect(":memory:")
+    cursor = connection.cursor()
     rows = cursor.execute(query)
     return rows
 
@@ -21,7 +20,7 @@ def run_write_query():
     rows = conn.execute(query, headers=1)
     conn.close()
     return rows
-    
+
 mState = rows[0].mark
 cState = rows[0].cathy
 
