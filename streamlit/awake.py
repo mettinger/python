@@ -1,6 +1,18 @@
 import streamlit as st
 from shillelagh.backends.apsw.db import connect
 
+
+connection = connect(":memory:")
+cursor = connection.cursor()
+
+SQL = """
+SELECT *
+FROM "https://docs.google.com/spreadsheets/d/1uDmTt0ZpltLJfP3xQqlCNOgNHYr9A5rb31PnqcuACnA/edit#gid=0"
+"""
+for row in cursor.execute(SQL):
+    st.write(row)
+
+'''
 def run_read_query(query):
     connection = connect(":memory:")
     cursor = connection.cursor()
@@ -11,8 +23,6 @@ sheet_url = st.secrets["public_gsheets_url"]
 rows = run_read_query(f'SELECT * FROM "{sheet_url}"')
 
 st.write(rows)
-
-'''
 
 def run_write_query():
     conn = connect()
