@@ -1,26 +1,34 @@
 import streamlit as st
+import os
 
-if 'm' not in st.session_state:
-	st.session_state.m = 'awake'
+stateFile = os.path.dirname(__file__) + '/state.txt'
 
-if 'c' not in st.session_state:
-	st.session_state.c = 'awake'
+with open(stateFile, 'r') as fp:
+    mState, cState = fp.readlines()
 
-mButton = st.button("M")
-cButton = st.button("C")
+def mChange():
+    global mState, cState
 
-if mButton:
-    if st.session_state.m == 'awake':
-        st.session_state.m = 'asleep'
+    if mState == 'awake':
+        mState = 'asleep'
     else:
-        st.session_state.m = 'awake'
+        mState = 'awake'
+    with open(stateFile, 'w') as fp:
+        fp.write(mState + '\n' + cState)
 
-if cButton:
-    if st.session_state.c == 'awake':
-        st.session_state.c = 'asleep'
+def cChange():
+    global mState, cState
+
+    if cState == 'awake':
+        cState = 'asleep'
     else:
-        st.session_state.c = 'awake'
-        
-st.write("M: %s    C: %s" % (st.session_state.m, st.session_state.c))
+        cState = 'awake'
+    with open(stateFile, 'w') as fp:
+        fp.write(mState + '\n' + cState)
+
+mButton = st.button("M", on_click=mChange)
+cButton = st.button("C", on_click=cChange)
+
+st.write("M: %s    C: %s" % (mState, cState))
 
 
