@@ -1,69 +1,33 @@
 import streamlit as st
-
 from streamlit_server_state import server_state, server_state_lock
 
-st.title("Global Counter Example")
 
-with server_state_lock["count"]:  # Lock the "count" state for thread-safety
-    if "count" not in server_state:
-        server_state.count = 0
+with server_state_lock["mState"]: 
+    if "mState" not in server_state:
+        server_state.mState = "awake"
 
-increment = st.button("Increment")
-if increment:
-    with server_state_lock.count:
-        server_state.count += 1
-
-decrement = st.button("Decrement")
-if decrement:
-    with server_state_lock.count:
-        server_state.count -= 1
-
-st.write("Count = ", server_state.count)
+with server_state_lock["mState"]: 
+    if "cState" not in server_state:
+        server_state.cState = "asleep"
 
 
-'''
-def run_read_query(query):
-    connection = connect(":memory:")
-    cursor = connection.cursor()
-    rows = cursor.execute(query)
-    return rows
-
-sheet_url = st.secrets["public_gsheets_url"]
-rows = run_read_query(f'SELECT * FROM "{sheet_url}"')
-
-st.write(rows)
-
-def run_write_query():
-    conn = connect()
-    query = f'UPDATE "{sheet_url}" SET mark = "1", cathy = "2"'
-    rows = conn.execute(query, headers=1)
-    conn.close()
-    return rows
-
-mState = rows[0].mark
-cState = rows[0].cathy
+mButton = st.button("Change M")
+if mButton:
+    with server_state_lock.mState:
+        if server_state.mState == 'awake':
+            server_state.mState = 'asleep'
+        else:
+            server_state.mState = 'awake'
 
 
-def mChange():
-    global mState
-    if mState == 'awake':
-        mState = 'asleep'
-    else:
-        mState = 'awake'
-    #rows = run_write_query()
+cButton = st.button("Change C")
+if cButton:
+    with server_state_lock.cState:
+        if server_state.cState == 'awake':
+            server_state.cState = 'asleep'
+        else:
+            server_state.cState = 'awake'
 
-def cChange():
-    global cState
-    if cState == 'awake':
-        cState = 'asleep'
-    else:
-        cState = 'awake'
-
-mButton = st.button("M", on_click=mChange)
-cButton = st.button("C", on_click=cChange)
-
-st.write("M: %s    C: %s" % (mState, cState))
-'''
-
+st.write("M: %s    C: %s" % (server_state.mState, server_state.cState))
 
 
