@@ -1,34 +1,46 @@
 import streamlit as st
-import os
+from shillelagh.backends.apsw.db import connect
 
-stateFile = os.path.dirname(__file__) + '/state.txt'
+def run_read_query(query):
+    conn = connect()
+    rows = conn.execute(query, headers=1)
+    rows = rows.fetchall()
+    conn.close()
+    return rows
 
-with open(stateFile, 'r') as fp:
-    mState, cState = fp.readlines()
+def run_write_query():
+    conn = connect()
+    query = f'UPDATE "{sheet_url}" SET mark = "1", cathy = "2"'
+    rows = conn.execute(query, headers=1)
+    conn.close()
+    return rows
+
+sheet_url = st.secrets["public_gsheets_url"]
+rows = run_read_query(f'SELECT * FROM "{sheet_url}"')
+
+mState = rows[0].mark
+cState = rows[0].cathy
 
 def mChange():
-    global mState, cState
-
+    global mState
     if mState == 'awake':
         mState = 'asleep'
     else:
         mState = 'awake'
-    with open(stateFile, 'w') as fp:
-        fp.write(mState + '\n' + cState)
+    rows = run_write_query()
 
 def cChange():
-    global mState, cState
-
+    global cState
     if cState == 'awake':
         cState = 'asleep'
     else:
         cState = 'awake'
-    with open(stateFile, 'w') as fp:
-        fp.write(mState + '\n' + cState)
 
 mButton = st.button("M", on_click=mChange)
 cButton = st.button("C", on_click=cChange)
 
 st.write("M: %s    C: %s" % (mState, cState))
+
+
 
 
