@@ -8,19 +8,20 @@ def run_read_query(query):
     rows = cursor.execute(query)
     return rows
 
-def run_write_query():
-    conn = connect()
-    query = f'UPDATE "{sheet_url}" SET mark = "1", cathy = "2"'
-    rows = conn.execute(query, headers=1)
-    conn.close()
-    return rows
-
 sheet_url = st.secrets["public_gsheets_url"]
 rows = run_read_query(f'SELECT * FROM "{sheet_url}"')
 
 st.write(rows)
 
 '''
+
+def run_write_query():
+    conn = connect()
+    query = f'UPDATE "{sheet_url}" SET mark = "1", cathy = "2"'
+    rows = conn.execute(query, headers=1)
+    conn.close()
+    return rows
+    
 mState = rows[0].mark
 cState = rows[0].cathy
 
