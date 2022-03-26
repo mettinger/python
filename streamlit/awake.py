@@ -1,16 +1,25 @@
 import streamlit as st
-from shillelagh.backends.apsw.db import connect
 
+from streamlit_server_state import server_state, server_state_lock
 
-connection = connect(":memory:")
-cursor = connection.cursor()
+st.title("Global Counter Example")
 
-SQL = """
-SELECT *
-FROM ""
-"""
-for row in cursor.execute(SQL):
-    st.write(row)
+with server_state_lock["count"]:  # Lock the "count" state for thread-safety
+    if "count" not in server_state:
+        server_state.count = 0
+
+increment = st.button("Increment")
+if increment:
+    with server_state_lock.count:
+        server_state.count += 1
+
+decrement = st.button("Decrement")
+if decrement:
+    with server_state_lock.count:
+        server_state.count -= 1
+
+st.write("Count = ", server_state.count)
+
 
 '''
 def run_read_query(query):
