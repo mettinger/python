@@ -7,7 +7,7 @@ cursor = connection.cursor()
 
 SQL = """
 SELECT *
-FROM "https://docs.google.com/spreadsheets/d/1uDmTt0ZpltLJfP3xQqlCNOgNHYr9A5rb31PnqcuACnA/edit#gid=0"
+FROM ""
 """
 for row in cursor.execute(SQL):
     st.write(row)
