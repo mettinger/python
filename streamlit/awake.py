@@ -1,11 +1,11 @@
 import streamlit as st
 from shillelagh.backends.apsw.db import connect
 
+connection = connect(":memory:")
+cursor = connection.cursor()
+
 def run_read_query(query):
-    conn = connect()
-    rows = conn.execute(query, headers=1)
-    rows = rows.fetchall()
-    conn.close()
+    rows = cursor.execute(query)
     return rows
 
 def run_write_query():
@@ -27,7 +27,7 @@ def mChange():
         mState = 'asleep'
     else:
         mState = 'awake'
-    rows = run_write_query()
+    #rows = run_write_query()
 
 def cChange():
     global cState
