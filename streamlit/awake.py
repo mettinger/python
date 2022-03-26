@@ -18,8 +18,12 @@ def run_write_query():
 sheet_url = st.secrets["public_gsheets_url"]
 rows = run_read_query(f'SELECT * FROM "{sheet_url}"')
 
+st.write(rows)
+
+'''
 mState = rows[0].mark
 cState = rows[0].cathy
+
 
 def mChange():
     global mState
@@ -40,7 +44,7 @@ mButton = st.button("M", on_click=mChange)
 cButton = st.button("C", on_click=cChange)
 
 st.write("M: %s    C: %s" % (mState, cState))
-
+'''
 
 
 
