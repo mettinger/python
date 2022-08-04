@@ -1,9 +1,8 @@
 import pyautogui
 import keyboard
-import cv2
 import numpy as np
 import time
-import math
+import json
 
 pyautogui.PAUSE = 2.5
 pyautogui.FAILSAFE = True
@@ -16,17 +15,8 @@ imageX, imageY = 77,129
 screenX, screenY = 1920, 1080
 circleTolerance = 20
 runAwaySeconds = 20
-
-def shipWindowColorGet():
-    x = 600
-    y = 0
-    width = 700
-    height = 700
-
-    im = pyautogui.screenshot(region=(x, y, width, height))
-    average_color_row = np.average(im, axis=0)
-    average_color = np.average(average_color_row, axis=0)
-    return average_color
+fuelEmergencyAmmount = 15
+processID = 1
 
 def keyPress(keyString, midDelay, endDelay):
     keyboard.press(keyString)
@@ -35,32 +25,13 @@ def keyPress(keyString, midDelay, endDelay):
     time.sleep(endDelay)
     return
 
-def stop():
+def stopShip():
     keyPress('x', .1, .1)
     return
 
-def forward(seconds):
+def forwardShip(seconds):
     keyPress('w', seconds, .1)
     return
-
-def runAwayFromStar():
-    pitchAngle0 = pitchSecondsPerCycle/4
-    pitchAngle1 = pitchSecondsPerCycle/2
-    fuelForwardSeconds = 4.0
-    fuelWaitSeconds = 30
-
-    stop()
-    keyPress('w', fuelForwardSeconds, .1)
-    stop()
-    time.sleep(fuelWaitSeconds)
-
-    keyPress('i', pitchAngle0, .1)
-    keyboard.press(']')
-    forward(runAwaySeconds)
-    keyboard.release(']')
-    stop()
-    keyPress('k', pitchAngle1, .1)
-    print("run away complete")
 
 def pitchTheta(theta):
     if theta >= 0:
@@ -80,6 +51,42 @@ def yawPhi(phi):
         keyPress('a', seconds, .1)
     return
 
+def hyperjump():
+    keyPress('j', .1, 0)
+    keyPress('w', 5, 0)
+    print("hyperjump completed...")
+
+def shipWindowColorGet():
+    x = 600
+    y = 0
+    width = 700
+    height = 700
+
+    im = pyautogui.screenshot(region=(x, y, width, height))
+    average_color_row = np.average(im, axis=0)
+    average_color = np.average(average_color_row, axis=0)
+    return average_color
+
+def runAwayFromStar():
+    pitchAngle0 = pitchSecondsPerCycle/4
+    pitchAngle1 = pitchSecondsPerCycle/2
+    fuelForwardSeconds = 4.0
+    fuelWaitSeconds = 30
+
+    stopShip()
+    forwardShip(fuelForwardSeconds)
+    stopShip()
+    time.sleep(fuelWaitSeconds)
+
+    keyPress('i', pitchAngle0, .1) # pitch up to get away from star
+    keyboard.press(']') # honk the system
+    forwardShip(runAwaySeconds) # run away from star
+    keyboard.release(']')
+    stopShip()
+    keyPress('k', pitchAngle1, .1) # pitch down to begin looking for target circle
+    print("run away complete")
+
+# find the target circle on the screen
 def targetCircleFind():
     pitchIncrement = 2 * np.pi/100
     yawIncrement = 2 * np.pi/180
@@ -96,6 +103,7 @@ def targetCircleFind():
             yawPhi(yawIncrement)
 
 
+# center the target circle for next jump
 def centerCircle():
     pitchSeconds = .2
     yawSeconds = .2
@@ -125,11 +133,17 @@ def centerCircle():
             print("centering completed...")
             return
         
+def checkFuel():
+  
+    f = open('C:/Users/the_m/Saved Games/Frontier Developments/Elite Dangerous/Status.json','r')
+    statusData = json.load(f)
+    f.close()
+    fuelAmount = statusData['Fuel']['FuelMain']
 
-def hyperjump():
-    keyPress('j', .1, 0)
-    keyPress('w', 5, 0)
-    print("hyperjump completed...")
+    if fuelAmount < fuelEmergencyAmmount:
+        return True
+    else:
+        return False
 
 def autoJump():
     print("entering autojump")
@@ -144,6 +158,9 @@ def autoJump():
         if colorNorm >= 170:
             print("starting tactic...")
             runAwayFromStar()
+            if checkFuel():
+                print("fuel low.  stopping...")
+                return True
             targetCircleFind()
             centerCircle()
             hyperjump()
@@ -154,45 +171,14 @@ while True:
         print('exit')
         break
     if keyboard.is_pressed('0'):
-        autoJump()
+        emergencyFlag = autoJump()
+        if emergencyFlag:
+            stopShip()
+            break 
     if keyboard.is_pressed('6'):
         avgColor = shipWindowColorGet()
         colorNorm = np.linalg.norm(avgColor)
         print(avgColor)
         print(colorNorm)
 
-    
-    
-'''
-def runAwayFromStar():
-    normBound = 7
-
-    stop()
-
-    avgColor = shipWindowColorGet()
-    colorNorm = np.linalg.norm(avgColor)
-    if colorNorm >= normBound:
-        pitchPi()
-        forward(runAwaySeconds)
-        stop()
-        print("run away complete")
-
-
-def centerCircle():
-    while True:
-        x, y, _, _ = pyautogui.locateOnScreen('target2.png', confidence=0.5)
-        currentCenterX = x + circleCenterPixelX
-        currentCenterY = y + circleCenterPixelY
-        if (abs(currentCenterX - (screenX/2.)) <= circleTolerance) and (abs(currentCenterY - (screenY/2)) <= circleTolerance):
-            print("centering completed...")
-            break
-        else:
-            radiusPitch = 2 ** 13
-            radiusYaw = 2 ** 11
-
-            pitchIncrement = math.atan2(((screenY/2) - currentCenterY), radiusPitch)
-            pitchTheta(pitchIncrement)
-
-            yawIncrement = math.atan2((currentCenterX - (screenX/2)), radiusYaw)
-            yawPhi(yawIncrement)
-'''
+ 
