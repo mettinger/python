@@ -1,4 +1,4 @@
-from concurrent.futures.process import _threads_wakeups
+#from concurrent.futures.process import _threads_wakeups
 import pyautogui
 import keyboard
 import numpy as np
@@ -6,7 +6,7 @@ import time
 import json
 import os
 
-# TODO: search for fuel-scoop-finished image, autofind of current log file, lose circle -refind circle
+# TODO: autofind of current log file, emergency timer
 
 pyautogui.PAUSE = 2.5
 pyautogui.FAILSAFE = True
@@ -16,7 +16,8 @@ yawSecondsPerCycle = 83     # seconds to complete a yaw rotation at speed = 0
 circleCenterPixelX = 54     # x offset of circle center in image
 circleCenterPixelY = 64     # y offset of circle center in image
 imageX, imageY = 77,129     # dimensions of circle image
-circleTolerance = 20        # tolerance of movement to get close to circle center
+circleTolerance = 20        # tolerance of movement to get close to circle center (sensitive)
+colorNormBound = 100  # 170 
 centerCirclePitchSeconds = .2  # seconds for each pitch step when centering the circle
 centerCircleYawSeconds = .2    # seconds for each yaw step when centering the circle
 fuelForwardSeconds = 4.0       # seconds to move forward toward star to fuel scoop
@@ -25,15 +26,15 @@ logDirectory = "C:/Users/the_m/Saved Games/Frontier Developments/Elite Dangerous
 
 runAwaySeconds = 20
 preRunAwayPitchAngle = pitchSecondsPerCycle * (1/4)
-postRunAwayPitchAngle = pitchSecondsPerCycle * (1/4)
+postRunAwayPitchAngle = pitchSecondsPerCycle * (1/8)
 circleFindPitchIncrement = -2 * np.pi/360
 circleFindYawIncrement = 2 * np.pi/725
 
 ## IMPORTANT ##
 killOnEmergency = False
 checkEmergencyFlag = False
-fuelEmergencyAmmount = 10
-logFile = 'Journal.2022-08-06T041841.01.log'
+fuelEmergencyAmmount = 16  # recommended 1/2 of fuel tank capacity?
+logFile = 'Journal.2022-08-06T155127.01.log'
 
 
 def keyPress(keyString, midDelay, endDelay):
@@ -118,29 +119,30 @@ def targetCircleFind():
 # center the target circle for next jump
 def centerCircle():
 
+    x, y, _, _ = targetCircleFind()
+    
     while True:
-        x, y, _, _ = pyautogui.locateOnScreen('target2.png', confidence=0.5)
-        currentCenterX = x + circleCenterPixelX
-        currentCenterY = y + circleCenterPixelY
+        circle  = pyautogui.locateOnScreen('target2.png', confidence=0.5)
+        if circle != None:
+            x, y, _, _ = circle
+            currentCenterX = x + circleCenterPixelX
+            currentCenterY = y + circleCenterPixelY
 
-        if currentCenterX < screenX/2 - circleTolerance:
-            keyPress('a', centerCircleYawSeconds, .1)
-        elif currentCenterX > screenX/2. + circleTolerance:
-            keyPress('d',centerCircleYawSeconds, .1)
+            if currentCenterX < (screenX/2) - circleTolerance:
+                keyPress('a', centerCircleYawSeconds, .1)
+            elif currentCenterX > (screenX/2.) + circleTolerance:
+                keyPress('d',centerCircleYawSeconds, .1)
+
+            if currentCenterY < (screenY/2) - circleTolerance:
+                keyPress('i', centerCirclePitchSeconds, .1)
+            elif currentCenterY > (screenY/2.) + circleTolerance:
+                keyPress('k', centerCirclePitchSeconds, .1)
+
+            if (abs(currentCenterX - (screenX/2.)) <= circleTolerance) and (abs(currentCenterY - (screenY/2)) <= circleTolerance):
+                print("centering completed...")
+                return
         else:
-            keyboard.release('a')
-            keyboard.release('d')
-
-        if currentCenterY < screenY/2 - circleTolerance:
-            keyPress('i', centerCirclePitchSeconds, .1)
-        elif currentCenterY > screenY/2. + circleTolerance:
-            keyPress('k', centerCirclePitchSeconds, .1)
-        else:
-            keyboard.release('i')
-            keyboard.release('k')
-
-        if (abs(currentCenterX - (screenX/2.)) <= circleTolerance) and (abs(currentCenterY - (screenY/2)) <= circleTolerance):
-            print("centering completed...")
+            centerCircle() # this occurs if we lose the circle sometime after finding it!
             return
         
 def checkFuel():
@@ -157,26 +159,26 @@ def checkFuel():
 
 def checkEmergency():
     
-    if not checkEmergencyFlag:
+    if checkEmergencyFlag:
+        eventList = []
+        with open(logDirectory + logFile, 'r') as myfile:
+            lines = myfile.readlines()
+            for thisLine in lines:
+                thisDict = json.loads(thisLine)
+                eventList.append(thisDict['event'])
+
+        uniqueEvents = list(set(eventList))
+
+        emergencyEventList = ['SupercruiseExit', 'HeatDamage', 'HullDamage']
+        for event in emergencyEventList:
+            if event in uniqueEvents:
+                print("Emergency: %s" % event)
+                return True
+
+        print("No Emergency...")
         return False
-
-    eventList = []
-    with open(logDirectory + logFile, 'r') as myfile:
-        lines = myfile.readlines()
-        for thisLine in lines:
-            thisDict = json.loads(thisLine)
-            eventList.append(thisDict['event'])
-
-    uniqueEvents = list(set(eventList))
-
-    emergencyEventList = ['SupercruiseExit', 'HeatDamage', 'HullDamage']
-    for event in emergencyEventList:
-        if event in uniqueEvents:
-            print("Emergency: %s" % event)
-            return True
-
-    print("No Emergency...")
-    return False
+    else:
+        return False 
 
 def autoJump():
     print("entering autojump")
@@ -189,8 +191,8 @@ def autoJump():
             avgColor = shipWindowColorGet()
             colorNorm = np.linalg.norm(avgColor)
 
-            if colorNorm >= 170:
-                print("starting tactic...")
+            if colorNorm >= colorNormBound:
+
                 runAwayFromStar()
                 if checkFuel():
                     print("fuel low.  exiting game...")
@@ -198,19 +200,16 @@ def autoJump():
                 if checkEmergency():
                     print("Emergency after runaway...")
                     return True
-                targetCircleFind()
-                if checkEmergency():
-                    print("Emergency after circle find...")
-                    return True
+
                 centerCircle()
                 if checkEmergency():
                     print("Emergency after center circle...")
                     return True
+
                 hyperjump()
                 if checkEmergency():
                     print("Emergency after hyperjump...")
                     return True
-                print("ending tactic...")
         except Exception as e: 
             print('Strange error in autojump...')
             print(e)
