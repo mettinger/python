@@ -27,11 +27,10 @@ uniqueEvents
 [i for i in allEntries if i['event'] == 'HullDamage']
 
 
-
-# SupercruiseExit  HeatWarning ( also HeatDamage HullDamage)
-
 # %%
 import os
+
+# SupercruiseExit  HeatWarning ( also HeatDamage HullDamage)
 
 #os.system("taskkill /f /pid 23248")
 os.system("taskkill /im EliteDangerous64.exe")
