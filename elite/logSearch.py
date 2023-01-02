@@ -35,3 +35,12 @@ import os
 #os.system("taskkill /f /pid 23248")
 os.system("taskkill /im EliteDangerous64.exe")
 # %%
+import os
+import glob
+
+logDirectory = "C:/Users/the_m/Saved Games/Frontier Developments/Elite Dangerous/"
+list_of_files = glob.glob(logDirectory + '*.log')
+logFile = max(list_of_files, key=os.path.getctime)
+print(logFile)
+
+# %%

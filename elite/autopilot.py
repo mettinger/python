@@ -5,8 +5,10 @@ import numpy as np
 import time
 import json
 import os
+import glob 
+import datetime
 
-# TODO: autofind of current log file, emergency timer
+# TODO: emergency timer
 
 pyautogui.PAUSE = 2.5
 pyautogui.FAILSAFE = True
@@ -23,7 +25,6 @@ centerCircleYawSeconds = .2    # seconds for each yaw step when centering the ci
 fuelForwardSeconds = 4.0       # seconds to move forward toward star to fuel scoop
 fuelWaitSeconds = 20           # seconds to wait while fuel scooping
 logDirectory = "C:/Users/the_m/Saved Games/Frontier Developments/Elite Dangerous/"
-
 runAwaySeconds = 20
 preRunAwayPitchAngle = pitchSecondsPerCycle * (1/4)
 postRunAwayPitchAngle = pitchSecondsPerCycle * (1/8)
@@ -34,7 +35,7 @@ circleFindYawIncrement = 2 * np.pi/725
 killOnEmergency = False
 checkEmergencyFlag = False
 fuelEmergencyAmmount = 16  # recommended 1/2 of fuel tank capacity?
-logFile = 'Journal.2022-08-06T155127.01.log'
+timeoutMinutes = 30
 
 
 def keyPress(keyString, midDelay, endDelay):
@@ -105,12 +106,16 @@ def runAwayFromStar():
 def targetCircleFind():
 
     while True:
+
+        if timeoutCheck():
+            return 0,0,True
+
         circle = pyautogui.locateOnScreen('target2.png', confidence=0.5)
         if circle != None:
             left, top, width, height = circle
             print("circle target found: ")
             print(left,top,width,height)
-            return (left, top, width, height)
+            return (left, top, False)
         else:
             pitchTheta(circleFindPitchIncrement)
             yawPhi(circleFindYawIncrement)
@@ -119,9 +124,12 @@ def targetCircleFind():
 # center the target circle for next jump
 def centerCircle():
 
-    x, y, _, _ = targetCircleFind()
+    x, y, timeoutFlag = targetCircleFind()
+    if timeoutFlag:
+        return True
     
     while True:
+
         circle  = pyautogui.locateOnScreen('target2.png', confidence=0.5)
         if circle != None:
             x, y, _, _ = circle
@@ -138,12 +146,14 @@ def centerCircle():
             elif currentCenterY > (screenY/2.) + circleTolerance:
                 keyPress('k', centerCirclePitchSeconds, .1)
 
-            if (abs(currentCenterX - (screenX/2.)) <= circleTolerance) and (abs(currentCenterY - (screenY/2)) <= circleTolerance):
+            if (abs(currentCenterX - (screenX/2.)) <= circleTolerance) and (abs(currentCenterY - (screenY/2.)) <= circleTolerance):
                 print("centering completed...")
-                return
+                return False
         else:
-            centerCircle() # this occurs if we lose the circle sometime after finding it!
-            return
+            timeoutFlag = centerCircle() # this occurs if we lose the circle sometime after finding it!
+            if timeoutFlag:
+                return True
+            return False
         
 def checkFuel():
   
@@ -161,7 +171,7 @@ def checkEmergency():
     
     if checkEmergencyFlag:
         eventList = []
-        with open(logDirectory + logFile, 'r') as myfile:
+        with open(logFile, 'r') as myfile:
             lines = myfile.readlines()
             for thisLine in lines:
                 thisDict = json.loads(thisLine)
@@ -180,14 +190,24 @@ def checkEmergency():
     else:
         return False 
 
+def timeoutCheck():
+    timeDiff = datetime.datetime.now() - beginTime
+    if timeDiff > timeoutMinutes:
+        return True
+    else:
+        return False 
+
 def autoJump():
     print("entering autojump")
+    global beginTime 
+
     while True:
         try:
             if keyboard.is_pressed('-'):
                 print("autojump canceled...")
                 return False
 
+            beginTime = datetime.datetime.now()
             avgColor = shipWindowColorGet()
             colorNorm = np.linalg.norm(avgColor)
 
@@ -201,7 +221,10 @@ def autoJump():
                     print("Emergency after runaway...")
                     return True
 
-                centerCircle()
+                timeoutFlag = centerCircle()
+                if timeoutFlag:
+                    print("Timeout...")
+                    return True
                 if checkEmergency():
                     print("Emergency after center circle...")
                     return True
@@ -214,6 +237,14 @@ def autoJump():
             print('Strange error in autojump...')
             print(e)
             return True 
+
+
+list_of_files = glob.glob(logDirectory + '*.log')
+logFile = max(list_of_files, key=os.path.getctime)
+print(logFile)
+
+beginTime = datetime.datetime.now()
+timeoutMinutes = datetime.timedelta(minutes=timeoutMinutes)
 
 while True:
     if keyboard.is_pressed('='):
@@ -235,11 +266,3 @@ while True:
         colorNorm = np.linalg.norm(avgColor)
         print(avgColor)
         print(colorNorm)
-
-'''
-runAwaySeconds = 20
-preRunAwayPitchAngle = pitchSecondsPerCycle/4
-postRunAwayPitchAngle = pitchSecondsPerCycle/2
-circleFindPitchIncrement = 2 * np.pi/100
-circleFindYawIncrement = 2 * np.pi/180
-'''
