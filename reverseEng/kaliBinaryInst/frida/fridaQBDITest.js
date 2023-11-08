@@ -1,3 +1,16 @@
+
+// Simple test of QBDI and Frida integration on binary: fridaQBDITest.c
+//
+// In directory: /mnt/c/Users/jetti/github/python/reverseEng/kaliBinaryInst/frida
+//
+// first compile the javascript:
+//
+// frida-compile fridaQBDITest.js -o fridaCompiled.js 
+//
+// execute frida:
+//
+//frida -f fridaQBDITest -l fridaCompiled.js
+
 // QBDI
 import { VM, InstPosition, VMAction } from "./frida-qbdi.js";
 

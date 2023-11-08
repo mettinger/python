@@ -474,7 +474,7 @@ if __name__ == '__main__':
     # AST representation as Python syntax
     #setAstRepresentationMode(AST_REPRESENTATION.PYTHON)
 
-    sys.argv = sys.argv + ['/home/kali/Desktop/binaryInstrumentation/python/frida/fridaQBDITest']
+    sys.argv = sys.argv + ['/mnt/c/Users/jetti/github/python/reverseEng/kaliBinaryInst/frida/fridaQBDITest']
 
     if len(sys.argv) < 2:
         debug('Syntax: %s <elf binary> [arg1, arg2, ...]' %(sys.argv[0]))
