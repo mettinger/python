@@ -96,16 +96,23 @@ const drawDot = async (bodyArray) => {
         }
 
         for (let j = 0; j < addSize; j++) {
-            randomIndex = getRandomInt(bodyArray.length);
 
-            randomPixel = bodyArray.splice(randomIndex, 1)[0];
+            if (queue.length > 0 || queueSize > 1) {
+                randomIndex = getRandomInt(bodyArray.length);
+                randomPixel = bodyArray.splice(randomIndex, 1)[0];
+                queue.push(randomPixel);
+                y = Math.floor(randomPixel/width);
+                x = randomPixel % height;
+                ctx.fillRect(x, y, recSize, recSize);
+            }
+            else {
+                x = getRandomInt(width);
+                y = getRandomInt(height);
+                ctx.fillRect(x, y, recSize, recSize);
+                await sleep(sleepTime);
+                ctx.clearRect(x-1, y-1, recSize + 2, recSize + 2);
+            }
 
-            queue.push(randomPixel);
-
-            y = Math.floor(randomPixel/width);
-            x = randomPixel % height;
-
-            ctx.fillRect(x, y, recSize, recSize);
         }
         await sleep(sleepTime);
 
