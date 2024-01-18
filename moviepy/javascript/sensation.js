@@ -1,5 +1,7 @@
 const img = document.getElementById('bodyImage');
 const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
 
 const slider = document.getElementById("myRange");
 const maxQueueSize = parseInt(slider.max);
@@ -7,7 +9,6 @@ var queueSize = slider.value;
 
 const width = img.naturalWidth;
 const height = img.naturalHeight;
-const ctx = canvas.getContext('2d');
 
 var sleepTime = 1;
 var addSize = 1;
@@ -31,6 +32,7 @@ function processImage() {
     var canvas2 = document.createElement('canvas');
     var context = canvas2.getContext('2d');
     context.drawImage(img, 0, 0);
+    imgData = [];
     imgData = context.getImageData(0, 0, width, height).data;
     
     for (let i = 0; i < imgData.length; i += 4) {
