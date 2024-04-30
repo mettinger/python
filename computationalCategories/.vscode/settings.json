@@ -3,6 +3,8 @@
         "composability",
         "composables",
         "Functors",
+        "homset",
+        "homsets",
         "morphism",
         "morphisms",
         "verts"

@@ -395,7 +395,7 @@ def objectMapFromMorphismMap(c:Category, d:Category, morphismMap:dict) -> dict:
     return objectMap
 
 # %%
-functorList = enumerateFunctors(c1, c1, 3)
+functorList = enumerateFunctors(c1, z2, 3)
 print(functorList)
 
 # %% [markdown]
