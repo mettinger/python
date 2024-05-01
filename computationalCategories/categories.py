@@ -24,6 +24,7 @@ class Category:
         self.morphisms = list(src.keys())
         self.identityMap = identityMap
         self.debug = debug
+        self.homsets = {}
 
         # if no identities are given add identities
         if identityMap == {}:
@@ -35,6 +36,8 @@ class Category:
         assert self.composabilityCheck()
         assert self.compositionCheck()
         assert self.associativityCheck()
+
+        self.homsetMake()
         
     def __repr__(self) -> str:
         return self.__str__()
@@ -63,6 +66,7 @@ class Category:
             if self.target[first] != self.src[second]:
                 if self.debug:
                     print("Composability violation...")
+                    print((second,first))
                 return False
         return True
     
@@ -87,6 +91,7 @@ class Category:
                         if self.comp[(third, self.comp[second, first])] != self.comp[(self.comp[third, second], first)]:
                             if self.debug:
                                 print("Associativty failure...")
+                                print((third, second, first))
                             return False
         return True
     
@@ -96,6 +101,18 @@ class Category:
             thisMorphism = "id_" + str(thisObject)
             self.identityMap[thisObject] = thisMorphism
         self.completeIdentities()
+
+    def homsetMake(self) -> None:
+
+        for o1 in self.objects:
+            for o2 in self.objects:
+                self.homsets[(o1, o2)] = []
+
+        for thisMorphism in self.morphisms:
+            src = self.src[thisMorphism]
+            target = self.target[thisMorphism]
+            self.homsets[(src, target)].append(thisMorphism)
+
 
 
 #############   Functor Class   ###################
@@ -331,6 +348,27 @@ objectMap = {0:0, 1:1, 2:2, 3:3}
 morphismMap = {i:i for i in c1.morphisms}
 F = Functor(c1, c2, objectMap, morphismMap)
 
+src = {"1_00_1": 0, "1_01_1":0, "1_01_2":0, "1_11_1":1, "id0":0, "id1":1}
+target = {"1_00_1": 0, "1_01_1":1, "1_01_2":1, "1_11_1":1, "id0":0, "id1":1}
+comp = {("1_01_1","1_00_1"): "1_01_1", 
+        ("1_11_1","1_01_1"): "1_01_1",
+        ("1_01_2", "1_00_1"): "1_01_2",
+        ("1_11_1", "1_01_2"): "1_01_2",
+        ("id0", "1_00_1"): "1_00_1",
+        ("1_00_1", "id0"): "1_00_1",
+        ("1_01_1", "id0"): "1_01_1",
+        ("1_01_2", "id0"): "1_01_2",
+        ("id1", "1_01_1"): "1_01_1",
+        ("id1", "1_01_2"): "1_01_2",
+        ("id1", "1_11_1"): "1_11_1",
+        ("1_11_1", "id1"): "1_11_1",
+        ("1_00_1", "1_00_1"): "id0",
+        ("1_11_1", "1_11_1"): "id1",
+        ("id0", "id0"): "id0",
+        ("id1", "id1"): "id1"}
+
+c3 = Category(src, target, comp, {0:"id0", 1:"id1"}, debug=True)
+
 # %% [markdown]
 # ### To define a strict 2-category:
 # 
@@ -368,7 +406,7 @@ strict2 = StrictTwoCategory(zeroCells, hom, identityMap, comp)
 strict2
 
 # %%
-def enumerateFunctors(c:Category, d:Category, numToFind:int = 0) -> list:
+def enumerateFunctorsByMorphism(c:Category, d:Category, numToFind:int=0) -> list:
     functorList = []
     allFunctions = itertools.product(d.morphisms, repeat=len(c.morphisms))
     for thisFunction in allFunctions:
@@ -395,27 +433,56 @@ def objectMapFromMorphismMap(c:Category, d:Category, morphismMap:dict) -> dict:
     return objectMap
 
 # %%
-functorList = enumerateFunctors(c1, z2, 3)
+functorList = enumerateFunctorsByMorphism(z2, c1, 0)
+print(functorList)
+
+# %%
+def enumerateFunctorsByObject(c:Category, d:Category, numToFind: int=0) -> list:
+    functorList = []
+    allObjectFunctions = itertools.product(d.objects, repeat=len(c.objects))
+    for thisFunction in allObjectFunctions:
+        objectMap = dict(zip(c.objects, thisFunction))
+
+        # create morphismMap for potential functor
+        
+        cHomsets = list(c.homsets.items())
+        homSetFunctions = []
+        for (cSrc, cTarget),cMorphismList in cHomsets:
+            dSrc = objectMap[cSrc]
+            dTarget = objectMap[cTarget]
+            thisDHomset = d.homsets[(dSrc, dTarget)]
+            homSetFunctions.append(itertools.product(thisDHomset, repeat=len(cMorphismList)))
+
+        allMorphismFunctions =itertools.product(*homSetFunctions)
+        for thisMorphismFunction in allMorphismFunctions:
+            
+            morphismMap = {}
+            # map identities to identities
+            for thisIdentity in c.identityMap.values():
+                morphismMap[thisIdentity] = d.identityMap[objectMap[c.src[thisIdentity]]]
+            
+            thisMorphismFunction = list(thisMorphismFunction)
+            for _, cMorphismList in cHomsets:
+                thisDMorphismList = thisMorphismFunction.pop(0)  
+                morphismMap.update(dict(zip(cMorphismList,thisDMorphismList)))
+            try:
+                potentialFunctor = Functor(c, d, objectMap, morphismMap)
+                functorList.append(potentialFunctor)
+                if len(functorList) == numToFind:
+                    return functorList
+            except AssertionError:
+                pass
+
+    return functorList
+
+# %%
+functorList = enumerateFunctorsByObject(c1, c1, 0)
 print(functorList)
 
 # %% [markdown]
 # ## Scratch
 
-# %%
-'''                
-    # add identity morphisms to set of morphisms
-    def addIdentities(self) -> None:
-        for thisObject in self.objects:
-            thisMorphism = "id_" + str(thisObject)
-            self.src[thisMorphism] = thisObject
-            self.target[thisMorphism] = thisObject
-            self.morphisms = self.morphisms + [thisMorphism]
-            self.identityMap[thisObject] = thisMorphism
-            for i in self.morphisms:
-                if self.src[i] == thisObject:
-                    self.comp[(i, thisMorphism)] = i
-                if self.target[i] == thisObject:
-                    self.comp[(thisMorphism, i)] = i
-    '''
+# %% [markdown]
+# 
 
 
